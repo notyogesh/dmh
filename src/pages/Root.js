@@ -1,5 +1,4 @@
 import React, { useState, useMemo } from "react";
-// import LightDark from "../components/LightDark.js";
 import Navbar from "../main/navbar/NavBar";
 import Divider from "@mui/material/Divider";
 
@@ -27,9 +26,7 @@ const Root = () => {
       <ThemeProvider theme={theme}>
         <Navbar onClick={changeTheme} />
         <Divider />
-        {/* <div className="content"> */}
         <Outlet />
-        {/* </div> */}
         <Divider />
         <Footer />
       </ThemeProvider>

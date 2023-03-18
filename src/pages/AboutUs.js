@@ -26,7 +26,7 @@ const AboutUs = () => {
         <Typography variant="h2" sx={{ ml: "auto" }}>
           DMH{" "}
         </Typography>
-        {/* <Item> */} Our aim is to be our clients & prospectiv clients
+        Our aim is to be our clients & prospectiv clients
         preferred parter for the installation of aircon and Mechanical
         ventilation equipment , forging relationships for the benefit of each
         other, the wider community & the environment . like the sound of this ?
@@ -48,11 +48,10 @@ const AboutUs = () => {
         the equipment, is a legal requirment ( for certain equipment ) and helps
         prevent operational issues, saving you both time & money. <br />
         We look forward to discussing your maintenances requirements & treating
-        you to the DMH Experience !{/* </Item>{" "} */}
+        you to the DMH Experience !
         <Typography variant="h4" sx={{ my: 2 }}>
           DMH Mission Statement{" "}
         </Typography>
-        {/* <Item> */}
         To be our clients preferred any aircon system maintenance parter that
         through our knowledge, passion and exemplary service we improve the
         comport of our clients and facilitate their operations by delivering an
@@ -62,7 +61,7 @@ const AboutUs = () => {
         employees that fosters respect of the trust customers, colleagues and
         suppliers place in us. <br />
         Conduct all out business with respect for the community and environment.{" "}
-        {/* </Item> */}
+       
       </Card>
     </Box>
   );

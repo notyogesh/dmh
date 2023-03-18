@@ -59,35 +59,6 @@ export const customTheme = (mode) => ({
         }),
   },
 });
-// palette: {
-//   mode,
-//   primary: {
-//     ...amber,
-//     ...(mode === "dark" && {
-//       main: amber[300],
-//     }),
-//   },
-//   ...(mode === "dark" && {
-//     background: {
-//       default: "#000",
-//       paper: "#000",
-//     },
-//   }),
-//   // To change the table color change this
-
-//   secondary: { main: "#7b1fa2" },
-
-//   text: {
-//     ...(mode === "light"
-//       ? {
-//           primary: grey[900],
-//           secondary: grey[800],
-//         }
-//       : {
-//           primary: "#fff",
-//           secondary: grey[500],
-//         }),
-//   },
 
 // export const light = {
 //   palette: {
@@ -100,41 +71,3 @@ export const customTheme = (mode) => ({
 //       contrastText: "#fff",
 //     },
 //   },
-//   primary: {
-//     main: "#FFF",
-//   },
-//   text: {
-//     default: "#FFFF00",
-//   },
-//   typography: {
-//     h1: {
-//       color: "#ff0000",
-//     },
-//     body1: {
-//       color: "#333333",
-//     },
-//   },
-// };
-
-// export const dark = {
-//   palette: {
-//     mode: "dark",
-//   },
-//   // primary: {
-//   //   main: "#3c1361",
-//   // },
-//   text: {
-//     default: "#FFFF00",
-//   },
-// };
-// const homePageStyles = (
-//   <GlobalStyles
-//     styles={{
-//       body: { backgroundColor: 'cyan' },
-//       '.MuiTypography-root': {
-//         color: 'red',
-//       },
-//     }}
-//   />
-// );
-//

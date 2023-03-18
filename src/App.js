@@ -3,8 +3,8 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./main/ErrorPage";
 import CircularProgress from "@mui/material/CircularProgress";
-import Hero from "./components/hero/Hero";
 import Root from "./pages/Root";
+import Hero from "./components/hero/Hero";
 
 // const Root = React.lazy(() => import("./pages/Root"));
 const AboutUs = React.lazy(() => import("./pages/AboutUs"));
