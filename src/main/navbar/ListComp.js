@@ -3,25 +3,9 @@ import ListItemText from "@mui/material/ListItemText";
 import { NavLink } from "react-router-dom";
 // import HomeIcon from "@mui/icons-material/Home";
 import { ListItemButton, ListItemIcon } from "@mui/material";
-// import { makeStyles } from "@mui/material/styles";
-// import { makeStyles } from "@mui/styles";
-// import { createTheme } from "@mui/material/styles";
-// import { styled } from "@mui/material/styles";
 
-// const useStyles = styled((theme) => ({
-//   active: {
-//     // textDecoration: "none",
-//     color: theme.palette.text.secondary,
-//     fontWeight: "bold",
-//     // border: "1px solid deeppink",
-//   },
-//   inactive: {
-//     textDecoration: "none",
-//     color: theme.palette.text.inactive,
-//     // opacity: 1;
-//     fontWeight: "lighter",
-//   },
-// }));
+import { useTheme } from "@mui/material/styles";
+
 const menuItems = [
   { title: "Home", link: "/" },
   { title: "About Us", link: "/aboutus" },
@@ -29,7 +13,7 @@ const menuItems = [
   { title: "Contact Us", link: "/contact" },
 ];
 const ListComp = () => {
-  // const classes = useStyles();
+  const theme = useTheme();
 
   return (
     <List sx={{ display: { xs: "block", md: "flex" }, fontWeight: "bold" }}>
@@ -39,7 +23,21 @@ const ListComp = () => {
           <ListItemIcon>
             <NavLink
               to={item.link}
-              className={({ isActive }) => (isActive ? "active" : "inactive")}
+              // className={({ isActive }) =>
+              //   isActive ? classes.active : classes.inactive
+              // }
+              style={({ isActive }) =>
+                isActive
+                  ? {
+                      fontWeight: "bolder",
+                      color: theme.palette.text.secondary,
+                    }
+                  : {
+                      textDecoration: "none",
+                      fontWeight: "lighter",
+                      color: theme.palette.text.inactive,
+                    }
+              }
             >
               <ListItemText
                 primary={item.title}
@@ -48,6 +46,7 @@ const ListComp = () => {
                 }}
               />
             </NavLink>
+            {/* <CssBaseline /> */}
           </ListItemIcon>
         </ListItemButton>
       ))}

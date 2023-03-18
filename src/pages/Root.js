@@ -10,6 +10,7 @@ import Footer from "../main/Footer";
 
 const Root = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
+
   const changeTheme = () => {
     setIsDarkTheme(!isDarkTheme);
   };

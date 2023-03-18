@@ -3,18 +3,19 @@ import { Typography, Button, Box } from "@mui/material";
 import { useRouteError } from "react-router-dom";
 import { Link as RouterLink } from "react-router-dom";
 // import image from "../images/404.svg";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import Seo from "./Seo";
 
 const ErrorPage = () => {
   const error = useRouteError();
 
   return (
     <>
-      <HelmetProvider>
-        <Helmet>
-          <title>404 | D M H</title>
-        </Helmet>
-      </HelmetProvider>
+      <Seo
+        title="404 | D M H"
+        description="Page you are looking for is not found !"
+        name="D M H"
+        type="error"
+      />
       <Box
         sx={{
           maxWidth: "sm",

@@ -4,6 +4,8 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { Button } from "@mui/material";
+import Seo from "../../main/Seo";
+
 // import Link from "@mui/material/Link";
 const Hero = () => {
   return (
@@ -22,6 +24,13 @@ const Hero = () => {
             : "default",
       }}
     >
+      {" "}
+      <Seo
+        title="D M H"
+        description="construction & Engineering Pte.Ltd"
+        name="D M H"
+        type="landing page "
+      />
       <CssBaseline />
       <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
         <Typography

@@ -19,13 +19,13 @@ code {
 .content {
   flex-grow: 1;
 }
-.active {
-  /* text-decoration: none; */
-  color: white;
+/* .active { */
+/* text-decoration: none; */
+/* color: white;
   font-weight: bolder;
 }
 .inactive {
   text-decoration: none;
   color: "#fff";
   opacity: 1;
-}
+} */
