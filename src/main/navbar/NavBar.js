@@ -6,53 +6,42 @@ import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
 
 import AdbIcon from "@mui/icons-material/Adb";
-import List from "@mui/material/List";
-import ListItemText from "@mui/material/ListItemText";
-import { NavLink } from "react-router-dom";
-import LightDark from "./LightDark";
-import { Drawer, Box, ListItemButton, ListItemIcon } from "@mui/material";
 
-const menuItems = [
-  { title: "Home", link: "/" },
-  { title: "About Us", link: "/page2" },
-  { title: "Projects", link: "/page3" },
-  { title: "Contact Us", link: "/page4" },
-];
-const ListComb = () => {
-  return (
-    <List sx={{ display: { xs: "block", md: "flex" } }}>
-      {" "}
-      {menuItems.map((item, i) => (
-        <ListItemButton key={i}>
-          <ListItemIcon>
-            <NavLink to={item.link}>
-              <ListItemText primary={item.title} />
-            </NavLink>
-          </ListItemIcon>
-        </ListItemButton>
-      ))}
-    </List>
-  );
-};
+import LightDark from "./LightDark";
+import { Drawer, Box } from "@mui/material";
+import ListComp from "./ListComp";
+
 function NavBar(props) {
   const [openDrawer, setOpenDrawer] = useState(false);
 
   return (
     <AppBar
-      position="static"
-      sx={{ width: "100%", boxShadow: "5px 10px 10px #888888" }}
+      // position="static"
+      position="sticky"
+      sx={{
+        // boxShadow: 3,
+        backgroundColor: (theme) =>
+          theme.palette.mode === "light" ? "#C0FF02" : "default",
+      }}
     >
       <Toolbar>
         <AdbIcon />
         <Typography
           variant="h5"
-          sx={{ my: 2, color: "inherit", display: "inline-block" }}
+          sx={{
+            my: 2,
+            color: "inherit",
+            // display: "inline-block",
+            letterSpacing: 1,
+            fontWeight: "bolder",
+          }}
         >
           DMH
         </Typography>
 
         <Box sx={{ display: "flex", ml: "auto", alignItems: "center" }}>
           <LightDark onClick={props.onClick} />
+
           <Box
             sx={{
               display: { xs: "none", md: "flex" },
@@ -60,7 +49,7 @@ function NavBar(props) {
               whiteSpace: "nowrap",
             }}
           >
-            <ListComb />
+            <ListComp />
           </Box>
           <IconButton
             onClick={() => setOpenDrawer((prev) => !prev)}
@@ -84,7 +73,7 @@ function NavBar(props) {
         >
           {" "}
           <Box onClick={() => setOpenDrawer(false)}>
-            <ListComb sx={{ bgcolor: "background.paper" }} />
+            <ListComp sx={{ bgcolor: "background.paper" }} />
           </Box>
         </Drawer>
       </Toolbar>

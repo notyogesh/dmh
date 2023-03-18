@@ -3,17 +3,18 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./main/ErrorPage";
 import CircularProgress from "@mui/material/CircularProgress";
-import Hero from "./main/Hero";
+import Hero from "./components/hero/Hero";
+import Root from "./pages/Root";
 
-const Page1 = React.lazy(() => import("./pages/Page1"));
-const Page2 = React.lazy(() => import("./pages/Page2"));
-const Page3 = React.lazy(() => import("./pages/Page3"));
-const Page4 = React.lazy(() => import("./pages/Page4"));
+// const Root = React.lazy(() => import("./pages/Root"));
+const AboutUs = React.lazy(() => import("./pages/AboutUs"));
+const Projects = React.lazy(() => import("./pages/Projects"));
+const Contact = React.lazy(() => import("./pages/Contact"));
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Page1 />,
+    element: <Root />,
     errorElement: <ErrorPage />,
     children: [
       {
@@ -21,16 +22,16 @@ const router = createBrowserRouter([
         element: <Hero />,
       },
       {
-        path: "/page2",
-        element: <Page2 />,
+        path: "/aboutus",
+        element: <AboutUs />,
       },
       {
-        path: "/page3",
-        element: <Page3 />,
+        path: "/projects",
+        element: <Projects />,
       },
       {
-        path: "/page4",
-        element: <Page4 />,
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

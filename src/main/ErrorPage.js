@@ -47,8 +47,11 @@ const ErrorPage = () => {
         </Helmet>
       </HelmetProvider>
       <BoxStyle>
+        {" "}
+        <Typography variant="h1" component="h1" align="center" gutterBottom>
+          {error.status}
+        </Typography>
         <Typography variant="h3">Sorry, page not found!</Typography>
-
         <Typography paragraph color="textSecondary">
           Sorry, we could't find the page you're looking for. Perhaps you've
           mistyped the URL? Be sure to check your spelling.
@@ -56,9 +59,7 @@ const ErrorPage = () => {
         <Typography variant="h3">
           {(error && error.statusText) || error.message}
         </Typography>
-
         {/* <img src={image} alt="404 Error" loading="lazy" /> */}
-
         <Button
           to="/"
           variant="contained"
