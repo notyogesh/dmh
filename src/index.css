@@ -19,8 +19,8 @@ code {
 .content {
   flex-grow: 1;
 }
-/* .active {
-  text-decoration: none;
+.active {
+  /* text-decoration: none; */
   color: white;
   font-weight: bolder;
 }
@@ -28,4 +28,4 @@ code {
   text-decoration: none;
   color: "#fff";
   opacity: 1;
-} */
+}

@@ -40,7 +40,6 @@ export const customTheme = (mode) => ({
           },
           root: {
             main: "red",
-            mainGradient: "linear-gradient(to right, tomato, cyan)",
           },
         }
       : {

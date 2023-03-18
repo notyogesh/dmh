@@ -4,22 +4,24 @@ import { NavLink } from "react-router-dom";
 // import HomeIcon from "@mui/icons-material/Home";
 import { ListItemButton, ListItemIcon } from "@mui/material";
 // import { makeStyles } from "@mui/material/styles";
-import makeStyles from "@mui/styles/makeStyles";
+// import { makeStyles } from "@mui/styles";
+// import { createTheme } from "@mui/material/styles";
+// import { styled } from "@mui/material/styles";
 
-const useStyles = makeStyles((theme) => ({
-  active: {
-    // textDecoration: "none",
-    color: theme.palette.text.secondary,
-    fontWeight: "bold",
-    // border: "1px solid deeppink",
-  },
-  inactive: {
-    textDecoration: "none",
-    color: theme.palette.text.inactive,
-    // opacity: 1;
-    fontWeight: "lighter",
-  },
-}));
+// const useStyles = styled((theme) => ({
+//   active: {
+//     // textDecoration: "none",
+//     color: theme.palette.text.secondary,
+//     fontWeight: "bold",
+//     // border: "1px solid deeppink",
+//   },
+//   inactive: {
+//     textDecoration: "none",
+//     color: theme.palette.text.inactive,
+//     // opacity: 1;
+//     fontWeight: "lighter",
+//   },
+// }));
 const menuItems = [
   { title: "Home", link: "/" },
   { title: "About Us", link: "/aboutus" },
@@ -27,7 +29,7 @@ const menuItems = [
   { title: "Contact Us", link: "/contact" },
 ];
 const ListComp = () => {
-  const classes = useStyles();
+  // const classes = useStyles();
 
   return (
     <List sx={{ display: { xs: "block", md: "flex" }, fontWeight: "bold" }}>
@@ -37,9 +39,7 @@ const ListComp = () => {
           <ListItemIcon>
             <NavLink
               to={item.link}
-              className={({ isActive }) =>
-                isActive ? classes.active : classes.inactive
-              }
+              className={({ isActive }) => (isActive ? "active" : "inactive")}
             >
               <ListItemText
                 primary={item.title}
