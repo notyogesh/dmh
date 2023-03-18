@@ -2,7 +2,7 @@ import React from "react";
 import Skeleton from "@mui/material/Skeleton";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
-import Card from "@mui/material/Card";
+// import Card from "@mui/material/Card";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -10,9 +10,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
-import Paper from "@mui/material/Paper";
-
-// import img from "../images/contact.jpeg";
+// import Paper from "@mui/material/Paper";
 const Contact = () => {
   return (
     <Box
