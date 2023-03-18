@@ -18,7 +18,7 @@ import {
   // indigo,
   // teal,
 } from "@mui/material/colors";
-// amber, blue, blueGrey, brown, common, cyan, deepOrange, deepPurple, green, grey, indigo, lightBlue, lightGreen, lime, orange, pink, purple, red, teal, yellow
+
 // background-color: #f3f3f3;
 // #212121;
 export const customTheme = (mode) => ({

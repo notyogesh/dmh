@@ -1,40 +1,9 @@
 import React from "react";
 import { Typography, Button, Box } from "@mui/material";
-import { styled } from "@mui/material/styles";
 import { useRouteError } from "react-router-dom";
 import { Link as RouterLink } from "react-router-dom";
 // import image from "../images/404.svg";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-
-const BoxStyle = styled(Box)(({ theme }) => ({
-  maxWidth: theme.breakpoints.values.sm,
-  minHeight: `calc(100vh - ${theme.mixins.toolbar.minHeight * 2}px)`,
-  margin: "0 auto",
-  textAlign: "center",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-
-  "& .MuiTypography-paragraph": {
-    marginTop: 20,
-    marginBottom: 20,
-  },
-  "& img": {
-    width: "100%",
-    maxWidth: 400,
-    objectFit: "cover",
-  },
-  "& .MuiButton-root": {
-    backgroundColor: theme.palette.green,
-    color: "#fff",
-    marginTop: 40,
-  },
-
-  [theme.breakpoints.down("sm")]: {
-    "& .MuiTypography-h3": { fontSize: 30, fontWeight: 500 },
-  },
-}));
 
 const ErrorPage = () => {
   const error = useRouteError();
@@ -46,8 +15,16 @@ const ErrorPage = () => {
           <title>404 | D M H</title>
         </Helmet>
       </HelmetProvider>
-      <BoxStyle>
-        {" "}
+      <Box
+        sx={{
+          maxWidth: "sm",
+          margin: "0 auto",
+          // display: "flex",
+          // flexDirection: "column",
+          // justifyContent: "center",
+          // alignItems: "center",
+        }}
+      >
         <Typography variant="h1" component="h1" align="center" gutterBottom>
           {error.status}
         </Typography>
@@ -69,7 +46,7 @@ const ErrorPage = () => {
         >
           Go to Home
         </Button>
-      </BoxStyle>
+      </Box>
     </>
   );
 };
