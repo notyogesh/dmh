@@ -22,15 +22,17 @@ const AboutUs = () => {
         backgroundColor: (theme) => theme.palette.background.default,
       }}
     >
-      <Card elevation={3} sx={{ textAlign: "left", px: 20, py: 2 }}>
+      <Card
+        elevation={3}
+        sx={{ textAlign: "left", px: { xs: 2, md: 20 }, py: 2 }}
+      >
         <Typography variant="h2" sx={{ ml: "auto" }}>
           DMH{" "}
         </Typography>
-        Our aim is to be our clients & prospectiv clients
-        preferred parter for the installation of aircon and Mechanical
-        ventilation equipment , forging relationships for the benefit of each
-        other, the wider community & the environment . like the sound of this ?
-        Read on....
+        Our aim is to be our clients & prospectiv clients preferred parter for
+        the installation of aircon and Mechanical ventilation equipment ,
+        forging relationships for the benefit of each other, the wider community
+        & the environment . like the sound of this ? Read on....
         <br />
         <br />
         Maintaining ACMV equipment isn't just about oil cans & cleaning
@@ -61,7 +63,6 @@ const AboutUs = () => {
         employees that fosters respect of the trust customers, colleagues and
         suppliers place in us. <br />
         Conduct all out business with respect for the community and environment.{" "}
-       
       </Card>
     </Box>
   );
