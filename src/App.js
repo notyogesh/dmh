@@ -39,9 +39,9 @@ const router = createBrowserRouter([
 const App = () => {
   return (
     <div className="App">
-      {/* <Suspense fallback={<CircularProgress variant="determinate" />}> */}
-      <RouterProvider router={router} />
-      {/* </Suspense> */}
+      <Suspense fallback={<CircularProgress variant="determinate" />}>
+        <RouterProvider router={router} />
+      </Suspense>
     </div>
   );
 };
