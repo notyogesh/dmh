@@ -22,7 +22,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/aboutus",
-        element: <AboutUs />,
+        element: (
+          <Suspense fallback={<CircularProgress variant="determinate" />}>
+            <AboutUs />
+          </Suspense>
+        ),
       },
       {
         path: "/projects",

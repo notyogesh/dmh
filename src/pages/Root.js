@@ -1,7 +1,6 @@
-import React, { useState, useMemo, Suspense } from "react";
+import React, { useState, useMemo } from "react";
 import Navbar from "../main/navbar/NavBar";
 import Divider from "@mui/material/Divider";
-import CircularProgress from "@mui/material/CircularProgress";
 
 import { customTheme } from "../utils/Theme";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
@@ -26,11 +25,11 @@ const Root = () => {
   return (
     <div className="root">
       <ThemeProvider theme={theme}>
-        <Navbar onClick={changeTheme} />
-        <Divider />
-        <Suspense fallback={<CircularProgress variant="determinate" />}>
+        <div className="content">
+          <Navbar onClick={changeTheme} />
+          <Divider />
           <Outlet />
-        </Suspense>
+        </div>
         <Divider />
         <Footer />
       </ThemeProvider>

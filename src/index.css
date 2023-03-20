@@ -14,10 +14,10 @@ code {
 .root {
   display: flex;
   flex-direction: column;
-  min-height: 100dvh;
 }
 .content {
   flex-grow: 1;
+  min-height: 100dvh;
 }
 /* .active { */
 /* text-decoration: none; */

@@ -17,7 +17,7 @@ const Contact = () => {
       sx={{
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
-        minHeight: "100dvh",
+        // minHeight: "100dvh",
         // backgroundColor: (theme) => theme.palette.primary.main,
       }}
     >

@@ -19,12 +19,18 @@ const AboutUs = () => {
     <Box
       sx={{
         // p: 3,
+
         backgroundColor: (theme) => theme.palette.background.default,
       }}
     >
       <Card
         elevation={3}
-        sx={{ textAlign: "left", px: { xs: 2, md: 20 }, py: 2 }}
+        sx={{
+          textAlign: "left",
+          px: { xs: 2, md: 20 },
+          py: 2,
+          minHeight: "100dvh",
+        }}
       >
         <Typography variant="h2" sx={{ ml: "auto" }}>
           DMH{" "}
