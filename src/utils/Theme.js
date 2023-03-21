@@ -28,7 +28,9 @@ export const customTheme = (mode) => ({
       ? {
           // palette values for light mode
           primary: lime,
+          //  contrastText: grey[500] },
           divider: lime[200],
+
           background: {
             default: lime[50],
             paper: lime[200],
@@ -39,8 +41,15 @@ export const customTheme = (mode) => ({
             inactive: grey[700],
           },
           root: {
-            main: "red",
+            main: "#C0FF02",
           },
+          // success: {
+          //   main: "#C0FF02",
+          //   contrastText: "#C0FF02",
+          // },
+          // action: {
+          //   active: "#000",
+          // },
         }
       : {
           // palette values for dark mode
@@ -54,6 +63,10 @@ export const customTheme = (mode) => ({
             primary: yellow[500],
             secondary: yellow[500],
             inactive: grey[500],
+          },
+          root: {
+            main: yellow[500],
+            contrastText: grey[900],
           },
         }),
   },
@@ -70,3 +83,12 @@ export const customTheme = (mode) => ({
 //       contrastText: "#fff",
 //     },
 //   },
+// action: {
+//   ...(mode === "light"
+//     ? {
+//         active: "#000",
+//       }
+//     : {
+//         active: "#fff",
+//       }),
+// },

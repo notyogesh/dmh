@@ -58,7 +58,7 @@ export default function Footer() {
 
         <Box component="footer" sx={{ flex: 1 }}>
           {/* <Typography variant="body1">Follow Us On: </Typography> */}
-          <Button variant="contained" sx={{ mb: 2 }}>
+          <Button variant="contained" color="root" sx={{ mb: 2 }}>
             Follow Us On:
           </Button>
           <Stack>
@@ -67,6 +67,7 @@ export default function Footer() {
               href="https://www.facebook.com/"
               target="_blank"
               variant="text"
+              color="root"
               sx={{ mx: "auto" }}
             >
               Facebook
@@ -76,6 +77,7 @@ export default function Footer() {
               href="https://twitter.com/"
               target="_blank"
               variant="text"
+              color="root"
               sx={{ mx: "auto" }}
             >
               Twitter
@@ -85,6 +87,7 @@ export default function Footer() {
               href="https://www.instagram.com/"
               target="_blank"
               variant="text"
+              color="root"
               sx={{ mx: "auto" }}
             >
               Instagram
@@ -94,6 +97,7 @@ export default function Footer() {
               href="https://www.instagram.com/"
               target="_blank"
               variant="text"
+              color="root"
               sx={{ mx: "auto" }}
             >
               E-mail
@@ -104,55 +108,3 @@ export default function Footer() {
     </>
   );
 }
-// import React from 'react';
-// import { makeStyles } from '@material-ui/core/styles';
-// import { Typography, Link, Box } from '@material-ui/core';
-// import FacebookIcon from '@material-ui/icons/Facebook';
-// import TwitterIcon from '@material-ui/icons/Twitter';
-// import InstagramIcon from '@material-ui/icons/Instagram';
-
-// const useStyles = makeStyles((theme) => ({
-//   footer: {
-//     backgroundColor: '#f2f2f2',
-//     padding: theme.spacing(4),
-//     marginTop: 'auto',
-//   },
-//   socialLinks: {
-//     display: 'flex',
-//     justifyContent: 'center',
-//     marginTop: theme.spacing(2),
-//   },
-//   socialIcon: {
-//     margin: theme.spacing(0, 1),
-//     fontSize: '2rem',
-//     color: '#666666',
-//     '&:hover': {
-//       color: '#000000',
-//     },
-//   },
-// }));
-
-// const Footer = () => {
-//   const classes = useStyles();
-
-//   return (
-//     <Box component="footer" className={classes.footer}>
-//       <Typography variant="body1">
-//         Follow Us:
-//       </Typography>
-//       <div className={classes.socialLinks}>
-//         <Link href="https://www.facebook.com/" target="_blank">
-//           <FacebookIcon className={classes.socialIcon} />
-//         </Link>
-//         <Link href="https://twitter.com/" target="_blank">
-//           <TwitterIcon className={classes.socialIcon} />
-//         </Link>
-//         <Link href="https://www.instagram.com/" target="_blank">
-//           <InstagramIcon className={classes.socialIcon} />
-//         </Link>
-//       </div>
-//     </Box>
-//   );
-// };
-
-// export default Footer;
