@@ -17,12 +17,12 @@ const Contact = () => {
       sx={{
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
-        // minHeight: "100dvh",
+        minHeight: "100vh",
         // backgroundColor: (theme) => theme.palette.primary.main,
       }}
     >
       <CssBaseline />
-      <Box sx={{ flex: 1 }}>
+      <Box sx={{ flex: 1, display: { xs: "none", md: "flex" } }}>
         <Skeleton
           variant="rectangular"
           // animation="wave"

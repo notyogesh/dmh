@@ -19,7 +19,6 @@ const AboutUs = () => {
     <Box
       sx={{
         // p: 3,
-
         backgroundColor: (theme) => theme.palette.background.default,
       }}
     >

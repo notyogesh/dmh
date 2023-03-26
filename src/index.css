@@ -15,7 +15,9 @@ code {
   display: flex;
   flex-direction: column;
 }
-
+.content {
+  min-height: 100vh;
+}
 .rotate {
   /* width: 100px; */
 

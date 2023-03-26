@@ -1,7 +1,6 @@
 import React, { useState, useMemo } from "react";
 import Navbar from "../main/navbar/NavBar";
 import Divider from "@mui/material/Divider";
-import { Box } from "@mui/material";
 
 import { customTheme } from "../utils/Theme";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
@@ -25,12 +24,11 @@ const Root = () => {
   return (
     <div className="root">
       <ThemeProvider theme={theme}>
-        <Box sx={{ flexGrow: 1, minheight: "100dvh" }}>
+        <div className="content">
           <Navbar onClick={changeTheme} />
           <Divider />
           <Outlet />
-        </Box>
-
+        </div>
         <Divider />
         <Footer />
       </ThemeProvider>
