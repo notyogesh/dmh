@@ -5,10 +5,13 @@ import ErrorPage from "./main/ErrorPage";
 import CircularProgress from "@mui/material/CircularProgress";
 import Root from "./pages/Root";
 import Hero from "./components/hero/Hero";
+import AboutUs from "./pages/AboutUs";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
-const AboutUs = React.lazy(() => import("./pages/AboutUs"));
-const Projects = React.lazy(() => import("./pages/Projects"));
-const Contact = React.lazy(() => import("./pages/Contact"));
+// const AboutUs = React.lazy(() => import("./pages/AboutUs"));
+// const Projects = React.lazy(() => import("./pages/Projects"));
+// const Contact = React.lazy(() => import("./pages/Contact"));
 
 const router = createBrowserRouter([
   {

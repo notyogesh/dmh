@@ -71,10 +71,10 @@ function NavBar(props) {
             setOpenDrawer(false);
           }}
         >
-          {" "}
-          <Box onClick={() => setOpenDrawer(false)}>
-            <ListComp sx={{ bgcolor: "background.paper" }} />
-          </Box>
+          <ListComp
+            sx={{ bgcolor: "background.paper" }}
+            onClick={() => setOpenDrawer(false)}
+          />
         </Drawer>
       </Toolbar>
     </AppBar>
