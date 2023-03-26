@@ -30,6 +30,7 @@ const Root = () => {
           <Divider />
           <Outlet />
         </div>
+
         <Divider />
         <Footer />
       </ThemeProvider>

@@ -26,9 +26,9 @@ const Hero = () => {
     >
       {" "}
       <Seo
-        title="D M H"
-        description="construction & Engineering Pte.Ltd"
-        name="D M H"
+        title="S R M"
+        description="Electrical & Aircon  Engineering Pte.Ltd"
+        name="S R M"
         type="landing page "
       />
       <CssBaseline />
@@ -40,22 +40,34 @@ const Hero = () => {
           sx={{
             color: "inherit",
             textShadow: (theme) =>
-              theme.palette.mode === "light" ? "5px 5px 2px #c5c5c5" : "none",
+              theme.palette.mode === "light"
+                ? "5px 5px 2px #c5c5c5"
+                : "5px 5px 2px #3a3b3c",
           }}
         >
-          DMH construction & Engineering Pte.Ltd
+          SRM Electrical & Aircon Engineering Pte.Ltd
         </Typography>
-        <Typography variant="h5" gutterBottom>
-          Construction Design & Build
-        </Typography>
-        <Button
-          color="success"
-          variant="contained"
-          disableElevation
-          sx={{ fontWeight: "bold" }}
-        >
-          Every work of art tells a story
-        </Button>
+        <div className="rotate">
+          <Button
+            variant="contained"
+            color="root"
+            sx={{ fontWeight: "bold", mt: 5 }}
+          >
+            Your one stop solution
+          </Button>
+          <Button
+            variant="outlined"
+            color="root"
+            disableElevation
+            sx={{
+              fontWeight: "bold",
+              backgroundColor: (theme) =>
+                theme.palette.mode === "light" ? "#212121" : "root",
+            }}
+          >
+            for all types of Electrical & Aircon services !
+          </Button>
+        </div>
       </Container>
     </Box>
   );

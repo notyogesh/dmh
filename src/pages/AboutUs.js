@@ -33,7 +33,7 @@ const AboutUs = () => {
         }}
       >
         <Typography variant="h2" sx={{ ml: "auto" }}>
-          DMH{" "}
+          SRM{" "}
         </Typography>
         Our aim is to be our clients & prospectiv clients preferred parter for
         the installation of aircon and Mechanical ventilation equipment ,
@@ -45,7 +45,7 @@ const AboutUs = () => {
         chemicals - it's about trust , about knowledge, about understanding each
         other, about honesty, about reliability and doing what we say we are
         going to do. <br />
-        At DMH we design , install , maintain and service air conditioning
+        At SRM we design , install , maintain and service air conditioning
         systems, industrial VRV system, mechanical ventilation system. We
         endeavour to support the role of the building facilities manager by
         providing a reliable & Cost effective ACMV maintenance service. We
@@ -56,9 +56,9 @@ const AboutUs = () => {
         the equipment, is a legal requirment ( for certain equipment ) and helps
         prevent operational issues, saving you both time & money. <br />
         We look forward to discussing your maintenances requirements & treating
-        you to the DMH Experience !
+        you to the SRM Experience !
         <Typography variant="h4" sx={{ my: 2 }}>
-          DMH Mission Statement{" "}
+          SRM Mission Statement{" "}
         </Typography>
         To be our clients preferred any aircon system maintenance parter that
         through our knowledge, passion and exemplary service we improve the

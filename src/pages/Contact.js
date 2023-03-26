@@ -30,46 +30,71 @@ const Contact = () => {
           height="100%"
         />
       </Box>
-      <Box sx={{ flex: 1 }}>
+      <Box sx={{ flex: 1, mt: 5 }}>
         {/* <Card sx={{ minWidth: 275 }}> */}
-        <Typography variant="h4">DAVID</Typography>
-        <Typography variant="body2">
-          DMH CONSTRUCTION & ENGINEERING PTE LTD
+        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+          V.MURUGESAN
         </Typography>
+        <Typography variant="body2">
+          SRM Electrical & Aircon Engineering Pte.Ltd
+        </Typography>
+        <Button
+          startIcon={<PhoneIcon />}
+          href="tel:96549761"
+          target="_blank"
+          // variant="text"
+          color="success"
+          sx={{ mx: "auto" }}
+        >
+          +96549761
+        </Button>
         <Divider />
-        <Typography variant="h6">Project Manager</Typography>
+        <Typography
+          variant="h6"
+          sx={{
+            fontWeight: "bold",
+            mt: 2,
+            // color: (theme) =>
+            //   theme.palette.mode === "light" ? "#18191a" : "#D3d3d3",
+          }}
+        >
+          Project Manager
+        </Typography>
         <Stack>
           <Button
             startIcon={<PhoneIcon />}
-            href="https://www.facebook.com/"
+            href="tel:62935657"
             target="_blank"
-            variant="text"
+            color="success"
+            // variant="text"
             sx={{ mx: "auto" }}
           >
-            +6591289466
+            +62935657
           </Button>
 
           <Button
             startIcon={<EmailIcon />}
-            href="https://www.email.com/"
-            target="_blank"
-            variant="text"
+            href="mailto:srmeaepl@gmail.com"
+            color="success"
+            // target="_blank"
+            // variant="text"
             sx={{ mx: "auto" }}
           >
-            dmh.group23@gmail.com
+            srmeaepl@gmail.com
           </Button>
           <Button
             startIcon={<LocationOnIcon />}
-            href="https://twitter.com/"
-            target="_blank"
-            variant="text"
+            // href="https://twitter.com/"
+
+            // variant="text"
+            color="success"
             sx={{ mx: "auto" }}
           >
-            111 North Bridge ROad #08-16
+            35 SELEGIE Road #09-02
             <br />
-            Peninsula Plaza
+            Parklane Shopping Mall
             <br />
-            Singapore - 179098
+            Singapore - 188307
           </Button>
         </Stack>
         {/* </Card> */}

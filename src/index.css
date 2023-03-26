@@ -19,13 +19,17 @@ code {
   flex-grow: 1;
   min-height: 100dvh;
 }
-/* .active { */
-/* text-decoration: none; */
-/* color: white;
-  font-weight: bolder;
+.rotate {
+  /* width: 100px; */
+
+  animation: rotation 1s infinite linear;
+  animation-direction: alternate;
 }
-.inactive {
-  text-decoration: none;
-  color: "#fff";
-  opacity: 1;
-} */
+@keyframes rotation {
+  from {
+    transform: rotate(-4deg);
+  }
+  to {
+    transform: rotate(4deg);
+  }
+}

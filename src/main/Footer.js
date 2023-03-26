@@ -46,9 +46,11 @@ export default function Footer() {
           <Button sx={{ mx: "auto" }}>
             {"Copyright  © "}
             {new Date().getFullYear()}
-            {" - DMH"}
+            {" - SRM"}
             {"."}
             {"(All Rights Reserved)"}
+            <br />
+            {"Reg.No. 2000924197W"}
           </Button>
         </Box>
         <Divider
@@ -94,7 +96,7 @@ export default function Footer() {
             </Button>
             <Button
               startIcon={<EmailIcon />}
-              href="https://www.instagram.com/"
+              href="mailto:srmeaepl@gmail.com"
               target="_blank"
               variant="text"
               color="root"

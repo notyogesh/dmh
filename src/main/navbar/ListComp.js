@@ -9,7 +9,7 @@ import { useTheme } from "@mui/material/styles";
 const menuItems = [
   { title: "Home", link: "/" },
   { title: "About Us", link: "/aboutus" },
-  { title: "Projects", link: "/projects" },
+  { title: "Services", link: "/projects" },
   { title: "Contact Us", link: "/contact" },
 ];
 const ListComp = () => {
