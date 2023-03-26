@@ -36,7 +36,7 @@ function NavBar(props) {
             fontWeight: "bolder",
           }}
         >
-          DMH
+          SRM
         </Typography>
 
         <Box sx={{ display: "flex", ml: "auto", alignItems: "center" }}>
