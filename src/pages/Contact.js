@@ -46,7 +46,7 @@ const Contact = () => {
           color="success"
           sx={{ mx: "auto" }}
         >
-          +96549761
+          +65 9654 9761
         </Button>
         <Divider />
         <Typography
@@ -69,7 +69,7 @@ const Contact = () => {
             // variant="text"
             sx={{ mx: "auto" }}
           >
-            +62935657
+            +65 6293 5657
           </Button>
 
           <Button
