@@ -29,11 +29,11 @@ export const customTheme = (mode) => ({
           // palette values for light mode
           primary: lime,
           //  contrastText: grey[500] },
-          divider: lime[200],
+          divider: grey[400],
 
           background: {
-            default: lime[50],
-            paper: lime[200],
+            default: "#f3f0f1",
+            paper: "#f3f0f1",
           },
           text: {
             primary: grey[900],
@@ -41,7 +41,8 @@ export const customTheme = (mode) => ({
             inactive: grey[700],
           },
           root: {
-            main: "#C0FF02",
+            main: "#f3f0f1",
+            contrastText: grey[900],
           },
           // success: {
           //   main: "#C0FF02",

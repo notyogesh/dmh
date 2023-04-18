@@ -6,6 +6,7 @@ import { customTheme } from "../utils/Theme";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Outlet } from "react-router-dom";
 import Footer from "../main/Footer";
+import Box from "@mui/material/Box";
 
 const Root = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -22,13 +23,17 @@ const Root = () => {
   );
 
   return (
-    <div className="root">
+    <div style={{ textAlign: "center" }}>
       <ThemeProvider theme={theme}>
-        <div className="content">
+        <Box
+          sx={{
+            m: 2,
+            minHeight: "100vh",
+          }}
+        >
           <Navbar onClick={changeTheme} />
-          <Divider />
           <Outlet />
-        </div>
+        </Box>
         <Divider />
         <Footer />
       </ThemeProvider>

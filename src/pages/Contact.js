@@ -10,6 +10,8 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
+import FaxIcon from "@mui/icons-material/Fax";
+
 // import Paper from "@mui/material/Paper";
 const Contact = () => {
   return (
@@ -63,6 +65,7 @@ const Contact = () => {
         <Stack>
           <Button
             startIcon={<PhoneIcon />}
+            endIcon={<FaxIcon />}
             href="tel:62935657"
             target="_blank"
             color="success"

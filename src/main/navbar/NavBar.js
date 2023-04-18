@@ -4,10 +4,9 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
-
 import AdbIcon from "@mui/icons-material/Adb";
 
-import LightDark from "./LightDark";
+// import LightDark from "./LightDark";
 import { Drawer, Box } from "@mui/material";
 import ListComp from "./ListComp";
 
@@ -17,36 +16,50 @@ function NavBar(props) {
   return (
     <AppBar
       // position="static"
+      elevation={0}
       position="sticky"
       sx={{
-        // boxShadow: 3,
+        // boxShadow:
+        //   "inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692)",
+        // mb: 2,
+        // backdropFilter: "blur(4px)",
+        borderRadius: "10px",
         backgroundColor: (theme) =>
-          theme.palette.mode === "light" ? "#C0FF02" : "default",
+          theme.palette.mode === "light" ? "#f3f0f1" : "#393A3E",
       }}
     >
       <Toolbar>
-        <AdbIcon />
+        <AdbIcon
+          sx={{
+            color: (theme) =>
+              theme.palette.mode === "light" ? "#2C2C2C" : "inherit",
+          }}
+        />
         <Typography
           variant="h5"
           sx={{
             my: 2,
-            color: "inherit",
-            // display: "inline-block",
+            color: (theme) =>
+              theme.palette.mode === "light" ? "#444" : "inherit",
+            textShadow:
+              " -3px -3px 7px #ffffffb0,  3px 3px 5px rgba(94, 104, 121, 0.692)",
+
             letterSpacing: 1,
             fontWeight: "bolder",
           }}
         >
-          SRM
+          DMH
         </Typography>
 
         <Box sx={{ display: "flex", ml: "auto", alignItems: "center" }}>
-          <LightDark onClick={props.onClick} />
+          {/* <LightDark onClick={props.onClick} /> */}
 
           <Box
             sx={{
               display: { xs: "none", md: "flex" },
               ml: "auto",
               whiteSpace: "nowrap",
+              my: 1,
             }}
           >
             <ListComp />

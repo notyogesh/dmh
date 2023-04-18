@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import "./App.css";
+// import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./main/ErrorPage";
 import CircularProgress from "@mui/material/CircularProgress";
@@ -8,6 +8,8 @@ import Hero from "./components/hero/Hero";
 import AboutUs from "./pages/AboutUs";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Acmv from "./pages/Acmv";
+import KitchenExhaustSystem from "./pages/KitchenExhaustSystem";
 
 // const AboutUs = React.lazy(() => import("./pages/AboutUs"));
 // const Projects = React.lazy(() => import("./pages/Projects"));
@@ -25,16 +27,32 @@ const router = createBrowserRouter([
       },
       {
         path: "/aboutus",
-        element: (
-          <Suspense fallback={<CircularProgress variant="determinate" />}>
-            <AboutUs />
-          </Suspense>
-        ),
+        element: <AboutUs />,
       },
       {
-        path: "/projects",
-        element: <Projects />,
+        path: "/service",
+        // element: <Hero />,
+        // element: <Projects />,
+        // index: true,
+        children: [
+          {
+            path: "projects",
+            element: <Projects />,
+          },
+          {
+            path: "acmv",
+            element: <Acmv />,
+          },
+          {
+            path: "kitchen-exhaust-system",
+            element: <KitchenExhaustSystem />,
+          },
+        ],
       },
+      // {
+      //   path: "/service",
+      //   element: <Projects />,
+      // },
       {
         path: "/contact",
         element: <Contact />,

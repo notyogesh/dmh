@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Button, Box } from "@mui/material";
+import { Typography, Button, Box, CssBaseline } from "@mui/material";
 import { useRouteError } from "react-router-dom";
 import { Link as RouterLink } from "react-router-dom";
 // import image from "../images/404.svg";
@@ -9,7 +9,16 @@ const ErrorPage = () => {
   const error = useRouteError();
 
   return (
-    <>
+    <Box
+      sx={{
+        backgroundColor: "#f3f0f1",
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        textAlign: "center",
+      }}
+    >
       <Seo
         title="404 | D M H"
         description="Page you are looking for is not found !"
@@ -19,11 +28,11 @@ const ErrorPage = () => {
       <Box
         sx={{
           maxWidth: "sm",
-          margin: "0 auto",
-          // display: "flex",
-          // flexDirection: "column",
-          // justifyContent: "center",
-          // alignItems: "center",
+          m: "auto",
+          p: 2,
+          verticalAlign: "middle",
+          boxShadow:
+            " inset 14px 14px 20px #cbced1,inset -14px -14px 20px white",
         }}
       >
         <Typography variant="h1" component="h1" align="center" gutterBottom>
@@ -43,12 +52,33 @@ const ErrorPage = () => {
           variant="contained"
           component={RouterLink}
           size="large"
-          disableElevation
+          // color="root"
+          // disableElevation
+
+          sx={{
+            // color: "#444",
+            // backgroundColor: "#f3f0f1",
+
+            fontWeight: "bold",
+            borderRadius: "10px",
+            border: " 1px solid rgba(255, 255, 255, 0.2)",
+            m: { xs: 1, md: 2 },
+
+            color: "#f3f0f1",
+            backgroundColor: "#6D7587",
+            boxShadow: "14px 14px 20px #cbced1, -14px -14px 20px white",
+
+            "&:hover": {
+              backgroundColor: "#6D7587",
+            },
+          }}
         >
           Go to Home
         </Button>
+        <CssBaseline />
       </Box>
-    </>
+      {/* <h1>gggg</h1> */}
+    </Box>
   );
 };
 

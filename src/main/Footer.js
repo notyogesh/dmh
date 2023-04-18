@@ -9,10 +9,26 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
 import Stack from "@mui/material/Stack";
-import Button from "@mui/material/Button";
-import Divider from "@mui/material/Divider";
+// import Button from "@mui/material/Button";
+import Card from "@mui/material/Card";
+// import Fab from "@mui/material/Fab";
 
-export default function Footer() {
+import Divider from "@mui/material/Divider";
+import SocialButton from "../utils/SocioButton";
+import Typography from "@mui/material/Typography";
+import FooterButton from "../utils/FooterButton";
+
+const socio = [
+  { name: "Facebook", icon: <FacebookIcon />, link: "http://www.facebook.com" },
+  { name: "Twitter", icon: <TwitterIcon />, link: "http://www.twitter.com" },
+  {
+    name: "Instagram",
+    icon: <InstagramIcon />,
+    link: "http://www.instagram.com",
+  },
+  { name: "Email", icon: <EmailIcon />, link: "http://www.gmail.com" },
+];
+const Footer = () => {
   return (
     <>
       <Box
@@ -23,90 +39,85 @@ export default function Footer() {
           mt: "auto",
           display: "flex",
           flexDirection: { xs: "column-reverse", md: "row" },
-          backgroundColor: (theme) =>
-            theme.palette.mode === "light"
-              ? theme.palette.grey[900]
-              : "#212121",
+          backgroundColor: (theme) => theme.palette.background.default,
         }}
       >
         <Box
-          // maxWidth="sm"
+          maxWidth="sm"
           sx={{
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-evenly",
             // alignItems: "center",
             flex: 1,
+            mt: { xs: 2, md: 0 },
           }}
         >
-          <Button sx={{ mx: "auto" }}>Privacy Policy</Button>
+          <FooterButton>Privacy Policy</FooterButton>
           {/* <Divider /> */}
-          <Button sx={{ mx: "auto" }}>Terms & Condition </Button>
+          <FooterButton>Terms & Condition </FooterButton>
           {/* <Divider orientation="vertical" flexItem /> */}
-          <Button sx={{ mx: "auto" }}>
+          <FooterButton>
+            {" "}
             {"Copyright  © "}
             {new Date().getFullYear()}
-            {" - SRM"}
+            {" - DMH"}
             {"."}
             {"(All Rights Reserved)"}
             <br />
-            {"Reg.No. 2000924197W"}
-          </Button>
+            {/* {"Reg.No. 2000924197W"} */}{" "}
+          </FooterButton>
         </Box>
         <Divider
           flexItem
-          sx={{ orientation: { xs: "horizontal", md: "vertical" } }}
+          sx={{
+            orientation: { xs: "horizontal", md: "vertical", color: "#000" },
+          }}
         />
 
-        <Box component="footer" sx={{ flex: 1 }}>
-          {/* <Typography variant="body1">Follow Us On: </Typography> */}
-          <Button variant="contained" color="root" sx={{ mb: 2 }}>
-            Follow Us On:
-          </Button>
-          <Stack>
-            <Button
-              startIcon={<FacebookIcon />}
-              href="https://www.facebook.com/"
-              target="_blank"
-              variant="text"
-              color="root"
-              sx={{ mx: "auto" }}
+        <Box
+          maxWidth="sm"
+          sx={{
+            flex: 1,
+          }}
+        >
+          <Card
+            sx={{
+              maxWidth: { xs: 325, md: 230 },
+              mx: "auto",
+              borderRadius: 5,
+              mb: { xs: 2, md: 0 },
+            }}
+            elevation={4}
+          >
+            <Typography
+              variant="h6"
+              color="#333333"
+              className="text"
+              sx={{
+                my: 2,
+                mt: 1,
+                textShadow: "1px 1px 3px #565656",
+                // backgroundColor: " #565656",
+              }}
             >
-              Facebook
-            </Button>
-            <Button
-              startIcon={<TwitterIcon />}
-              href="https://twitter.com/"
-              target="_blank"
-              variant="text"
-              color="root"
-              sx={{ mx: "auto" }}
-            >
-              Twitter
-            </Button>
-            <Button
-              startIcon={<InstagramIcon />}
-              href="https://www.instagram.com/"
-              target="_blank"
-              variant="text"
-              color="root"
-              sx={{ mx: "auto" }}
-            >
-              Instagram
-            </Button>
-            <Button
-              startIcon={<EmailIcon />}
-              href="mailto:srmeaepl@gmail.com"
-              target="_blank"
-              variant="text"
-              color="root"
-              sx={{ mx: "auto" }}
-            >
-              E-mail
-            </Button>
-          </Stack>
+              Social Links
+            </Typography>
+            {/* <Fab variant="extended">Navigate</Fab> */}
+            <Stack>
+              {socio.map((item, i) => (
+                <SocialButton
+                  name={item.name}
+                  icon={item.icon}
+                  key={i}
+                  link={item.link}
+                />
+              ))}
+            </Stack>
+          </Card>
         </Box>
       </Box>
     </>
   );
-}
+};
+export default Footer;

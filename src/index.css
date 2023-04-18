@@ -5,30 +5,34 @@ body {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f3f0f1;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.root {
-  display: flex;
-  flex-direction: column;
-}
-.content {
-  min-height: 100vh;
-}
-.rotate {
-  /* width: 100px; */
+/* * {
+  text-shadow: -3px -3px 7px #ffffffb0, 3px 3px 5px rgba(94, 104, 121, 0.692);
+} */
+.active {
+  font-weight: bolder;
+  text-decoration: none;
 
-  animation: rotation 1s infinite linear;
-  animation-direction: alternate;
+  /* transform: "translateY(-10%)"; */
+
+  /* color: theme.palette.text.secondary, */
+  box-shadow: inset -3px -3px 7px #ffffffb0,
+    inset 3px 3px 5px rgba(94, 104, 121, 0.692);
+  border-radius: 20px;
+  margin-right: 7px;
+  transition: all 0.12s ease-out;
 }
-@keyframes rotation {
-  from {
-    transform: rotate(-4deg);
-  }
-  to {
-    transform: rotate(4deg);
-  }
+.inactive {
+  text-decoration: none;
+  font-weight: lighter;
+  /* color: theme.palette.text.inactive, */
+  margin-right: 7px;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  border-radius: 20px;
 }

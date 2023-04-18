@@ -57,7 +57,16 @@ const LightDark = (props) => {
   return (
     <FormGroup>
       <FormControlLabel
-        control={<MaterialUISwitch sx={{ m: 1 }} onClick={props.onClick} />}
+        control={
+          <MaterialUISwitch
+            sx={{
+              m: 1,
+              boxShadow:
+                "inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692)",
+            }}
+            onClick={props.onClick}
+          />
+        }
         // label="MUI switch"
       />
     </FormGroup>
