@@ -39,6 +39,18 @@ const menuItems = [
         title: "Kitchen Exhaust System",
         link: "/service/kitchen-exhaust-system",
       },
+      {
+        title: "Electrical Services",
+        link: "/service/electrical-services",
+      },
+      {
+        title: "Scaffolding work",
+        link: "/service/scaffolding-work",
+      },
+      {
+        title: "Glass & Aluminum Work",
+        link: "/service/glass-aluminum-work",
+      },
     ],
   },
   {

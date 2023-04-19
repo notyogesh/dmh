@@ -1,8 +1,8 @@
 import React from "react";
-import Skeleton from "@mui/material/Skeleton";
+// import Skeleton from "@mui/material/Skeleton";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
-// import Card from "@mui/material/Card";
+import Card from "@mui/material/Card";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -10,10 +10,19 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
-import FaxIcon from "@mui/icons-material/Fax";
+// import FaxIcon from "@mui/icons-material/Fax";
 
 // import Paper from "@mui/material/Paper";
 const Contact = () => {
+  const handleWhatsAppButtonClick = () => {
+    const phoneNumber = "9787820695"; // Replace with the recipient's phone number
+    const message = "Hello!"; // Replace with your pre-defined message
+    const url = `whatsapp://send?phone=${phoneNumber}&text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(url);
+  };
+
   return (
     <Box
       sx={{
@@ -24,23 +33,52 @@ const Contact = () => {
       }}
     >
       <CssBaseline />
-      <Box sx={{ flex: 1, display: { xs: "none", md: "flex" } }}>
-        <Skeleton
-          variant="rectangular"
-          // animation="wave"
-          width="100%"
-          height="100%"
-        />
+      <Box
+        sx={{
+          flex: 1,
+          textAlign: "left",
+          pl: 5,
+          mt: 7,
+          // display: { xs: "none", md: "flex" }
+        }}
+      >
+        <Typography variant="h3">Contact Us</Typography>
+        <Typography variant="h2" sx={{ pb: 3 }}>
+          We're here for you
+        </Typography>
+        <Typography variant="h5" sx={{ textAlign: "center" }}>
+          Monday-Friday : <span>9am-6pm (SST)</span>
+        </Typography>
+        <Button onClick={handleWhatsAppButtonClick}>Live chat</Button>
       </Box>
-      <Box sx={{ flex: 1, mt: 5 }}>
+      <Box sx={{ flex: 1, mt: 7 }}>
         {/* <Card sx={{ minWidth: 275 }}> */}
-        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
-          V.MURUGESAN
-        </Typography>
-        <Typography variant="body2">
-          SRM Electrical & Aircon Engineering Pte.Ltd
-        </Typography>
-        <Button
+        <Card
+          sx={{
+            maxWidth: { xs: 325, md: 400 },
+            mx: "auto",
+            borderRadius: 5,
+            mb: { xs: 2, md: 0 },
+            px: 3,
+            py: 7,
+          }}
+          elevation={4}
+        >
+          <Typography
+            variant="h4"
+            sx={{
+              fontWeight: "bold",
+              pb: 1,
+              textShadow:
+                "-3px -3px 7px #ffffffb0, 3px 3px 5px rgba(94, 104, 121, 0.692)",
+            }}
+          >
+            DAVID
+          </Typography>
+          <Typography variant="body2">
+            DMH Construction & Engineering Pte.Ltd
+          </Typography>
+          {/* <Button
           startIcon={<PhoneIcon />}
           href="tel:96549761"
           target="_blank"
@@ -48,59 +86,59 @@ const Contact = () => {
           color="success"
           sx={{ mx: "auto" }}
         >
-          +65 9654 9761
-        </Button>
-        <Divider />
-        <Typography
-          variant="h6"
-          sx={{
-            fontWeight: "bold",
-            mt: 2,
-            // color: (theme) =>
-            //   theme.palette.mode === "light" ? "#18191a" : "#D3d3d3",
-          }}
-        >
-          Project Manager
-        </Typography>
-        <Stack>
-          <Button
-            startIcon={<PhoneIcon />}
-            endIcon={<FaxIcon />}
-            href="tel:62935657"
-            target="_blank"
-            color="success"
-            // variant="text"
-            sx={{ mx: "auto" }}
+          +65 8024 0521
+        </Button> */}
+          <Divider />
+          <Typography
+            variant="h6"
+            sx={{
+              fontWeight: "bold",
+              mt: 2,
+              textShadow:
+                "-1px -1px 1px #ffffffb0, 1px 1px 3px rgba(94, 104, 121, 0.692)",
+              // color: (theme) =>
+              //   theme.palette.mode === "light" ? "#18191a" : "#D3d3d3",
+            }}
           >
-            +65 6293 5657
-          </Button>
+            Project Manager
+          </Typography>
+          <Stack>
+            <Button
+              startIcon={<PhoneIcon />}
+              // endIcon={<FaxIcon />}
+              href="tel:80240521"
+              target="_blank"
+              // variant="text"
+              sx={{ mx: "auto" }}
+            >
+              +65 8024 0521
+            </Button>
 
-          <Button
-            startIcon={<EmailIcon />}
-            href="mailto:srmeaepl@gmail.com"
-            color="success"
-            // target="_blank"
-            // variant="text"
-            sx={{ mx: "auto" }}
-          >
-            srmeaepl@gmail.com
-          </Button>
-          <Button
-            startIcon={<LocationOnIcon />}
-            // href="https://twitter.com/"
+            <Button
+              startIcon={<EmailIcon />}
+              href="mailto:dmhconstructionengineering@gmail.com"
+              target="_blank"
+              // variant="text"
+              sx={{ mx: "auto", textTransform: "lowercase" }}
+            >
+              dmhconstructionengineering@gmail.com
+            </Button>
+            <Button
+              startIcon={<LocationOnIcon />}
+              href="https://maps.app.goo.gl/W1kQbLLZpy19UEV6A"
+              // variant="text"
 
-            // variant="text"
-            color="success"
-            sx={{ mx: "auto" }}
-          >
-            35 SELEGIE Road #09-02
-            <br />
-            Parklane Shopping Mall
-            <br />
-            Singapore - 188307
-          </Button>
-        </Stack>
-        {/* </Card> */}
+              target="_blank"
+              sx={{ mx: "auto", textTransform: "capitalize" }}
+            >
+              111, North Bridge Road #08-16
+              <br />
+              Peninsula Plaza,
+              <br />
+              Singapore - 179098
+            </Button>
+          </Stack>
+        </Card>
       </Box>
     </Box>
   );

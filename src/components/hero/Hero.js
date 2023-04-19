@@ -68,9 +68,9 @@ const Hero = () => {
               //   " inset 14px 14px 20px #cbced1,inset -14px -14px 20px white",
             }}
           >
-            Your one stop solution
+            Powering Your Comfort
           </Button>
-          <Button
+          {/* <Button
             variant="outlined"
             disableElevation
             color="root"
@@ -88,8 +88,8 @@ const Hero = () => {
               },
             }}
           >
-            for all types of Electrical & Aircon services !
-          </Button>
+            Powering Your Comfort
+          </Button> */}
         </div>
       </Container>
     </Box>

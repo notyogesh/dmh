@@ -10,6 +10,9 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Acmv from "./pages/Acmv";
 import KitchenExhaustSystem from "./pages/KitchenExhaustSystem";
+import ElectricalServices from "./pages/ElectricalServices";
+import ScaffoldingWork from "./pages/ScaffoldingWork";
+import GlassAluminumWork from "./pages/GlassAluminumWork";
 
 // const AboutUs = React.lazy(() => import("./pages/AboutUs"));
 // const Projects = React.lazy(() => import("./pages/Projects"));
@@ -46,6 +49,18 @@ const router = createBrowserRouter([
           {
             path: "kitchen-exhaust-system",
             element: <KitchenExhaustSystem />,
+          },
+          {
+            path: "electrical-services",
+            element: <ElectricalServices />,
+          },
+          {
+            path: "scaffolding-work",
+            element: <ScaffoldingWork />,
+          },
+          {
+            path: "glass-aluminum-work",
+            element: <GlassAluminumWork />,
           },
         ],
       },

@@ -24,7 +24,7 @@ const socio = [
   {
     name: "Instagram",
     icon: <InstagramIcon />,
-    link: "http://www.instagram.com",
+    link: "https://instagram.com/dmh.group?igshid=YmMyMTA2M2Y=",
   },
   { name: "Email", icon: <EmailIcon />, link: "http://www.gmail.com" },
 ];

@@ -12,11 +12,11 @@ import { CssBaseline } from "@mui/material";
 
 const services = [
   "Aircon Installation",
-  "General Service",
-  "Chemical Wash",
-  "Troubleshooting & Repair",
-  "Freon Gas Top up ",
-  "Annual Maintenence Contract",
+  "Kitchen Exhaust System",
+  "Electrical Services",
+  // "Troubleshooting & Repair",
+  "Scaffolding Work",
+  "Glass & Aluminum Work",
 ];
 const Projects = () => {
   return (
