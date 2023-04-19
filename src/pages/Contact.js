@@ -10,9 +10,24 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
+import ContactButton from "../utils/ContactButton";
 // import FaxIcon from "@mui/icons-material/Fax";
 
 // import Paper from "@mui/material/Paper";
+const contacts = [
+  {
+    name: " +65 8024 0521",
+    icon: <PhoneIcon />,
+    link: "http://www.facebook.com",
+    textTransform: "lowercase",
+  },
+  {
+    name: "dmhconstructionengineering@gmail.com",
+    icon: <EmailIcon />,
+    link: "http://www.twitter.com",
+    textTransform: "lowercase",
+  },
+];
 const Contact = () => {
   const handleWhatsAppButtonClick = () => {
     const phoneNumber = "9787820695"; // Replace with the recipient's phone number
@@ -43,7 +58,7 @@ const Contact = () => {
         }}
       >
         <Typography variant="h3">Contact Us</Typography>
-        <Typography variant="h2" sx={{ pb: 3 }}>
+        <Typography variant="h2" sx={{ pb: 3, fontWeight: "bolderr" }}>
           We're here for you
         </Typography>
         <Typography variant="h5" sx={{ textAlign: "center" }}>
@@ -75,7 +90,14 @@ const Contact = () => {
           >
             DAVID
           </Typography>
-          <Typography variant="body2">
+          <Typography
+            variant="body2"
+            sx={{
+              textShadow: "1px 1px 1px #FFF",
+              fontWeight: "bold",
+              color: "#6D7587",
+            }}
+          >
             DMH Construction & Engineering Pte.Ltd
           </Typography>
           {/* <Button
@@ -94,8 +116,10 @@ const Contact = () => {
             sx={{
               fontWeight: "bold",
               mt: 2,
-              textShadow:
-                "-1px -1px 1px #ffffffb0, 1px 1px 3px rgba(94, 104, 121, 0.692)",
+              pb: 2,
+              // textShadow:
+              //   "-1px -1px 1px #ffffffb0, 1px 1px 3px rgba(94, 104, 121, 0.692)",
+              textShadow: "1px 1px 1px #FFF",
               // color: (theme) =>
               //   theme.palette.mode === "light" ? "#18191a" : "#D3d3d3",
             }}
@@ -103,7 +127,29 @@ const Contact = () => {
             Project Manager
           </Typography>
           <Stack>
-            <Button
+            {contacts.map((item, i) => (
+              <ContactButton
+                name={item.name}
+                icon={item.icon}
+                key={i}
+                link={item.link}
+                textTransform={item.textTransform}
+              />
+            ))}
+            <ContactButton
+              // name={item.name}
+              icon={<LocationOnIcon />}
+              // key={i}
+              link="https://maps.app.goo.gl/W1kQbLLZpy19UEV6A"
+              textTransform="capitalize"
+            >
+              111, North Bridge Road #08-16
+              <br />
+              Peninsula Plaza,
+              <br />
+              Singapore - 179098
+            </ContactButton>
+            {/* <Button
               startIcon={<PhoneIcon />}
               // endIcon={<FaxIcon />}
               href="tel:80240521"
@@ -122,8 +168,8 @@ const Contact = () => {
               sx={{ mx: "auto", textTransform: "lowercase" }}
             >
               dmhconstructionengineering@gmail.com
-            </Button>
-            <Button
+            </Button> */}
+            {/* <Button
               startIcon={<LocationOnIcon />}
               href="https://maps.app.goo.gl/W1kQbLLZpy19UEV6A"
               // variant="text"
@@ -136,7 +182,7 @@ const Contact = () => {
               Peninsula Plaza,
               <br />
               Singapore - 179098
-            </Button>
+            </Button> */}
           </Stack>
         </Card>
       </Box>
