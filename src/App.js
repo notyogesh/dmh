@@ -13,6 +13,7 @@ import KitchenExhaustSystem from "./pages/KitchenExhaustSystem";
 import ElectricalServices from "./pages/ElectricalServices";
 import ScaffoldingWork from "./pages/ScaffoldingWork";
 import GlassAluminumWork from "./pages/GlassAluminumWork";
+import Construction from "./pages/Construction";
 
 // const AboutUs = React.lazy(() => import("./pages/AboutUs"));
 // const Projects = React.lazy(() => import("./pages/Projects"));
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
           {
             path: "glass-aluminum-work",
             element: <GlassAluminumWork />,
+          },
+          {
+            path: "construction",
+            element: <Construction />,
           },
         ],
       },

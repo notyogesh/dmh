@@ -57,8 +57,10 @@ const Contact = () => {
           // display: { xs: "none", md: "flex" }
         }}
       >
-        <Typography variant="h3">Contact Us</Typography>
-        <Typography variant="h2" sx={{ pb: 3, fontWeight: "bolderr" }}>
+        <Typography variant="h3" sx={{ fontWeight: "lighter" }}>
+          Contact Us
+        </Typography>
+        <Typography variant="h2" sx={{ pb: 3, fontWeight: "bolder" }}>
           We're here for you
         </Typography>
         <Typography variant="h5" sx={{ textAlign: "center" }}>

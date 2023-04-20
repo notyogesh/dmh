@@ -29,11 +29,11 @@ const menuItems = [
   },
   {
     title: "Service",
-    link: "/service/projects",
+    // link: "/service/projects",
     icon: <EngineeringIcon />,
     end: <ArrowDropDownIcon />,
     sub: [
-      { title: "Services", link: "/service/projects" },
+      // { title: "Services", link: "/service/projects" },
       { title: "Acmv", link: "/service/acmv" },
       {
         title: "Kitchen Exhaust System",
@@ -50,6 +50,10 @@ const menuItems = [
       {
         title: "Glass & Aluminum Work",
         link: "/service/glass-aluminum-work",
+      },
+      {
+        title: "Construction",
+        link: "/service/construction",
       },
     ],
   },
