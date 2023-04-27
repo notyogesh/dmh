@@ -14,6 +14,8 @@ import ElectricalServices from "./pages/ElectricalServices";
 import ScaffoldingWork from "./pages/ScaffoldingWork";
 import GlassAluminumWork from "./pages/GlassAluminumWork";
 import Construction from "./pages/Construction";
+import TermsAndConditions from "./components/terms/TermsAndConditions";
+import PrivacyPolicy from "./components/terms/PrivacyPolicy";
 
 // const AboutUs = React.lazy(() => import("./pages/AboutUs"));
 // const Projects = React.lazy(() => import("./pages/Projects"));
@@ -76,6 +78,14 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
+      },
+      {
+        path: "/terms&conditions",
+        element: <TermsAndConditions />,
       },
     ],
   },

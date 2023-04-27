@@ -4,8 +4,8 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
-import AdbIcon from "@mui/icons-material/Adb";
-
+// import AdbIcon from "@mui/icons-material/Adb";
+import logo from "../../images/logo.png";
 // import LightDark from "./LightDark";
 import { Drawer, Box } from "@mui/material";
 import ListComp from "./ListComp";
@@ -29,16 +29,22 @@ function NavBar(props) {
       }}
     >
       <Toolbar>
-        <AdbIcon
+        {/* <AdbIcon
           sx={{
             color: (theme) =>
               theme.palette.mode === "light" ? "#2C2C2C" : "inherit",
           }}
+        /> */}
+        <img
+          src={logo}
+          alt="logo"
+          style={{ borderRadius: "50%", width: "40px" }}
         />
         <Typography
           variant="h5"
           sx={{
             my: 2,
+            ml: 0.7,
             color: (theme) =>
               theme.palette.mode === "light" ? "#444" : "inherit",
             textShadow:

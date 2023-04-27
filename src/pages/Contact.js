@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import ContactButton from "../utils/ContactButton";
 // import FaxIcon from "@mui/icons-material/Fax";
@@ -29,14 +29,14 @@ const contacts = [
   },
 ];
 const Contact = () => {
-  const handleWhatsAppButtonClick = () => {
-    const phoneNumber = "9787820695"; // Replace with the recipient's phone number
-    const message = "Hello!"; // Replace with your pre-defined message
-    const url = `whatsapp://send?phone=${phoneNumber}&text=${encodeURIComponent(
-      message
-    )}`;
-    window.open(url);
-  };
+  // const handleWhatsAppButtonClick = () => {
+  //   const phoneNumber = "9787820695"; // Replace with the recipient's phone number
+  //   const message = "Hello!"; // Replace with your pre-defined message
+  //   const url = `whatsapp://send?phone=${phoneNumber}&text=${encodeURIComponent(
+  //     message
+  //   )}`;
+  //   window.open(url);
+  // };
 
   return (
     <Box
@@ -66,7 +66,7 @@ const Contact = () => {
         <Typography variant="h5" sx={{ textAlign: "center" }}>
           Monday-Friday : <span>9am-6pm (SST)</span>
         </Typography>
-        <Button onClick={handleWhatsAppButtonClick}>Live chat</Button>
+        {/* <Button onClick={handleWhatsAppButtonClick}>Live chat</Button> */}
       </Box>
       <Box sx={{ flex: 1, mt: 7 }}>
         {/* <Card sx={{ minWidth: 275 }}> */}

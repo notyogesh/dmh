@@ -53,9 +53,9 @@ const Footer = () => {
             mt: { xs: 2, md: 0 },
           }}
         >
-          <FooterButton>Privacy Policy</FooterButton>
+          <FooterButton to="privacy-policy">Privacy Policy</FooterButton>
           {/* <Divider /> */}
-          <FooterButton>Terms & Condition </FooterButton>
+          <FooterButton to="terms&conditions">Terms & Condition </FooterButton>
           {/* <Divider orientation="vertical" flexItem /> */}
           <FooterButton>
             {" "}
