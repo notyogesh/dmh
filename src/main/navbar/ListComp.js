@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import List from "@mui/material/List";
 import ListItemText from "@mui/material/ListItemText";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
 import BiotechIcon from "@mui/icons-material/Biotech";
 import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
@@ -32,8 +32,11 @@ const ListComp = (props) => {
   };
   const handleMenuClose = () => {
     setAnchorEl(null);
-    props.onClick();
+    // props.onClick();
   };
+  // function handlePropClick() {
+  //   props.onClick();
+  // }
   // onMouseEnter={handleMenuClick}
   //         onMouseLeave={handleMenuClose}
   return (
@@ -126,11 +129,19 @@ const ListComp = (props) => {
         open={Boolean(anchorEl)}
         onClose={handleMenuClose}
         disableRestoreFocus
+        onClick={props.onClick}
       >
         {sub.map((item, i) => (
           <MenuItem
-            onClick={handleMenuClose}
-            component={NavLink}
+            onClick={() => {
+              handleMenuClose();
+              // props.onClick;
+            }}
+            // onClick={() => {
+            //   handleMenuClose();
+            //   handlePropClick();
+            // }}
+            component={Link}
             to={item.link}
             key={i}
             // className={({ isActive }) => (isActive ? "active" : "inactive")}
