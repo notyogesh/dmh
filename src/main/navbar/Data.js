@@ -58,3 +58,27 @@ export const menuItems = [
     id: "4",
   },
 ];
+export const sub = [
+  // { title: "Services", link: "/service/projects" },
+  { title: "Acmv", link: "/service/acmv" },
+  {
+    title: "Kitchen Exhaust System",
+    link: "/service/kitchen-exhaust-system",
+  },
+  {
+    title: "Electrical Services",
+    link: "/service/electrical-services",
+  },
+  {
+    title: "Scaffolding work",
+    link: "/service/scaffolding-work",
+  },
+  {
+    title: "Glass & Aluminum Work",
+    link: "/service/glass-aluminum-work",
+  },
+  {
+    title: "Construction",
+    link: "/service/construction",
+  },
+];

@@ -2,146 +2,172 @@ import React, { useState } from "react";
 import List from "@mui/material/List";
 import ListItemText from "@mui/material/ListItemText";
 import { NavLink } from "react-router-dom";
-// import HomeIcon from "@mui/icons-material/Home";
+import HomeIcon from "@mui/icons-material/Home";
+import BiotechIcon from "@mui/icons-material/Biotech";
+import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import EngineeringIcon from "@mui/icons-material/Engineering";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 import {
-  Box,
+  // Box,
   ListItemButton,
   ListItemIcon,
   // ListItemSecondaryAction,
 } from "@mui/material";
 // import { Box } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
-import { menuItems } from "./Data";
+// import { useTheme } from "@mui/material/styles";
+import { sub } from "./Data";
 // import Typography from '@mui/material/Typography';
-
 // import Button from "@mui/material/Button";
-
-import SubMenu from "./SubMenu";
-
+// import SubMenu from "./SubMenu";
 const ListComp = (props) => {
-  const theme = useTheme();
+  // const theme = useTheme();
 
   const [anchorEl, setAnchorEl] = useState();
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
 
   const handleMenuClick = (e) => {
     setAnchorEl(e.currentTarget);
-
-    setOpen(true);
   };
-  // const handleMenuClose = () => {
-  //   setAnchorEl(null);
-  //   setOpen(false);
-  // };
-  const handleMenuClose = (e) => {
-    if (e.currentTarget.localName !== "ul") {
-      const menu = document.getElementById("simple-menu").children[2];
-      const menuBoundary = {
-        left: menu.offsetLeft,
-        top: e.currentTarget.offsetTop + e.currentTarget.offsetHeight,
-        right: menu.offsetLeft + menu.offsetHeight,
-        bottom: menu.offsetTop + menu.offsetHeight,
-      };
-      if (
-        e.clientX >= menuBoundary.left &&
-        e.clientX <= menuBoundary.right &&
-        e.clientY <= menuBoundary.bottom &&
-        e.clientY >= menuBoundary.top
-      ) {
-        return;
-      }
-    }
-
-    setOpen(false);
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+    props.onClick();
   };
-
-  theme.props = {
-    MuiList: {
-      onMouseLeave: (e) => {
-        handleMenuClose(e);
-      },
-    },
-  };
+  // onMouseEnter={handleMenuClick}
+  //         onMouseLeave={handleMenuClose}
   return (
     <List
       sx={{ display: { xs: "block", md: "flex" }, fontWeight: "bold" }}
-      onClick={props.onClick}
+      // onClick={props.onClick}
     >
-      {menuItems.map((item, i) =>
-        item.sub ? (
-          <Box key={i}>
-            <ListItemButton
-              key={i}
-              id={i}
-              // onClick={(e) => handleMenuClick(e)}
-              // onMouseOver={handleMenuClick}
-              // aria-owns={open ? "simple-menu" : undefined}
-              // aria-haspopup="true"
-              onMouseEnter={handleMenuClick}
-              onMouseLeave={handleMenuClose}
-              style={{ zIndex: 10 }}
-              sx={{
-                borderRadius: 5,
-                boxShadow: {
-                  xs: "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
-                  md: "none",
-                },
+      <NavLink
+        to="/"
+        className={({ isActive }) => (isActive ? "active" : "inactive")}
+        exact="true"
+      >
+        <ListItemButton
+          onClick={props.onClick}
+          sx={{
+            borderRadius: 5,
+            boxShadow: {
+              xs: "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
+              md: "none",
+            },
+          }}
+        >
+          <ListItemIcon>
+            <HomeIcon />
+            <ListItemText
+              primary="Home"
+              primaryTypographyProps={{
+                fontWeight: "inherit",
               }}
-            >
-              <ListItemIcon>
-                {item.icon}
-                <ListItemText
-                  primary={item.title}
-                  primaryTypographyProps={{
-                    fontWeight: "inherit",
-                  }}
-                />
-                {item.end}
-              </ListItemIcon>
-            </ListItemButton>
-
-            <SubMenu
-              anchorEl={anchorEl}
-              open={open}
-              close={handleMenuClose}
-              item={item.sub}
             />
-          </Box>
-        ) : (
-          <NavLink
-            to={item.link}
-            key={i + 3}
-            className={({ isActive }) => (isActive ? "active" : "inactive")}
-            exact="true"
-          >
-            <ListItemButton
-              key={i}
-              // onClick={item.sub ? handleMenuClick : handleMenuClose}
-              // onMouseOver={item.sub ? handleMenuClick : handleMenuClose}
-              // onMouseLeave={handleMenuClose}
-              style={{ zIndex: 10 }}
-              sx={{
-                borderRadius: 5,
-                boxShadow: {
-                  xs: "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
-                  md: "none",
-                },
+          </ListItemIcon>
+        </ListItemButton>
+      </NavLink>
+      <NavLink
+        to="/aboutus"
+        className={({ isActive }) => (isActive ? "active" : "inactive")}
+        exact="true"
+      >
+        <ListItemButton
+          onClick={props.onClick}
+          sx={{
+            borderRadius: 5,
+            boxShadow: {
+              xs: "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
+              md: "none",
+            },
+          }}
+        >
+          <ListItemIcon>
+            <BiotechIcon />
+            <ListItemText
+              primary="About Us"
+              primaryTypographyProps={{
+                fontWeight: "inherit",
               }}
+            />
+          </ListItemIcon>
+        </ListItemButton>
+      </NavLink>
+      <NavLink
+        className="inactive"
+        // exact="true"
+      >
+        <ListItemButton
+          onClick={handleMenuClick}
+          sx={{
+            borderRadius: 5,
+            boxShadow: {
+              xs: "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
+              md: "none",
+            },
+          }}
+        >
+          <ListItemIcon>
+            <EngineeringIcon />
+            <ListItemText
+              primary="Service"
+              primaryTypographyProps={{
+                fontWeight: "lighter",
+              }}
+            />
+            <ArrowDropDownIcon />
+          </ListItemIcon>
+        </ListItemButton>
+        <Menu
+          id="simple-menu"
+          keepMounted
+          anchorEl={anchorEl}
+          anchorOrigin={{
+            vertical: "bottom",
+            horizontal: "left",
+          }}
+          open={Boolean(anchorEl)}
+          onClose={handleMenuClose}
+          disableRestoreFocus
+        >
+          {sub.map((item, i) => (
+            <MenuItem
+              onClick={handleMenuClose}
+              component={NavLink}
+              to={item.link}
+              key={i}
             >
-              <ListItemIcon>
-                {item.icon}
-                <ListItemText
-                  primary={item.title}
-                  primaryTypographyProps={{
-                    fontWeight: "inherit",
-                  }}
-                />
-                {item.end}
-              </ListItemIcon>
-            </ListItemButton>
-          </NavLink>
-        )
-      )}
+              {item.title}
+            </MenuItem>
+          ))}
+        </Menu>
+      </NavLink>
+      <NavLink
+        to="/contact"
+        className={({ isActive }) => (isActive ? "active" : "inactive")}
+        exact="true"
+      >
+        <ListItemButton
+          onClick={props.onClick}
+          sx={{
+            borderRadius: 5,
+            boxShadow: {
+              xs: "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
+              md: "none",
+            },
+          }}
+        >
+          <ListItemIcon>
+            <ConnectWithoutContactIcon />
+            <ListItemText
+              primary="Contact Us"
+              primaryTypographyProps={{
+                fontWeight: "inherit",
+              }}
+            />
+          </ListItemIcon>
+        </ListItemButton>
+      </NavLink>
     </List>
   );
 };
