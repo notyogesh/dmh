@@ -9,10 +9,14 @@ import logo from "../../images/logo.png";
 // import LightDark from "./LightDark";
 import { Drawer, Box } from "@mui/material";
 import ListComp from "./ListComp";
+import { useNavigate } from "react-router-dom";
 
 function NavBar(props) {
   const [openDrawer, setOpenDrawer] = useState(false);
-
+  const navigate = useNavigate();
+  const to = () => {
+    navigate("/");
+  };
   return (
     <AppBar
       // position="static"
@@ -39,9 +43,11 @@ function NavBar(props) {
           src={logo}
           alt="logo"
           style={{ borderRadius: "50%", width: "40px" }}
+          onClick={to}
         />
         <Typography
           variant="h5"
+          onClick={to}
           sx={{
             my: 2,
             ml: 0.7,

@@ -18,13 +18,13 @@ const contacts = [
   {
     name: " +65 8024 0521",
     icon: <PhoneIcon />,
-    link: "http://www.facebook.com",
+    link: "tel:+6580240521",
     textTransform: "lowercase",
   },
   {
     name: "dmhconstructionengineering@gmail.com",
     icon: <EmailIcon />,
-    link: "http://www.twitter.com",
+    link: "mailto:dmhconstructionengineering@gmail.com",
     textTransform: "lowercase",
   },
 ];

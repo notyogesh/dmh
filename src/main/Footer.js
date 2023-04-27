@@ -26,7 +26,11 @@ const socio = [
     icon: <InstagramIcon />,
     link: "https://instagram.com/dmh.group?igshid=YmMyMTA2M2Y=",
   },
-  { name: "Email", icon: <EmailIcon />, link: "http://www.gmail.com" },
+  {
+    name: "Email",
+    icon: <EmailIcon />,
+    link: "mailto:dmhconstructionengineering@gmail.com",
+  },
 ];
 const Footer = () => {
   return (

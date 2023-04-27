@@ -19,21 +19,21 @@ code {
   font-weight: bolder;
   text-decoration: none;
 
-  /* transform: "translateY(-10%)"; */
+  transform: "translateY(-10%)";
 
   /* color: theme.palette.text.secondary, */
   margin-right: 7px;
-  /* box-shadow: inset -3px -3px 7px #ffffffb0,
+  box-shadow: inset -3px -3px 7px #ffffffb0,
     inset 3px 3px 5px rgba(94, 104, 121, 0.692);
   border-radius: 20px;
- 
-  transition: all 0.12s ease-out; */
+
+  transition: all 0.12s ease-out;
 }
 .inactive {
   text-decoration: none;
   font-weight: lighter;
   /* color: theme.palette.text.inactive, */
   margin-right: 7px;
-  /* box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
-  border-radius: 20px; */
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  border-radius: 20px;
 }
