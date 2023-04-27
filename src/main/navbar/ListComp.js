@@ -93,55 +93,53 @@ const ListComp = (props) => {
           </ListItemIcon>
         </ListItemButton>
       </NavLink>
-      <NavLink
-        className="inactive"
-        // exact="true"
+
+      <ListItemButton
+        onClick={handleMenuClick}
+        sx={{
+          borderRadius: 5,
+          boxShadow: {
+            xs: "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
+            md: "none",
+          },
+        }}
       >
-        <ListItemButton
-          onClick={handleMenuClick}
-          sx={{
-            borderRadius: 5,
-            boxShadow: {
-              xs: "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
-              md: "none",
-            },
-          }}
-        >
-          <ListItemIcon>
-            <EngineeringIcon />
-            <ListItemText
-              primary="Service"
-              primaryTypographyProps={{
-                fontWeight: "lighter",
-              }}
-            />
-            <ArrowDropDownIcon />
-          </ListItemIcon>
-        </ListItemButton>
-        <Menu
-          id="simple-menu"
-          keepMounted
-          anchorEl={anchorEl}
-          anchorOrigin={{
-            vertical: "bottom",
-            horizontal: "left",
-          }}
-          open={Boolean(anchorEl)}
-          onClose={handleMenuClose}
-          disableRestoreFocus
-        >
-          {sub.map((item, i) => (
-            <MenuItem
-              onClick={handleMenuClose}
-              component={NavLink}
-              to={item.link}
-              key={i}
-            >
-              {item.title}
-            </MenuItem>
-          ))}
-        </Menu>
-      </NavLink>
+        <ListItemIcon>
+          <EngineeringIcon />
+          <ListItemText
+            primary="Service"
+            primaryTypographyProps={{
+              fontWeight: "lighter",
+            }}
+          />
+          <ArrowDropDownIcon />
+        </ListItemIcon>
+      </ListItemButton>
+      <Menu
+        id="simple-menu"
+        keepMounted
+        anchorEl={anchorEl}
+        anchorOrigin={{
+          vertical: "bottom",
+          horizontal: "left",
+        }}
+        open={Boolean(anchorEl)}
+        onClose={handleMenuClose}
+        disableRestoreFocus
+      >
+        {sub.map((item, i) => (
+          <MenuItem
+            onClick={handleMenuClose}
+            component={NavLink}
+            to={item.link}
+            key={i}
+            // className={({ isActive }) => (isActive ? "active" : "inactive")}
+          >
+            {item.title}
+          </MenuItem>
+        ))}
+      </Menu>
+
       <NavLink
         to="/contact"
         className={({ isActive }) => (isActive ? "active" : "inactive")}
