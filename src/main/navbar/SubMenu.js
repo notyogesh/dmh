@@ -5,7 +5,6 @@ import MenuItem from "@mui/material/MenuItem";
 // import Popover from "@mui/material/Popover";
 
 const SubMenu = (props) => {
-  //   console.log(props);
   return (
     <Menu
       id="simple-menu"

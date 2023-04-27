@@ -26,8 +26,7 @@ const ListComp = (props) => {
 
   const handleMenuClick = (e) => {
     setAnchorEl(e.currentTarget);
-    console.log(e);
-    // props.setAnchorEl(event.currentTarget);
+
     setOpen(true);
   };
   // const handleMenuClose = () => {
