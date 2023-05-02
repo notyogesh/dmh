@@ -1,7 +1,7 @@
 import {
   grey,
   lime,
-  yellow,
+  // yellow,
   // amber,
   // orange,
   // deepOrange,
@@ -44,6 +44,12 @@ export const customTheme = (mode) => ({
             main: "#f3f0f1",
             contrastText: grey[900],
           },
+          typography: {
+            allVariants: {
+              // fontFamily: "serif",
+              fontFamily: ["Inter", "sans-serif"].join(","),
+            },
+          },
           // success: {
           //   main: "#C0FF02",
           //   contrastText: "#C0FF02",
@@ -54,21 +60,37 @@ export const customTheme = (mode) => ({
         }
       : {
           // palette values for dark mode
-          primary: yellow,
-          divider: yellow[200],
+          // palette values for light mode
+          primary: lime,
+          //  contrastText: grey[500] },
+          divider: grey[400],
+
           background: {
-            default: grey[900],
-            paper: grey[900],
+            default: "#f3f0f1",
+            paper: "#f3f0f1",
           },
           text: {
-            primary: yellow[500],
-            secondary: yellow[500],
-            inactive: grey[500],
+            primary: grey[900],
+            secondary: grey[900],
+            inactive: grey[700],
           },
           root: {
-            main: yellow[500],
+            main: "#f3f0f1",
             contrastText: grey[900],
           },
+          typography: {
+            allVariants: {
+              // fontFamily: "serif",
+              fontFamily: ["Inter", "sans-serif"].join(","),
+            },
+          },
+          // success: {
+          //   main: "#C0FF02",
+          //   contrastText: "#C0FF02",
+          // },
+          // action: {
+          //   active: "#000",
+          // },
         }),
   },
 });

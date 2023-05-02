@@ -23,11 +23,12 @@ const Root = () => {
   );
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <Box style={{ textAlign: "center" }}>
       <ThemeProvider theme={theme}>
         <Box
           sx={{
-            m: 2,
+            // m: 2,
+            p: 1,
             minHeight: "100vh",
           }}
         >
@@ -37,7 +38,7 @@ const Root = () => {
         <Divider />
         <Footer />
       </ThemeProvider>
-    </div>
+    </Box>
   );
 };
 

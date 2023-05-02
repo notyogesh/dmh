@@ -3,10 +3,13 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-// import { Button } from "@mui/material";
+import { Button } from "@mui/material";
 import Seo from "../../main/Seo";
-import heroImg from "../../images/Home.png";
+import heroImg from "../../images/heroto.png";
 import HeroButton from "../../utils/HeroButton";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+// import IconButton from "@mui/material/IconButton";
+
 // import Link from "@mui/material/Link";
 const Hero = () => {
   return (
@@ -41,7 +44,7 @@ const Hero = () => {
           gutterBottom
           sx={{
             color: "#444",
-
+            pl: 1,
             textShadow:
               " -3px -3px 7px #ffffffb0,  3px 3px 5px rgba(94, 104, 121, 0.692)",
             // textShadow:
@@ -55,21 +58,45 @@ const Hero = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-start",
-            p: 5,
+            p: { xs: 0, md: 4.5 },
           }}
         >
           <HeroButton name=" Stay COOL" align="start" />
           <HeroButton name=" Stay COMFORTABLE" align="center" />
           <HeroButton name="  with DMH" align="end" />
         </Box>
+        <Box sx={{ display: "flex" }}>
+          <Button
+            href="https://wa.me/6580567061?text=I'm%20interested%20in%20your%20company%20profile"
+            variant="contained"
+            endIcon={<WhatsAppIcon />}
+            sx={{
+              color: "#fff",
+              fontWeight: 600,
+              ml: "auto",
+              mr: "60px",
+              backgroundColor: "#36C33A",
+              // boxShadow: "14px 14px 20px #cbced1, -14px -14px 20px white",
+              textTransform: "capitalize",
+              borderRadius: "20px",
+              "&:hover": {
+                backgroundColor: "#fff",
+                color: "#36C33A",
+                border: "2px solid #36C33A",
+              },
+            }}
+          >
+            Whatsapp Us
+          </Button>
+        </Box>
       </Container>
-      <Container sx={{ mt: 8, mb: 2, flex: 1 }} maxWidth="sm">
+      <Container sx={{ mt: 9, mb: 2, flex: 1 }} maxWidth="sm">
         <img
           src={heroImg}
           alt="index"
           style={{
             // borderRadius: "50%",
-            width: "300px",
+            width: "550px",
             // border: "1px solid rgba(255, 255, 255, 0.5)",
             // boxShadow:
             //   " -3px -3px 7px #ffffffb0,  3px 3px 5px rgba(94, 104, 121, 0.692)",

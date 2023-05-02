@@ -51,7 +51,7 @@ const Contact = () => {
         sx={{
           flex: 1,
           textAlign: "left",
-          pl: 9,
+          pl: { xs: 2, md: 9 },
           mt: { xs: 5, md: 12 },
 
           // display: { xs: "none", md: "flex" }
@@ -60,7 +60,11 @@ const Contact = () => {
         <Typography variant="h3" sx={{ fontWeight: "lighter" }}>
           Contact Us
         </Typography>
-        <Typography variant="h2" sx={{ pb: 3, fontWeight: "bolder" }}>
+        <Typography
+          variant="h2"
+          sx={{ pb: 3, fontWeight: "bolder" }}
+          // className="contact"
+        >
           We're here for you
         </Typography>
         <Typography variant="h5" sx={{ textAlign: "center" }}>

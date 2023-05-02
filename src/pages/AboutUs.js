@@ -20,6 +20,7 @@ const AboutUs = () => {
       sx={{
         backgroundColor: "#f3f0f1",
         textAlign: "left",
+
         px: { xs: 2, md: 20 },
         py: 2,
         minHeight: "100vh",
@@ -34,9 +35,7 @@ const AboutUs = () => {
           minHeight: "100vh",
         }}
       > */}
-      <Typography variant="h2" sx={{ ml: "auto" }}>
-        DMH{" "}
-      </Typography>
+      <Typography variant="h2">DMH </Typography>
       Our aim is to be our clients & prospectiv clients preferred parter for the
       installation of aircon and Mechanical ventilation equipment , forging
       relationships for the benefit of each other, the wider community & the

@@ -9,6 +9,8 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import EngineeringIcon from "@mui/icons-material/Engineering";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import { styled } from "@mui/material/styles";
+
 import {
   // Box,
   ListItemButton,
@@ -18,14 +20,51 @@ import {
 // import { Box } from "@mui/material";
 // import { useTheme } from "@mui/material/styles";
 import { sub } from "./Data";
-// import Typography from '@mui/material/Typography';
-// import Button from "@mui/material/Button";
-// import SubMenu from "./SubMenu";
+const StyledMenu = styled((props) => (
+  <Menu
+    elevation={0}
+    anchorOrigin={{
+      vertical: "bottom",
+      horizontal: "right",
+    }}
+    transformOrigin={{
+      vertical: "top",
+      horizontal: "right",
+    }}
+    {...props}
+  />
+))(({ theme }) => ({
+  "& .MuiPaper-root": {
+    borderRadius: 6,
+    marginTop: theme.spacing(1),
+    minWidth: 180,
+    color: " rgb(55, 65, 81)",
+    boxShadow:
+      "rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
+    "& .MuiMenu-list": {
+      padding: "4px 0",
+    },
+    "& .MuiMenuItem-root": {
+      "& .MuiSvgIcon-root": {
+        // fontSize: 18,
+        // color: theme.palette.text.secondary,
+        marginRight: theme.spacing(1.5),
+      },
+      "&:hover": {
+        boxShadow:
+          "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
+      },
+    },
+  },
+}));
 const ListComp = (props) => {
   // const theme = useTheme();
 
   const [anchorEl, setAnchorEl] = useState();
   // const [open, setOpen] = useState(false);
+  const activeClass = window.location.pathname.startsWith("/service")
+    ? "active"
+    : "inactive";
 
   const handleMenuClick = (e) => {
     setAnchorEl(e.currentTarget);
@@ -60,7 +99,7 @@ const ListComp = (props) => {
           }}
         >
           <ListItemIcon>
-            <HomeIcon />
+            <HomeIcon sx={{ transform: "translateY(10%)" }} />
             <ListItemText
               primary="Home"
               primaryTypographyProps={{
@@ -98,11 +137,12 @@ const ListComp = (props) => {
       </NavLink>
       <NavLink
         // to="/service:"
-        className={"inactive"}
+        className={activeClass}
         // exact="true"
       >
         <ListItemButton
           onClick={handleMenuClick}
+          // className={activeClass}
           // onMouseOver={handleMenuClick}
           // onMouseEnter={handleMenuClick}
           // onMouseLeave={handleMenuClose}
@@ -119,23 +159,23 @@ const ListComp = (props) => {
             <ListItemText
               primary="Service"
               primaryTypographyProps={{
-                fontWeight: "lighter",
+                fontWeight: "inherit",
               }}
             />
             <ArrowDropDownIcon />
           </ListItemIcon>
         </ListItemButton>
-        <Menu
+        <StyledMenu
           id="simple-menu"
           keepMounted
           anchorEl={anchorEl}
-          anchorOrigin={{
-            vertical: "bottom",
-            horizontal: "left",
-          }}
+          // anchorOrigin={{
+          //   vertical: "bottom",
+          //   horizontal: "left",
+          // }}
           open={Boolean(anchorEl)}
           onClose={handleMenuClose}
-          disableRestoreFocus
+          // disableRestoreFocus
           onClick={props.onClick}
         >
           {sub.map((item, i) => (
@@ -155,7 +195,7 @@ const ListComp = (props) => {
               {item.title}
             </MenuItem>
           ))}
-        </Menu>
+        </StyledMenu>
       </NavLink>
       <NavLink
         to="/contact"

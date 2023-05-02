@@ -93,7 +93,7 @@ const router = createBrowserRouter([
 
 const App = () => {
   return (
-    <div className="App">
+    <div>
       <Suspense fallback={<CircularProgress variant="determinate" />}>
         <RouterProvider router={router} />
       </Suspense>
