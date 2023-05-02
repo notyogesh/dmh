@@ -19,7 +19,11 @@ import Typography from "@mui/material/Typography";
 import FooterButton from "../utils/FooterButton";
 
 const socio = [
-  { name: "Facebook", icon: <FacebookIcon />, link: "http://www.facebook.com" },
+  {
+    name: "Facebook",
+    icon: <FacebookIcon />,
+    link: "https://www.facebook.com/profile.php?id=100092418425772",
+  },
   { name: "Twitter", icon: <TwitterIcon />, link: "http://www.twitter.com" },
   {
     name: "Instagram",

@@ -12,13 +12,12 @@ import EmailIcon from "@mui/icons-material/Email";
 import Stack from "@mui/material/Stack";
 import ContactButton from "../utils/ContactButton";
 // import FaxIcon from "@mui/icons-material/Fax";
-
 // import Paper from "@mui/material/Paper";
 const contacts = [
   {
-    name: " +65 8024 0521",
+    name: " +65 8056 7061",
     icon: <PhoneIcon />,
-    link: "tel:+6580240521",
+    link: "tel:+6580567061",
     textTransform: "lowercase",
   },
   {
@@ -52,8 +51,9 @@ const Contact = () => {
         sx={{
           flex: 1,
           textAlign: "left",
-          pl: 5,
-          mt: 7,
+          pl: 9,
+          mt: { xs: 5, md: 12 },
+
           // display: { xs: "none", md: "flex" }
         }}
       >
@@ -68,7 +68,7 @@ const Contact = () => {
         </Typography>
         {/* <Button onClick={handleWhatsAppButtonClick}>Live chat</Button> */}
       </Box>
-      <Box sx={{ flex: 1, mt: 7 }}>
+      <Box sx={{ flex: 1, mt: 5 }}>
         {/* <Card sx={{ minWidth: 275 }}> */}
         <Card
           sx={{
@@ -77,7 +77,7 @@ const Contact = () => {
             borderRadius: 5,
             mb: { xs: 2, md: 0 },
             px: 3,
-            py: 7,
+            py: 5,
           }}
           elevation={4}
         >
@@ -151,40 +151,6 @@ const Contact = () => {
               <br />
               Singapore - 179098
             </ContactButton>
-            {/* <Button
-              startIcon={<PhoneIcon />}
-              // endIcon={<FaxIcon />}
-              href="tel:80240521"
-              target="_blank"
-              // variant="text"
-              sx={{ mx: "auto" }}
-            >
-              +65 8024 0521
-            </Button>
-
-            <Button
-              startIcon={<EmailIcon />}
-              href="mailto:dmhconstructionengineering@gmail.com"
-              target="_blank"
-              // variant="text"
-              sx={{ mx: "auto", textTransform: "lowercase" }}
-            >
-              dmhconstructionengineering@gmail.com
-            </Button> */}
-            {/* <Button
-              startIcon={<LocationOnIcon />}
-              href="https://maps.app.goo.gl/W1kQbLLZpy19UEV6A"
-              // variant="text"
-
-              target="_blank"
-              sx={{ mx: "auto", textTransform: "capitalize" }}
-            >
-              111, North Bridge Road #08-16
-              <br />
-              Peninsula Plaza,
-              <br />
-              Singapore - 179098
-            </Button> */}
           </Stack>
         </Card>
       </Box>

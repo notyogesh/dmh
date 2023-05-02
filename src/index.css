@@ -19,7 +19,7 @@ code {
   font-weight: bolder;
   text-decoration: none;
 
-  transform: "translateY(-10%)";
+  transform: "translateY(10%)";
 
   /* color: theme.palette.text.secondary, */
   margin-right: 7px;

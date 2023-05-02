@@ -42,7 +42,13 @@ function NavBar(props) {
         <img
           src={logo}
           alt="logo"
-          style={{ borderRadius: "50%", width: "40px" }}
+          style={{
+            borderRadius: "50%",
+            width: "40px",
+            border: "1px solid #000",
+            boxShadow:
+              " -3px -3px 7px #ffffffb0,  3px 3px 5px rgba(94, 104, 121, 0.692)",
+          }}
           onClick={to}
         />
         <Typography
@@ -51,8 +57,7 @@ function NavBar(props) {
           sx={{
             my: 2,
             ml: 0.7,
-            color: (theme) =>
-              theme.palette.mode === "light" ? "#444" : "inherit",
+            color: "#444",
             textShadow:
               " -3px -3px 7px #ffffffb0,  3px 3px 5px rgba(94, 104, 121, 0.692)",
 
