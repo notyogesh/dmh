@@ -8,10 +8,14 @@ import Seo from "../../main/Seo";
 import heroImg from "../../images/heroto.png";
 import HeroButton from "../../utils/HeroButton";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { useInView } from "react-intersection-observer";
+
 // import IconButton from "@mui/material/IconButton";
 
 // import Link from "@mui/material/Link";
 const Hero = () => {
+  const { ref: imgRef, inView: imgIsVisible } = useInView();
+
   return (
     <Box
       sx={{
@@ -94,11 +98,11 @@ const Hero = () => {
           </Button>
         </Box>
       </Container>
-      <Container sx={{ mt: 9, mb: 2, flex: 1 }} maxWidth="sm">
+      <Container sx={{ mt: 9, mb: 2, flex: 1 }} maxWidth="sm" ref={imgRef}>
         <img
           src={heroImg}
           alt="DMH"
-          // className="heroimg"
+          className={imgIsVisible ? "animateRocket" : ""}
           loading="lazy"
           style={{
             // borderRadius: "50%",
