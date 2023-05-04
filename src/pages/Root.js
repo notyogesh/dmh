@@ -7,6 +7,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { Outlet } from "react-router-dom";
 import Footer from "../main/Footer";
 import Box from "@mui/material/Box";
+import Hero2 from "../components/hero/Hero2";
 
 const Root = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -35,6 +36,8 @@ const Root = () => {
           <Navbar onClick={changeTheme} />
           <Outlet />
         </Box>
+        <Divider />
+        <Hero2 />
         <Divider />
         <Footer />
       </ThemeProvider>

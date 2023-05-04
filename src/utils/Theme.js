@@ -22,6 +22,12 @@ import {
 // background-color: #f3f3f3;
 // #212121;
 export const customTheme = (mode) => ({
+  typography: {
+    allVariants: {
+      // fontFamily: "serif",
+      fontFamily: ["Nunito Sans", "sans-serif"].join(","),
+    },
+  },
   palette: {
     mode,
     ...(mode === "light"
@@ -47,9 +53,10 @@ export const customTheme = (mode) => ({
           typography: {
             allVariants: {
               // fontFamily: "serif",
-              fontFamily: ["Inter", "sans-serif"].join(","),
+              fontFamily: ["Nunito Sans", "sans-serif"].join(","),
             },
           },
+
           // success: {
           //   main: "#C0FF02",
           //   contrastText: "#C0FF02",
