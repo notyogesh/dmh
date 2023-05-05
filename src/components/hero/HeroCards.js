@@ -29,8 +29,8 @@ const HeroCards = () => {
         display: { xs: "block", md: "flex" },
         justifyContent: "space-evenly",
 
-        px: 2,
-        gap: 3,
+        px: 3,
+        gap: 5,
       }}
     >
       {cardcontent.map((item, i) => (

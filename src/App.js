@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 // import "./App.css";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./main/ErrorPage";
 import CircularProgress from "@mui/material/CircularProgress";
@@ -92,6 +93,11 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
+  // const location = useLocation();
+  // // Scroll to top if path changes
+  // useLayoutEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [location.pathname]);
   return (
     <div>
       <Suspense fallback={<CircularProgress variant="determinate" />}>
