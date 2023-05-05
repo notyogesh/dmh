@@ -129,7 +129,7 @@ const Hero = () => {
           </Slide>
         </Container>
       </Box>{" "}
-      {/* <Hero2 /> */}
+      <Hero2 />
       <Services />
     </>
   );
