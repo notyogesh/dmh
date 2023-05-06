@@ -8,7 +8,7 @@ import Seo from "../../main/Seo";
 import heroImg from "../../images/heroto.png";
 import HeroButton from "../../utils/HeroButton";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 import Slide from "@mui/material/Slide";
 import Hero2 from "./Hero2";
 import Services from "../services/Services";
@@ -17,7 +17,8 @@ import Services from "../services/Services";
 
 // import Link from "@mui/material/Link";
 const Hero = () => {
-  const { ref: imgRef, inView: imgIsVisible } = useInView();
+  // const { ref: imgRef, inView: imgIsVisible } = useInView();
+  // const [showTransition, setShowTransition] = useState(true);
 
   return (
     <>
@@ -55,7 +56,7 @@ const Hero = () => {
             // component="h1"
             gutterBottom
             sx={{
-              color: "#444",
+              color: "#31344B",
               // pl: 1,
               // fontFamily: "Nunito Sans",
               fontWeight: 700,
@@ -109,9 +110,9 @@ const Hero = () => {
         <Container
           sx={{ mt: 9, mb: 2, flex: 1, overflowX: "hidden" }}
           maxWidth="sm"
-          ref={imgRef}
+          // ref={imgRef}
         >
-          <Slide in={imgIsVisible} direction="left" timeout={2000}>
+          <Slide in={true} direction="left" timeout={2000}>
             <img
               src={heroImg}
               alt="DMH"

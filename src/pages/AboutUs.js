@@ -5,8 +5,17 @@ import React from "react";
 // import Divider from "@mui/material/Divider";
 // import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
-import { Box } from "@mui/material";
-
+import { Box, Button } from "@mui/material";
+import ContactPageIcon from "@mui/icons-material/ContactPage";
+import { Link } from "react-router-dom";
+import AboutUsCard from "../utils/AboutUsCard";
+import VisibilityIcon from "@mui/icons-material/Visibility";
+import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
+import PrecisionManufacturingIcon from "@mui/icons-material/PrecisionManufacturing";
+import Divider from "@mui/material/Divider";
+import LeaderboardIcon from "@mui/icons-material/Leaderboard";
+import GradeIcon from "@mui/icons-material/Grade";
+import BeenhereIcon from "@mui/icons-material/Beenhere";
 // const Item = styled(Paper)(({ theme }) => ({
 //   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
 //   ...theme.typography.body2,
@@ -15,62 +24,201 @@ import { Box } from "@mui/material";
 //   color: theme.palette.text.secondary,
 // }));
 const AboutUs = () => {
+  const aboutCardContent = [
+    {
+      head: "Audience",
+      body: "At DMH, we use human behavior, brand perception, and cultural trends to identify and capitalize on business opportunities",
+      icon: <VisibilityIcon fontSize="large" />,
+    },
+    {
+      head: "Branding",
+      body: "Despite being cautioned not to judge a book by its cover, we all do it every day. We making your establishment looks better.",
+      icon: <WorkspacePremiumIcon fontSize="large" />,
+    },
+    {
+      head: "Production",
+      body: "Today, truly creative sells. Get innovative ideas and polished finish pieces from our creative agency.",
+      icon: <PrecisionManufacturingIcon fontSize="large" />,
+    },
+  ];
+  const aboutCard2Content = [
+    {
+      head: "Adequate",
+      body: " Maintenance isn't just about oil cans & cleaning chemicals - it's about trust , about knowledge, about understanding each other, about honesty, about reliability and doing what we say we are going to do.",
+      icon: <GradeIcon fontSize="large" />,
+    },
+    {
+      head: "Capability",
+      body: "We are  one of the few  general facilities management provider in our sector , and  We're equipped to handle any task and finish the work on time, thanks to our resources, knowledge, experience and skills",
+      icon: <LeaderboardIcon fontSize="large" />,
+    },
+    {
+      head: "Effective",
+      body: "At DMH we design , install , maintain and service for all our systems.  We endeavour to support the role of the building facilities manager by providing a reliable & Cost effective  service. ",
+      icon: <BeenhereIcon fontSize="large" />,
+    },
+  ];
   return (
     <Box
       sx={{
         backgroundColor: "#f3f0f1",
-        textAlign: "left",
-
-        px: { xs: 2, md: 20 },
-        py: 2,
-        minHeight: "100vh",
+        // textAlign: "left",
+        color: "#31344B",
+        // px: { xs: 2, md: 20 },
+        // py: 2,
+        // minHeight: "100vh",
       }}
     >
-      {/* <Card
-        elevation={3}
-        sx={{
-          textAlign: "left",
-          px: { xs: 2, md: 20 },
-          py: 2,
-          minHeight: "100vh",
-        }}
-      > */}
-      <Typography variant="h2">DMH </Typography>
-      Our aim is to be our clients & prospectiv clients preferred parter for the
-      installation of aircon and Mechanical ventilation equipment , forging
-      relationships for the benefit of each other, the wider community & the
-      environment . like the sound of this ? Read on....
-      <br />
-      <br />
-      Maintaining ACMV equipment isn't just about oil cans & cleaning chemicals
-      - it's about trust , about knowledge, about understanding each other,
-      about honesty, about reliability and doing what we say we are going to do.{" "}
-      <br />
-      At DMH we design , install , maintain and service air conditioning
-      systems, industrial VRV system, mechanical ventilation system. We
-      endeavour to support the role of the building facilities manager by
-      providing a reliable & Cost effective ACMV maintenance service. We
-      specialise in this and only this, we are not a general facilities
-      management provider.
-      <br /> <br />
-      Regular maintenance is proven to improve the operation & efficiency of the
-      equipment, is a legal requirment ( for certain equipment ) and helps
-      prevent operational issues, saving you both time & money. <br />
-      We look forward to discussing your maintenances requirements & treating
-      you to the DMH Experience !
-      <Typography variant="h4" sx={{ my: 2 }}>
-        DMH Mission Statement{" "}
+      <Box
+        sx={{ pt: "20vh", display: "flex", flexDirection: "column", mb: 10 }}
+      >
+        <Typography variant="h3" sx={{ textAlign: "center", fontWeight: 600 }}>
+          We are DMH
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            textAlign: "center",
+            // px: 10,
+            pt: 5,
+            pb: 3,
+            fontWeight: 600,
+            px: { xs: 2, md: 20 },
+            // width: "350px",
+          }}
+        >
+          DMH is a private limited company based in Singapore that is involved
+          in the various field of construction and engineering industry.
+        </Typography>
+
+        <Button
+          to="/contact"
+          elevation={3}
+          component={Link}
+          startIcon={<ContactPageIcon />}
+          sx={{
+            backgroundColor: "#f3f0f1",
+            my: 5,
+            color: "#44476a",
+            textTransform: "capitalize",
+            mx: "auto",
+            boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
+            border: "1px solid #d1d9e6",
+            "&:hover": {
+              boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
+            },
+          }}
+        >
+          Contact Us
+        </Button>
+      </Box>
+      <Typography
+        variant="h4"
+        sx={{ textAlign: "center", fontWeight: 600, pb: 5 }}
+      >
+        Our Aim
       </Typography>
-      To be our clients preferred any aircon system maintenance parter that
-      through our knowledge, passion and exemplary service we improve the
-      comport of our clients and facilitate their operations by delivering an
-      enduring & reliable solution.
-      <br /> <br />
-      To provide a progressive, rewarding and cohesive atmosphere for employees
-      that fosters respect of the trust customers, colleagues and suppliers
-      place in us. <br />
-      Conduct all out business with respect for the community and environment.{" "}
-      {/* </Card> */}
+      <Typography
+        variant="body1"
+        sx={{
+          textAlign: "center",
+          fontWeight: 600,
+          px: { xs: 2, md: 20 },
+          pb: { xs: 2, md: 10 },
+        }}
+      >
+        Our aim is to be our clients & prospectiv clients preferred parter for
+        the installation of aircon and Mechanical ventilation equipment ,
+        forging relationships for the benefit of each other, the wider community
+        & the environment . like the sound of this ? Read on....
+      </Typography>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          justifyContent: "space-evenly",
+          // boxShadow: "6px 6px 12px #b8b9be,-6px -6px 12px #fff",
+          // border: "0.2px solid #d1d9e6",
+          py: 5,
+          px: { xs: 2, md: 10 },
+          mx: { xs: 2, md: 5 },
+          gap: 5,
+          // borderRadius: "9px",
+        }}
+      >
+        {aboutCardContent.map((item, i) => (
+          <AboutUsCard
+            head={item.head}
+            icon={item.icon}
+            key={i}
+            body={item.body}
+            boxShadow="inset 2px 2px 5px #b8b9be,inset -3px -3px 7px #fff"
+          />
+        ))}
+      </Box>
+      <Divider />
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          justifyContent: "space-evenly",
+
+          py: 5,
+          px: { xs: 2, md: 10 },
+          mx: { xs: 2, md: 5 },
+          gap: 5,
+        }}
+      >
+        {aboutCard2Content.map((item, i) => (
+          <AboutUsCard
+            head={item.head}
+            icon={item.icon}
+            key={i}
+            body={item.body}
+            boxShadow="6px 6px 12px #b8b9be,-6px -6px 12px #fff"
+          />
+        ))}
+      </Box>
+      <Box
+        sx={{
+          boxShadow: "6px 6px 12px #b8b9be,-6px -6px 12px #fff",
+          border: "0.2px solid #d1d9e6",
+          p: { xs: 1, md: 5 },
+          m: 1,
+          display: "flex",
+          flexDirection: "column",
+          mx: "auto",
+          borderRadius: "9px",
+          width: { xs: "auto", md: "70%" },
+        }}
+      >
+        <Typography
+          variant="h4"
+          sx={{ textAlign: "center", fontWeight: 600, pb: 5 }}
+        >
+          DMH Mission Statement{" "}
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            textAlign: "center",
+            fontWeight: 600,
+            // px: { xs: 2, md: 20 },
+            // pb: { xs: 2, md: 15 },
+          }}
+        >
+          To be our clients preferred any aircon system maintenance parter that
+          through our knowledge, passion and exemplary service we improve the
+          comport of our clients and facilitate their operations by delivering
+          an enduring & reliable solution.
+          <br /> <br />
+          To provide a progressive, rewarding and cohesive atmosphere for
+          employees that fosters respect of the trust customers, colleagues and
+          suppliers place in us. <br />
+          Conduct all out business with respect for the community and
+          environment.{" "}
+        </Typography>
+      </Box>
     </Box>
   );
 };

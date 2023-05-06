@@ -21,15 +21,18 @@ const ServiceCard = (props) => {
           boxShadow: "6px 6px 12px #b8b9be,-6px -6px 12px #fff",
           border: "1px solid #d1d9e6",
           flex: 1,
+          width: "100%",
+          // backgroundColor: "#fff",
         }}
       >
         <img
           src={props.img}
           alt={props.head}
+          loading="lazy"
           style={{
             flex: 1,
             borderRadius: "63% 37% 30% 70%/50% 45% 55% 50%",
-            width: "350px",
+            width: "inherit",
           }}
         />
       </Box>
@@ -38,6 +41,7 @@ const ServiceCard = (props) => {
           flex: 1,
           textAlign: "center",
           px: 5,
+          pt: 2,
           position: "relative",
           display: "flex",
           flexDirection: "column",

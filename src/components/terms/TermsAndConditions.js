@@ -5,10 +5,9 @@ const TermsAndConditions = () => {
     <div>
       Terms and Conditions
       <br />
-      Welcome to DMH (the "Company"). These terms and conditions ("Terms")
-      govern your use of the Company's website, services, and products
-      (collectively, the "Services"). By using the Services, you agree to these
-      Terms.
+      Welcome to DMH . These terms and conditions ("Terms") govern your use of
+      the Company's website, services, and products (collectively, the
+      "Services"). By using the Services, you agree to these Terms.
       <br />
       Use of Services You may use the Services only for lawful purposes and in
       accordance with these Terms. You agree not to use the Services:

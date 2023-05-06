@@ -28,8 +28,9 @@ function NavBar(props) {
         // mb: 2,
         // backdropFilter: "blur(4px)",
         borderRadius: "10px",
-        backgroundColor: (theme) =>
-          theme.palette.mode === "light" ? "#f3f0f1" : "#393A3E",
+        backgroundColor: "#f3f0f1",
+        // backgroundColor: (theme) =>
+        //   theme.palette.mode === "light" ? "#f3f0f1" : "#393A3E",
       }}
     >
       <Toolbar>
@@ -46,8 +47,8 @@ function NavBar(props) {
             borderRadius: "50%",
             width: "40px",
             border: "1px solid #000",
-            boxShadow:
-              " -3px -3px 7px #ffffffb0,  3px 3px 5px rgba(94, 104, 121, 0.692)",
+            // boxShadow:
+            //   " -3px -3px 7px #ffffffb0,  3px 3px 5px rgba(94, 104, 121, 0.692)",
           }}
           onClick={to}
         />
@@ -57,9 +58,9 @@ function NavBar(props) {
           sx={{
             my: 2,
             ml: 0.7,
-            color: "#444",
-            textShadow:
-              " -3px -3px 7px #ffffffb0,  3px 3px 5px rgba(94, 104, 121, 0.692)",
+            color: "#31344B",
+            // textShadow:
+            //   " -3px -3px 7px #ffffffb0,  3px 3px 5px rgba(94, 104, 121, 0.692)",
 
             letterSpacing: 1,
             fontWeight: "bolder",
