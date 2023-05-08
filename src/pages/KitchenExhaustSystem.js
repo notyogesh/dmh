@@ -1,6 +1,7 @@
 import React from "react";
 import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
+// import HeatPumpIcon from '@mui/icons-material/HeatPump';
 const KitchenExhaustSystem = () => {
   return (
     <Box

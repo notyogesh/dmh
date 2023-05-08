@@ -62,16 +62,12 @@ const ServiceCard = (props) => {
           elevation={3}
           sx={{
             backgroundColor: "#f3f0f1",
-            // mx: "auto",
-            // mb: 2,
-            // px: 2,
+
             display: "flex",
             // marginTop: "auto",
             mt: 5,
             ml: "auto",
-            // position: "absolute",
-            // bottom: 0,
-            // right: 16,
+
             color: "#44476a",
             textTransform: "capitalize",
             // textShadow: "1px 1px 1px #FFF",

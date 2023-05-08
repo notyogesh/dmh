@@ -31,7 +31,7 @@ const Root = () => {
           <Box
             sx={{
               // m: 2,
-              p: 1,
+              // p: 1,
               minHeight: "100vh",
             }}
           >

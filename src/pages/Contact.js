@@ -68,7 +68,7 @@ const Contact = () => {
           >
             We're here for you
           </Typography>
-          <Typography variant="h5" sx={{ textAlign: "center" }}>
+          <Typography variant="h5" sx={{ textAlign: "right" }}>
             Monday-Friday : <span>9am-6pm (SST)</span>
           </Typography>
           {/* <Button onClick={handleWhatsAppButtonClick}>Live chat</Button> */}
@@ -100,6 +100,7 @@ const Contact = () => {
             >
               DAVID
             </Typography>
+
             <Typography
               variant="h6"
               sx={{

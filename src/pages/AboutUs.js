@@ -1,9 +1,5 @@
 import React from "react";
-// import Paper from "@mui/material/Paper";
-// import Container from "@mui/material/Container";
-// import { styled } from "@mui/material/styles";
-// import Divider from "@mui/material/Divider";
-// import Card from "@mui/material/Card";
+
 import Typography from "@mui/material/Typography";
 import { Box, Button } from "@mui/material";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
@@ -16,23 +12,17 @@ import Divider from "@mui/material/Divider";
 import LeaderboardIcon from "@mui/icons-material/Leaderboard";
 import GradeIcon from "@mui/icons-material/Grade";
 import BeenhereIcon from "@mui/icons-material/Beenhere";
-// const Item = styled(Paper)(({ theme }) => ({
-//   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-//   ...theme.typography.body2,
-//   padding: theme.spacing(1),
-//   textAlign: "center",
-//   color: theme.palette.text.secondary,
-// }));
+
 const AboutUs = () => {
   const aboutCardContent = [
     {
-      head: "Audience",
-      body: "At DMH, we use human behavior, brand perception, and cultural trends to identify and capitalize on business opportunities",
+      head: "Target Audience",
+      body: "At DMH, we use human, brand perception, and cultural trends to identify and capitalize on our home and business consumers",
       icon: <VisibilityIcon fontSize="large" />,
     },
     {
       head: "Branding",
-      body: "Despite being cautioned not to judge a book by its cover, we all do it every day. We making your establishment looks better.",
+      body: "Despite being cautioned not to judge a book by its cover, we all do it every day. We make your establishment looks better.",
       icon: <WorkspacePremiumIcon fontSize="large" />,
     },
     {
@@ -43,7 +33,7 @@ const AboutUs = () => {
   ];
   const aboutCard2Content = [
     {
-      head: "Adequate",
+      head: "Virtue",
       body: " Maintenance isn't just about oil cans & cleaning chemicals - it's about trust , about knowledge, about understanding each other, about honesty, about reliability and doing what we say we are going to do.",
       icon: <GradeIcon fontSize="large" />,
     },
@@ -53,7 +43,7 @@ const AboutUs = () => {
       icon: <LeaderboardIcon fontSize="large" />,
     },
     {
-      head: "Effective",
+      head: "Efficacious",
       body: "At DMH we design , install , maintain and service for all our systems.  We endeavour to support the role of the building facilities manager by providing a reliable & Cost effective  service. ",
       icon: <BeenhereIcon fontSize="large" />,
     },
@@ -87,8 +77,11 @@ const AboutUs = () => {
             // width: "350px",
           }}
         >
-          DMH is a private limited company based in Singapore that is involved
+          DMH is a privately owned company based in Singapore that is involved
           in the various field of construction and engineering industry.
+          Including air conditioning, kitchen exhaust duct system construction
+          and maintenance, Electrical work, aluminum and glass work, and
+          scaffolding work."
         </Typography>
 
         <Button
@@ -184,10 +177,11 @@ const AboutUs = () => {
           boxShadow: "6px 6px 12px #b8b9be,-6px -6px 12px #fff",
           border: "0.2px solid #d1d9e6",
           p: { xs: 1, md: 5 },
-          m: 1,
+
           display: "flex",
           flexDirection: "column",
           mx: "auto",
+          mb: 5,
           borderRadius: "9px",
           width: { xs: "auto", md: "70%" },
         }}

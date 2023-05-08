@@ -27,7 +27,7 @@ function NavBar(props) {
         //   "inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692)",
         // mb: 2,
         // backdropFilter: "blur(4px)",
-        borderRadius: "10px",
+        // borderRadius: "10px",
         backgroundColor: "#f3f0f1",
         // backgroundColor: (theme) =>
         //   theme.palette.mode === "light" ? "#f3f0f1" : "#393A3E",

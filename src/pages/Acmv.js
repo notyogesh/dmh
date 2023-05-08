@@ -1,19 +1,102 @@
 import React from "react";
 import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
-
+import AcmvCard from "../utils/AcmvCard";
+// import VisibilityIcon from "@mui/icons-material/Visibility";
+import HeatPumpIcon from "@mui/icons-material/HeatPump";
+import HvacIcon from "@mui/icons-material/Hvac";
+import Snowfall from "react-snowfall";
+import aircon from "../images/aircon.png";
 const Acmv = () => {
+  const acmvCardContent = [
+    {
+      head: "AIR PURIFICATION & AIR-CON INSTALLATION",
+      body: "Professional air-conditioning installation in Singapore for home, office or vehicle use.",
+      icon: <HeatPumpIcon fontSize="large" />,
+      img: aircon,
+    },
+    {
+      head: "AIR-CON SERVICING, REPAIR & MAINTENANCE",
+      body: "Our quality AC maintenance keeps each of your air-con units in top condition for 100% peace of mind.",
+      icon: <HvacIcon fontSize="large" />,
+    },
+  ];
   return (
     <Box
       sx={{
-        backgroundColor: "#f3f0f1",
-        textAlign: "left",
-        px: { xs: 2, md: 20 },
-        py: 2,
-        minHeight: "100vh",
+        // backgroundColor: "#f3f0f1",
+        // textAlign: "left",
+        color: "#31344B",
+        // px: { xs: 2, md: 20 },
+        // py: 2,
+        // minHeight: "100vh",
+        //
       }}
     >
-      <Typography variant="h2" sx={{ ml: "auto", my: 3, textAlign: "center" }}>
+      <Box
+        sx={{
+          pt: "20vh",
+          pb: "35vh",
+          display: "flex",
+          flexDirection: "column",
+          // mb: 10,
+          minHeight: { xs: "90vh", md: "" },
+          backgroundImage: `linear-gradient(to bottom, #f3f0f1 0%, #76777C 100%)`,
+          // backgroundImage: `linear-gradient(to bottom,#f3f0f1 0%, #76777C 90%,#f3f0f1 100%)`,
+          fontFamily: "Nunito Sans",
+        }}
+      >
+        <Snowfall />
+        <Typography variant="h2" sx={{ textAlign: "center", fontWeight: 600 }}>
+          DMH
+        </Typography>
+        <Typography variant="h4" sx={{ textAlign: "center", fontWeight: 500 }}>
+          AIR-CON SERVICES - SINGAPORE
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            textAlign: "center",
+            // px: 10,
+            pt: 5,
+            pb: 3,
+            fontWeight: 600,
+            px: { xs: 2, md: 20 },
+            // width: "350px",
+            color: "#fff",
+          }}
+        >
+          Heating, Ventilating & Air conditioning Services
+        </Typography>
+      </Box>
+      {/* <Divider /> */}
+      <Box
+        sx={{
+          backgroundImage: `linear-gradient(to top, #f3f0f1 0%, #76777C 100%)`,
+        }}
+      >
+        <Box
+          sx={{
+            // backgroundImage: `linear-gradient(to top, #f3f0f1 0%, #76777C 100%)`,
+            display: "flex",
+            flexDirection: { xs: "column", md: "row" },
+            justifyContent: "space-between",
+            p: 5,
+            gap: 5,
+          }}
+        >
+          {acmvCardContent.map((item, i) => (
+            <AcmvCard
+              head={item.head}
+              icon={item.icon}
+              key={i}
+              body={item.body}
+              img={item.img}
+            />
+          ))}{" "}
+        </Box>
+      </Box>
+      <Typography variant="h2" sx={{ ml: "auto", textAlign: "center" }}>
         AIRCON Installation{" "}
       </Typography>
       {"      "}Welcome to our air conditioning installation website! We are
