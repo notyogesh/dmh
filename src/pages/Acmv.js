@@ -7,6 +7,15 @@ import AcmvCard from "../utils/AcmvCard";
 import Snowfall from "react-snowfall";
 import aircon from "../images/aircon.png";
 import maintenance from "../images/maintenance.png";
+import quality from "../images/quality.png";
+
+import pricing from "../images/pricing.png";
+import warranty from "../images/warranty.png";
+import customize from "../images/customize.png";
+import customerservice from "../images/customerservice.png";
+// import deer from "../images/snowdeeer.png";
+
+// import maintenance from "../images/maintenance.png";
 
 const Acmv = () => {
   const acmvCardContent = [
@@ -22,23 +31,24 @@ const Acmv = () => {
 
       img: maintenance,
     },
-    {
-      head: "Customized Solutions:",
-      body: "  We understand that every property is unique, and cooling requirements may vary. That's why we offer customized solutions tailored to your specific needs. Our team will assess your property, take into consideration factors such as room size, layout, insulation, and your budget, and recommend the best aircon installation solution that fits your requirements.",
 
-      img: aircon,
-    },
     {
       head: " Quality Products:",
       body: " We only work with reputable brands and suppliers to ensure that you get the best quality air conditioning systems for your installation. Our products are energy-efficient, environmentally friendly, and designed to provide reliable cooling for years to come. We can also provide guidance on selecting the right type and size of air conditioning system that suits your property and usage patterns.",
 
-      img: maintenance,
+      img: quality,
     },
     {
-      head: "Excellent Customer Service:",
+      head: "Customized Solutions:",
+      body: "  We understand that every property is unique, and cooling requirements may vary. That's why we offer customized solutions tailored to your specific needs. Our team will assess your property, take into consideration factors such as room size, layout, insulation, and your budget, and recommend the best aircon installation solution that fits your requirements.",
+
+      img: customize,
+    },
+    {
+      head: "Pricing",
       body: " We believe in providing transparent and competitive pricing for our aircon installation services. Our team will provide you with a detailed quote that includes all costs upfront, so you know exactly what to expect. We strive to offer affordable options without compromising on quality or service.",
 
-      img: maintenance,
+      img: pricing,
     },
     // {
     //   head: "  Timely Installation:",
@@ -47,16 +57,16 @@ const Acmv = () => {
     //   img: maintenance,
     // },
     {
-      head: " Quality Products:",
+      head: " Excellent Customer Service:",
       body: "   We are committed to providing exceptional customer service throughout the aircon installation process. Our friendly and knowledgeable team is available to answer all your questions, provide expert advice, and address any concerns you may have. We believe in building long-term relationships with our customers based on trust, reliability, and satisfaction.",
 
-      img: maintenance,
+      img: customerservice,
     },
     {
-      head: " Customer Service",
+      head: " Warranty",
       body: "  We stand by the quality of our work and the products we install. That's why we offer warranties on our installation services and the air conditioning systems we install. In case of any issues or concerns, our team is readily available to provide prompt and reliable support to ensure your complete satisfaction. If you're looking for a reliable aircon installation service, you've come to the right place. Contact us today to schedule an appointment or request a quote, and let us help you achieve a comfortable and cool indoor environment for your home or business. ",
 
-      img: maintenance,
+      img: warranty,
     },
   ];
   return (
@@ -82,6 +92,11 @@ const Acmv = () => {
           // backgroundImage: `linear-gradient(to bottom, #f3f0f1 0%, #76777C 100%)`,
           backgroundImage: `linear-gradient(to bottom,#f3f0f1 0%, #76777C 90%,#f3f0f1 100%)`,
           // fontFamily: "Nunito Sans",
+          // backgroundImage: `url(${deer})`,
+          // backgroundRepeat: "no-repeat",
+          // height: "100%",
+          // backgroundSize: "cover",
+          // background: `url(${deer}) no-repeat center center fixed`,
         }}
       >
         <Snowfall />
@@ -132,7 +147,10 @@ const Acmv = () => {
           }
         }
       > */}
-      <Typography variant="h3" sx={{ pb: 2, pt: 10, color: "#31344B" }}>
+      <Typography
+        variant="h3"
+        sx={{ pb: 2, pt: 10, color: "#31344B", fontWeight: 500 }}
+      >
         AIR - CON
       </Typography>
       <Typography
