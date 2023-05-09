@@ -60,25 +60,25 @@ export const menuItems = [
 ];
 export const sub = [
   // { title: "Services", link: "/service/projects" },
-  { title: "Acmv", link: "/service/acmv" },
+  { title: "Acmv", link: "/acmv" },
   {
     title: "Kitchen Exhaust System",
-    link: "/service/kitchen-exhaust-system",
+    link: "/kitchen-exhaust-system",
   },
   {
     title: "Electrical Services",
-    link: "/service/electrical-services",
+    link: "/electrical-services",
   },
   {
     title: "Scaffolding work",
-    link: "/service/scaffolding-work",
+    link: "/scaffolding-work",
   },
   {
     title: "Glass & Aluminum Work",
-    link: "/service/glass-aluminum-work",
+    link: "/glass-aluminum-work",
   },
   {
     title: "Construction",
-    link: "/service/construction",
+    link: "/construction",
   },
 ];

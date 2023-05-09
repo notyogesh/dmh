@@ -36,42 +36,42 @@ const router = createBrowserRouter([
         path: "/aboutus",
         element: <AboutUs />,
       },
+      // {
+      //   path: "/services",
+      //   // element: <Hero />,
+      //   // element: <Projects />,
+      //   // index: true,
+      //   children: [
       {
-        path: "/service",
-        // element: <Hero />,
-        // element: <Projects />,
-        // index: true,
-        children: [
-          {
-            path: "projects",
-            element: <Projects />,
-          },
-          {
-            path: "acmv",
-            element: <Acmv />,
-          },
-          {
-            path: "kitchen-exhaust-system",
-            element: <KitchenExhaustSystem />,
-          },
-          {
-            path: "electrical-services",
-            element: <ElectricalServices />,
-          },
-          {
-            path: "scaffolding-work",
-            element: <ScaffoldingWork />,
-          },
-          {
-            path: "glass-aluminum-work",
-            element: <GlassAluminumWork />,
-          },
-          {
-            path: "construction",
-            element: <Construction />,
-          },
-        ],
+        path: "projects",
+        element: <Projects />,
       },
+      {
+        path: "acmv",
+        element: <Acmv />,
+      },
+      {
+        path: "kitchen-exhaust-system",
+        element: <KitchenExhaustSystem />,
+      },
+      {
+        path: "electrical-services",
+        element: <ElectricalServices />,
+      },
+      {
+        path: "scaffolding-work",
+        element: <ScaffoldingWork />,
+      },
+      {
+        path: "glass-aluminum-work",
+        element: <GlassAluminumWork />,
+      },
+      {
+        path: "construction",
+        element: <Construction />,
+      },
+      //   ],
+      // },
       // {
       //   path: "/service",
       //   element: <Projects />,

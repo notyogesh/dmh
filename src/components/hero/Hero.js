@@ -96,10 +96,12 @@ const Hero = () => {
                 // boxShadow: "14px 14px 20px #cbced1, -14px -14px 20px white",
                 textTransform: "capitalize",
                 borderRadius: "20px",
+                boxSizing: "border-box",
                 "&:hover": {
                   backgroundColor: "#fff",
                   color: "#36C33A",
-                  border: "2px solid #36C33A",
+                  // border: "2px solid #36C33A",
+                  boxShadow: "0 0 0 2px #36C33A",
                 },
               }}
             >

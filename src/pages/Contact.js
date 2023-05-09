@@ -28,15 +28,6 @@ const contacts = [
   },
 ];
 const Contact = () => {
-  // const handleWhatsAppButtonClick = () => {
-  //   const phoneNumber = "9787820695"; // Replace with the recipient's phone number
-  //   const message = "Hello!"; // Replace with your pre-defined message
-  //   const url = `whatsapp://send?phone=${phoneNumber}&text=${encodeURIComponent(
-  //     message
-  //   )}`;
-  //   window.open(url);
-  // };
-
   return (
     <Box sx={{ display: "flex", flexDirection: "column" }}>
       <Box
@@ -54,7 +45,7 @@ const Contact = () => {
             textAlign: "left",
             pl: { xs: 2, md: 9 },
             mt: { xs: 5, md: 12 },
-
+            color: "#31344B",
             // display: { xs: "none", md: "flex" }
           }}
         >
@@ -83,7 +74,7 @@ const Contact = () => {
               mb: { xs: 2, md: 0 },
               // px: 3,
               pt: 4,
-              pb: 2,
+              // pb: 2,
 
               boxShadow: "inset 2px 2px 5px #b8b9be,inset -3px -3px 7px #fff",
             }}
@@ -128,7 +119,13 @@ const Contact = () => {
 
             <Divider />
 
-            <Stack sx={{ mt: 4 }}>
+            <Stack
+              sx={{
+                pt: 5,
+                pb: 2,
+                boxShadow: "inset 2px 2px 5px #b8b9be,inset -3px -3px 7px #fff",
+              }}
+            >
               {contacts.map((item, i) => (
                 <ContactButton
                   name={item.name}

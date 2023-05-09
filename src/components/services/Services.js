@@ -1,19 +1,20 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 import ServiceCard from "../../utils/ServiceCard";
+import { Box } from "@mui/material";
 
 const Services = () => {
   const services = [
     {
       head: "ACMV",
       body: "(Air Conditioning and Mechanical Ventilation System) Heating, ventilation, and air conditioning  services,We offer a comprehensive range of HVAC services, including installation, maintenance, and repairs. ",
-      img: "https://images.unsplash.com/photo-1635604866833-70844856de75?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=822&q=80",
+      img: "https://buildingandinteriors.com/wp-content/uploads/2020/11/feature2.jpg",
       to: "/service/acmv",
     },
     {
       head: "Plumbing & Electrical Services",
       body: " we offer reliable and efficient plumbing and electrical services to our clients. From minor repairs to major installations, we do it all",
-      img: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZWxlY3RyaWNhbCUyMCUyMGluZHVzdHJ5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+      img: "https://5.imimg.com/data5/SELLER/Default/2021/9/UI/SV/IP/50098890/electrical-plumbing-500x500.jpg",
       to: "/service/electrical-services",
     },
     {
@@ -31,7 +32,7 @@ const Services = () => {
     {
       head: "Scaffolding Work",
       body: "We provide scaffolding work services for a range of industries, including construction, maintenance, and renovation. Providing safe and reliable access to hard-to-reach areas. We use high-quality materials and equipment, and strictly adhere to safety regulations to ensure the protection of our clients and workers. ",
-      img: "https://images.unsplash.com/photo-1504964670878-71b73cec0ce1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2NhZmZvbGRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+      img: "https://images.unsplash.com/photo-1555945071-f36c590968bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNjYWZmb2xkaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       to: "/service/scaffolding-work",
     },
     {
@@ -42,7 +43,7 @@ const Services = () => {
     },
   ];
   return (
-    <div>
+    <Box sx={{ m: { xs: 0, md: 1 } }}>
       <Typography variant="h3" sx={{ mb: 5, fontWeight: "bold" }}>
         Services
       </Typography>
@@ -56,7 +57,7 @@ const Services = () => {
           to={item.to}
         />
       ))}
-    </div>
+    </Box>
   );
 };
 

@@ -2,15 +2,19 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 
 const AcmvCard = (props) => {
+  const width = props.i < 2 ? 500 : props.i < 5 ? 300 : 500;
+  console.log(width);
   return (
     <Box
       sx={{
-        // boxShadow: " 6px 6px 12px #b8b9be,-6px -6px 12px #fff",
+        boxShadow: " 6px 6px 12px #b8b9be,-6px -6px 12px #fff",
+        // boxShadow: "inset 2px 2px 5px #b8b9be,inset -3px -3px 7px #fff",
         border: "1px solid #d1d9e6",
-        mt: 12,
-        flex: 1,
+        mt: 20,
+        // flex: 1,
         borderRadius: "9px",
         backgroundColor: "#f3f0f1",
+        width: { xs: "auto", md: width },
       }}
     >
       <Box
@@ -23,14 +27,14 @@ const AcmvCard = (props) => {
           border: "1px solid #d1d9e6",
           mt: "-80px",
           ml: 5,
-          backgroundColor: "#e6e7ee",
+          backgroundColor: "#f3f0f1",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
         }}
       >
         <img
-          src={props.icon}
+          src={props.img}
           alt="g"
           width="80px"
           height="80px"
@@ -38,11 +42,11 @@ const AcmvCard = (props) => {
         />
         {/* {props.icon} */}
       </Box>
-      <Box sx={{ textAlign: "left", p: 5 }}>
-        <Typography variant="h6" sx={{ pb: 2 }}>
+      <Box sx={{ textAlign: "left", px: 4, pt: 2, pb: 3 }}>
+        <Typography variant="h6" sx={{ pb: 2, color: "#31344B" }}>
           {props.head}
         </Typography>
-        <Typography variant="body2" sx={{ fontFamily: "Nunito Sans" }}>
+        <Typography sx={{ fontFamily: "Nunito Sans", fontWeight: 400 }}>
           {props.body}
         </Typography>
       </Box>

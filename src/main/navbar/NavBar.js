@@ -59,6 +59,7 @@ function NavBar(props) {
             my: 2,
             ml: 0.7,
             color: "#31344B",
+
             // textShadow:
             //   " -3px -3px 7px #ffffffb0,  3px 3px 5px rgba(94, 104, 121, 0.692)",
 
