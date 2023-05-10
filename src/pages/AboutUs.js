@@ -57,13 +57,14 @@ const AboutUs = () => {
         // px: { xs: 2, md: 20 },
         // py: 2,
         // minHeight: "100vh",
+        pb: 5,
       }}
     >
       <Box
         sx={{ pt: "20vh", display: "flex", flexDirection: "column", mb: 10 }}
       >
         <Typography variant="h3" sx={{ textAlign: "center", fontWeight: 600 }}>
-          We are DMH
+          Hola, we are DMH
         </Typography>
         <Typography
           variant="body1"
@@ -192,26 +193,35 @@ const AboutUs = () => {
         >
           DMH Mission Statement{" "}
         </Typography>
-        <Typography
-          variant="body1"
-          sx={{
-            textAlign: "center",
-            fontWeight: 600,
-            // px: { xs: 2, md: 20 },
-            // pb: { xs: 2, md: 15 },
-          }}
-        >
-          To be our clients preferred any aircon system maintenance parter that
-          through our knowledge, passion and exemplary service we improve the
-          comport of our clients and facilitate their operations by delivering
-          an enduring & reliable solution.
-          <br /> <br />
-          To provide a progressive, rewarding and cohesive atmosphere for
-          employees that fosters respect of the trust customers, colleagues and
-          suppliers place in us. <br />
-          Conduct all out business with respect for the community and
-          environment.{" "}
-        </Typography>
+        <Box sx={{ display: { xs: "block", md: "flex" }, gap: 5 }}>
+          <img
+            src="https://img.icons8.com/ios-filled/200/null/mission-of-a-company.png"
+            alt="mission"
+            // wisth
+          />
+          <Typography
+            variant="body1"
+            sx={{
+              textAlign: "center",
+              fontWeight: 500,
+              pt: 3,
+              // color:" "#6D7587""
+              // px: { xs: 2, md: 20 },
+              // pb: { xs: 2, md: 15 },
+            }}
+          >
+            To be our clients preferred any aircon system maintenance parter
+            that through our knowledge, passion and exemplary service we improve
+            the comport of our clients and facilitate their operations by
+            delivering an enduring & reliable solution.
+            <br /> <br />
+            To provide a progressive, rewarding and cohesive atmosphere for
+            employees that fosters respect of the trust customers, colleagues
+            and suppliers place in us. <br />
+            Conduct all out business with respect for the community and
+            environment.{" "}
+          </Typography>
+        </Box>
       </Box>
     </Box>
   );

@@ -9,37 +9,37 @@ const Services = () => {
       head: "ACMV",
       body: "(Air Conditioning and Mechanical Ventilation System) Heating, ventilation, and air conditioning  services,We offer a comprehensive range of HVAC services, including installation, maintenance, and repairs. ",
       img: "https://buildingandinteriors.com/wp-content/uploads/2020/11/feature2.jpg",
-      to: "/service/acmv",
+      to: "/acmv",
     },
     {
       head: "Plumbing & Electrical Services",
       body: " we offer reliable and efficient plumbing and electrical services to our clients. From minor repairs to major installations, we do it all",
       img: "https://5.imimg.com/data5/SELLER/Default/2021/9/UI/SV/IP/50098890/electrical-plumbing-500x500.jpg",
-      to: "/service/electrical-services",
+      to: "/electrical-services",
     },
     {
       head: "Kitchen Exhaust System",
       body: "We provide kitchen exhaust ducting services, including installation, cleaning, and maintenance.And make sure  your kitchen exhaust system operates efficiently and meets all safety and health codes.",
       img: "https://www.baremetalstandard.com/wp-content/uploads/2017/07/commercial-kitchen.jpg",
-      to: "/service/kitchen-exhaust-system",
+      to: "/kitchen-exhaust-system",
     },
     {
       head: "Glass & Aluminum Work",
       body: "We offer Glass and Aluminum work services for commercial and residential properties. Including installation, repair, and maintenance of glass windows, doors, and storefronts, as well as aluminum fabrication and installation. Whether you're  upgrading  or improve its energy efficiency we can deliver the desired results",
       img: "https://4.imimg.com/data4/QN/AB/MY-9630668/aluminium-partition-work-500x500.jpg",
-      to: "/service/glass-aluminum-work",
+      to: "/glass-aluminum-work",
     },
     {
       head: "Scaffolding Work",
       body: "We provide scaffolding work services for a range of industries, including construction, maintenance, and renovation. Providing safe and reliable access to hard-to-reach areas. We use high-quality materials and equipment, and strictly adhere to safety regulations to ensure the protection of our clients and workers. ",
       img: "https://images.unsplash.com/photo-1555945071-f36c590968bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNjYWZmb2xkaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      to: "/service/scaffolding-work",
+      to: "/scaffolding-work",
     },
     {
       head: "Construction Design & Build",
       body: "We offer comprehensive construction and building services for commercial and residential properties. From concept to completion,  including design, planning, and construction management. We  ensure that each project is completed to the highest standards of quality and safety. Whether you're looking to build a new property from scratch or renovate an existing one.",
       img: "https://www.doegedevelopment.com/wp-content/uploads/commercial-design-build.jpg",
-      to: "/service/construction",
+      to: "/construction",
     },
   ];
   return (

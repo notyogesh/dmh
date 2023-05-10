@@ -64,7 +64,7 @@ const Contact = () => {
           </Typography>
           {/* <Button onClick={handleWhatsAppButtonClick}>Live chat</Button> */}
         </Box>
-        <Box sx={{ flex: 1, mt: 5 }}>
+        <Box sx={{ flex: 1, mt: 5 }} id="contact">
           {/* <Card sx={{ minWidth: 275 }}> */}
           <Card
             sx={{

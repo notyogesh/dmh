@@ -2,7 +2,6 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 
 import { InView } from "react-intersection-observer";
-import Collapse from "@mui/material/Collapse";
 import HeroCards from "./HeroCards";
 // import Slide from "@mui/material/Slide";
 // import Grow from "@mui/material/Grow";
@@ -24,16 +23,16 @@ const Hero2 = () => {
           <Typography variant="h3" sx={{ pb: 5, fontWeight: "bold" }}>
             Why Choose Us
           </Typography>
-          <Collapse
+          {/* <Collapse
             orientation="horizontal"
             in={inView}
             // collapsedSize={"50%"}
             // mountOnEnter
             // unmountOnExit
             timeout={2000}
-          >
-            <HeroCards />
-          </Collapse>
+          > */}
+          <HeroCards inView={inView} />
+          {/* </Collapse> */}
         </Box>
       )}
     </InView>

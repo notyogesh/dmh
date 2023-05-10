@@ -4,8 +4,11 @@ import ConstructionIcon from "@mui/icons-material/Construction";
 import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices";
 import HeroCard from "../../utils/HeroCard";
 import { Box } from "@mui/material";
+// import { InView } from "react-intersection-observer";
+// import Collapse from "@mui/material/Collapse";
+import Grow from "@mui/material/Grow";
 
-const HeroCards = () => {
+const HeroCards = (props) => {
   const cardcontent = [
     {
       head: "Quality Servicing",
@@ -24,19 +27,39 @@ const HeroCards = () => {
     },
   ];
   return (
-    <Box
-      sx={{
-        display: { xs: "block", md: "flex" },
-        justifyContent: "space-evenly",
-
-        px: 3,
-        gap: 5,
-      }}
+    // <Collapse
+    //   orientation="horizontal"
+    //   in={props.inView}
+    //   // collapsedSize={"50%"}
+    //   mountOnEnter
+    //   unmountOnExit
+    //   timeout={2000}
+    // >
+    <Grow
+      in={props.inView}
+      style={{ transformOrigin: "0 0 0" }}
+      {...(props.inView ? { timeout: 2000 } : {})}
     >
-      {cardcontent.map((item, i) => (
-        <HeroCard head={item.head} icon={item.icon} key={i} body={item.body} />
-      ))}
-    </Box>
+      <Box
+        sx={{
+          display: { xs: "block", md: "flex" },
+          justifyContent: "space-evenly",
+
+          px: 3,
+          gap: 5,
+        }}
+      >
+        {cardcontent.map((item, i) => (
+          <HeroCard
+            head={item.head}
+            icon={item.icon}
+            key={i}
+            body={item.body}
+            inView={props.inView}
+          />
+        ))}
+      </Box>
+    </Grow>
   );
 };
 

@@ -13,9 +13,8 @@ import pricing from "../images/pricing.png";
 import warranty from "../images/warranty.png";
 import customize from "../images/customize.png";
 import customerservice from "../images/customerservice.png";
-// import deer from "../images/snowdeeer.png";
-
-// import maintenance from "../images/maintenance.png";
+import deer from "../images/onedeer1.png";
+import snow from "../images/snow2.png";
 
 const Acmv = () => {
   const acmvCardContent = [
@@ -90,7 +89,8 @@ const Acmv = () => {
           // mb: 10,
           minHeight: { xs: "90vh", md: "" },
           // backgroundImage: `linear-gradient(to bottom, #f3f0f1 0%, #76777C 100%)`,
-          backgroundImage: `linear-gradient(to bottom,#f3f0f1 0%, #76777C 90%,#f3f0f1 100%)`,
+          backgroundImage: `linear-gradient(to bottom,#f3f0f1 0%, #76777C 95%,#f3f0f1 100%)`,
+          // backgroundImage: `radial-gradient(#f3f0f1, #76777C)`,
           // fontFamily: "Nunito Sans",
           // backgroundImage: `url(${deer})`,
           // backgroundRepeat: "no-repeat",
@@ -138,6 +138,29 @@ const Acmv = () => {
         >
           Heating, Ventilating & Air conditioning Services
         </Typography>
+        <img
+          src={deer}
+          alt="deer"
+          style={{
+            width: "170px",
+            opacity: ".2",
+            position: "absolute",
+            right: "10vw",
+            bottom: "10vh",
+          }}
+        />
+        <img
+          src={snow}
+          alt="snow"
+          style={{
+            width: "100%",
+            height: "70vh",
+            opacity: ".2",
+            position: "absolute",
+            right: "0",
+            bottom: "0",
+          }}
+        />
       </Box>
       {/* <Divider /> */}
       {/* <Box
@@ -147,6 +170,7 @@ const Acmv = () => {
           }
         }
       > */}
+
       <Typography
         variant="h3"
         sx={{ pb: 2, pt: 10, color: "#31344B", fontWeight: 500 }}
@@ -170,6 +194,7 @@ const Acmv = () => {
         your cooling needs. Here's what you need to know about our aircon
         installation services:{" "}
       </Typography>
+
       <Box
         sx={{
           // backgroundImage: `linear-gradient(to top, #f3f0f1 0%, #76777C 100%)`,
@@ -191,7 +216,6 @@ const Acmv = () => {
           />
         ))}{" "}
       </Box>
-      {/* </Box> */}
     </Box>
   );
 };
