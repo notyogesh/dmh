@@ -42,7 +42,7 @@ const Contact = () => {
         <Box
           sx={{
             flex: 1,
-            textAlign: "left",
+            textAlign: { xs: "center", md: "left" },
             pl: { xs: 2, md: 9 },
             mt: { xs: 5, md: 12 },
             color: "#31344B",
@@ -54,12 +54,16 @@ const Contact = () => {
           </Typography>
           <Typography
             variant="h2"
-            sx={{ pb: 3, fontWeight: "bolder" }}
+            sx={{
+              pb: 3,
+              fontWeight: "bolder",
+              fontSize: { xs: 30, sm: 40, md: 50 },
+            }}
             // className="contact"
           >
             We're here for you
           </Typography>
-          <Typography variant="h5" sx={{ textAlign: "right" }}>
+          <Typography variant="h5" sx={{ pl: { xs: 3, md: 10 } }}>
             Monday-Friday : <span>9am-6pm (SST)</span>
           </Typography>
           {/* <Button onClick={handleWhatsAppButtonClick}>Live chat</Button> */}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, Divider } from "@mui/material";
 import Typography from "@mui/material/Typography";
 // import HeatPumpIcon from '@mui/icons-material/HeatPump';
 import clean from "../images/clean.png";
@@ -9,6 +9,28 @@ import install from "../images/install.png";
 import KitchenCard from "../utils/KitchenCard";
 
 const KitchenExhaustSystem = () => {
+  const whyUs = [
+    {
+      head: "Expertise:",
+      body: "Our team of technicians has extensive experience in the field and stays up-to-date with the latest industry trends and regulations. We have the knowledge and skills to design and install ducting systems that meet the highest standards of quality and safety.",
+    },
+    {
+      head: "Customized Solutions:",
+      body: "We understand that every kitchen is unique, and we tailor our services to your specific requirements. Our team will work closely with you to understand your needs and design a ducting system that fits seamlessly into your kitchen layout and ventilation needs.",
+    },
+    {
+      head: "Quality Materials:",
+      body: "We use only high-quality materials that are durable, fire-resistant, and compliant with local building codes. Our ductwork is fabricated to precise specifications and installed with meticulous attention to detail, ensuring longevity and performance.",
+    },
+    {
+      head: "Professionalism:",
+      body: "We take pride in our professionalism and commitment to excellent customer service. Our team is reliable, punctual, and respectful of your property. We strive to exceed your expectations with our prompt, efficient, and courteous service.",
+    },
+    {
+      head: "Compliance",
+      body: "We understand the importance of complying with local building codes and regulations. Our team is knowledgeable about the latest codes and standards related to kitchen exhaust ducting installation, and we ensure that our work meets all relevant requirements.",
+    },
+  ];
   const services = [
     {
       head: " Kitchen Exhaust Duct Design:",
@@ -43,10 +65,11 @@ const KitchenExhaustSystem = () => {
         // px: { xs: 2, md: 20 },
         // py: 2,
         // minHeight: "100vh",
-        color: "#31344B",
+        // color: "#E6E7EE",
         // backgroundColor: "#E6E7EE",
         backgroundColor: "#FFF5FF",
         fontFamily: "Nunito Sans",
+        pb: 5,
       }}
     >
       <Box
@@ -57,7 +80,9 @@ const KitchenExhaustSystem = () => {
           // mb: 10,
           // width: "100%",
           position: "relative",
-          backgroundColor: "#F3F0F1",
+          backgroundColor: "#f3f0f1",
+          color: "#31344B",
+
           // background: `url(${curvyback}) no-repeat  `,
           // backgroundOrigin: " border-box",
           // backgroundSize: "cover",
@@ -96,7 +121,7 @@ const KitchenExhaustSystem = () => {
         >
           <path
             fill="#FFF5FF"
-            fill-opacity="1"
+            // fill-opacity="1"
             d="M0,64L80,90.7C160,117,320,171,480,208C640,245,800,267,960,245.3C1120,224,1280,160,1360,128L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
           ></path>
         </svg>
@@ -106,10 +131,10 @@ const KitchenExhaustSystem = () => {
         body="Proper kitchen exhaust ducting installation is critical for the efficient and safe operation of your kitchen ventilation system. A well-designed and properly installed ducting system helps to remove grease, smoke, heat, and odors from your kitchen, creating a healthy and comfortable environment for your family, employees, or customers. It also helps to comply with local building codes and regulations, ensuring the safety and well-being of your property and those inside"
         img="https://ouch-cdn2.icons8.com/ei-wRarjKvOFs-LObA0jx2y0OKJ_jryu1vY-NUSF17A/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMzI5/L2RkMWFlNzFhLWMy/MGQtNGZkOC1iOWI1/LWNkNDc4NTMzMDkz/MS5zdmc.png"
       ></KitchenCard>
-      <Box sx={{ backgroundColor: "#31344B", color: "#FFF5FF", pb: 5, pt: 3 }}>
+      <Box sx={{ backgroundColor: "#31344B", color: "#FFF5FF", pb: 3, pt: 1 }}>
         <Typography
-          variant="h2"
-          sx={{ ml: "auto", my: 3, textAlign: "center" }}
+          variant="h4"
+          sx={{ ml: "auto", my: 3, textAlign: "center", fontWeight: 600 }}
         >
           Our Services
         </Typography>
@@ -129,108 +154,65 @@ const KitchenExhaustSystem = () => {
           i={i}
         />
       ))}
-      <Typography variant="h2" sx={{ ml: "auto", my: 3, textAlign: "center" }}>
-        Our Services
-      </Typography>
-      <Typography variant="body1">
-        As a leading provider of kitchen exhaust ducting installation services,
-        we offer a wide range of solutions tailored to your specific needs.
-        <br />
-        Our services include:
-      </Typography>
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Why is Kitchen Exhaust Ducting Installation Important?
-      </Typography>
-      <br />
-      <Typography variant="h4" sx={{ my: 2, textAlign: "center" }}></Typography>
-      As a leading provider of kitchen exhaust ducting installation services, we
-      offer a wide range of solutions tailored to your specific needs. Our
-      services include:
-      <br /> <br />
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Kitchen Exhaust Duct Design:
-      </Typography>
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Duct Fabrication and Installation:
-      </Typography>
-      We use high-quality materials and advanced fabrication techniques to
-      create custom ductwork that fits seamlessly into your kitchen. Our skilled
-      technicians will install the ducting system with precision, ensuring
-      proper alignment, sealing, and insulation for optimal performance.
-      <br /> <br />
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Exhaust Fan Installation:{" "}
-      </Typography>
-      We can recommend, supply, and install high-quality exhaust fans that are
-      suitable for your kitchen's needs. Properly sized and installed exhaust
-      fans are crucial for effective ventilation, and our team will ensure that
-      your fans are correctly positioned and connected to the ducting system for
-      maximum efficiency. <br /> <br />
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Duct Cleaning and Maintenance:
-      </Typography>
-      Regular maintenance and cleaning of your kitchen exhaust ducting system
-      are essential to keep it functioning at its best. Our team can provide
-      professional duct cleaning and maintenance services to prevent grease
-      buildup, remove debris, and keep your system running smoothly and safely.{" "}
-      <br /> <br />
-      <Typography variant="h4" sx={{ my: 2, textAlign: "center" }}>
-        Why Choose Us?
-      </Typography>
-      When it comes to kitchen exhaust ducting installation, you can trust us
-      for several reasons: <br /> <br />
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Expertise:{" "}
-      </Typography>
-      Our team of technicians has extensive experience in the field and stays
-      up-to-date with the latest industry trends and regulations. We have the
-      knowledge and skills to design and install ducting systems that meet the
-      highest standards of quality and safety.
-      <br /> <br />
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Customized Solutions:
-      </Typography>
-      We understand that every kitchen is unique, and we tailor our services to
-      your specific requirements. Our team will work closely with you to
-      understand your needs and design a ducting system that fits seamlessly
-      into your kitchen layout and ventilation needs. <br />
-      <br />
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Quality Materials:
-      </Typography>
-      We use only high-quality materials that are durable, fire-resistant, and
-      compliant with local building codes. Our ductwork is fabricated to precise
-      specifications and installed with meticulous attention to detail, ensuring
-      longevity and performance. <br />
-      <br />
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Professionalism:
-      </Typography>
-      We take pride in our professionalism and commitment to excellent customer
-      service. Our team is reliable, punctual, and respectful of your property.
-      We strive to exceed your expectations with our prompt, efficient, and
-      courteous service.
-      <br />
-      <br />
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Compliance:
-      </Typography>
-      We understand the importance of complying with local building codes and
-      regulations. Our team is knowledgeable about the latest codes and
-      standards related to kitchen exhaust ducting installation, and we ensure
-      that our work meets all relevant requirements.
-      <br />
-      <br />
-      <Typography variant="h4" sx={{ my: 2, textAlign: "center" }}>
-        Contact Us
-      </Typography>
-      Ready to get started with your kitchen exhaust ducting installation
-      project? Contact us today to schedule a consultation with our team of
-      experts. We will assess your needs, provide a detailed proposal, and
-      deliver exceptional results that exceed your expectations. Trust us for
-      all your kitchen ventilation needs!
-      <br />
-      <br />
+      <Box
+        sx={{
+          backgroundColor: "#31344B",
+          color: "#FFF5FF",
+          pb: 3,
+          pt: 3,
+        }}
+      >
+        <Typography
+          variant="h4"
+          sx={{
+            // my: 2,
+            textAlign: "center",
+            fontWeight: 600,
+            backgroundColor: "#31344B",
+            color: "#FFF5FF",
+            pb: 2,
+            // pt: 3,
+          }}
+        >
+          Why Choose Us?
+        </Typography>
+        When it comes to kitchen exhaust ducting installation, you can trust us
+        for several reasons:{" "}
+      </Box>
+      <Box
+        sx={{
+          boxShadow: "6px 6px 12px #b8b9be,-6px -6px 12px #fff",
+          border: "1px solid #d1d9e6",
+          pt: 5,
+          pb: 2,
+          mt: 8,
+          backgroundColor: "#F3F0F1",
+          mx: { xs: 2, md: 20 },
+          borderRadius: "9px",
+        }}
+      >
+        {whyUs.map((item, i) => (
+          <Box
+            key={i}
+            sx={{
+              textAlign: "left",
+              color: "#31344b",
+            }}
+          >
+            {" "}
+            <Typography
+              variant="h5"
+              sx={{ pb: 2, px: 5, pt: 2, fontWeight: 500, textAlign: "center" }}
+            >
+              {item.head}
+            </Typography>
+            <Typography variant="body1" sx={{ px: 5, pb: 4 }}>
+              {item.body}{" "}
+            </Typography>
+            <Divider className={i === whyUs.length - 1 ? "divider" : ""} />
+          </Box>
+        ))}
+      </Box>
     </Box>
   );
 };

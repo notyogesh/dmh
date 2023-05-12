@@ -58,6 +58,7 @@ const AboutUs = () => {
         // py: 2,
         // minHeight: "100vh",
         pb: 5,
+        m: 1,
       }}
     >
       <Box

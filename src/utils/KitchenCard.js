@@ -13,13 +13,13 @@ const KitchenCard = (props) => {
     >
       <Box
         sx={{
-          p: 4,
-          borderRadius: "50%",
+          // p: 4,
+          // borderRadius: "50%",
           //   boxShadow: "6px 6px 12px #b8b9be,-6px -6px 12px #fff",
           //   border: "1px solid #d1d9e6",
           flex: 1,
           width: "100%",
-          backgroundColor: "#F3F0F1",
+          backgroundColor: "#FFF5FF",
           // aspectRatio: "1 / 1",
           display: "flex",
           alignItems: "center",
@@ -34,7 +34,7 @@ const KitchenCard = (props) => {
             // flex: 1,
             // borderRadius: "50%",
             width: "70%",
-            backgroundColor: "#F3F0F1",
+            backgroundColor: "#FFF5FF",
           }}
         />
       </Box>

@@ -87,7 +87,7 @@ const Acmv = () => {
           display: "flex",
           flexDirection: "column",
           // mb: 10,
-          minHeight: { xs: "90vh", md: "" },
+          // minHeight: { xs: "90vh", md: "" },
           // backgroundImage: `linear-gradient(to bottom, #f3f0f1 0%, #76777C 100%)`,
           backgroundImage: `linear-gradient(to bottom,#f3f0f1 0%, #76777C 95%,#f3f0f1 100%)`,
           // backgroundImage: `radial-gradient(#f3f0f1, #76777C)`,
@@ -152,6 +152,7 @@ const Acmv = () => {
         <img
           src={snow}
           alt="snow"
+          // willReadFrequently
           style={{
             width: "100%",
             height: "80vh",

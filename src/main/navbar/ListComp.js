@@ -76,6 +76,11 @@ const ListComp = (props) => {
     setAnchorEl(null);
     // props.onClick();
   };
+  const navHandleClick = (e) => {
+    e.preventDefault();
+
+    // handleMenuClick();
+  };
   // function handlePropClick() {
   //   props.onClick();
   // }
@@ -144,74 +149,72 @@ const ListComp = (props) => {
           </ListItemIcon>
         </ListItemButton>
       </NavLink>
-      {/* <NavLink
-       onClick={this.handleClick} 
-            e.preventdefaullt
-            to="/pages"
-        
-        className="active"
+      <NavLink
+        onClick={navHandleClick}
+        to="/dd"
+        className={({ isActive }) => (isActive ? "active" : "inactive")}
         // exact="true"
-      > */}
-      <ListItemButton
-        onClick={handleMenuClick}
-        className={activeClass}
-        // onMouseOver={handleMenuClick}
-        // onMouseEnter={handleMenuClick}
-        // onMouseLeave={handleMenuClose}
-        sx={{
-          borderRadius: "35px",
-          boxShadow: {
-            xs: "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
-            md: "none",
-          },
-          "&:hover": {
-            boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
-          },
-        }}
       >
-        <ListItemIcon>
-          <EngineeringIcon />
-          <ListItemText
-            primary="Service"
-            primaryTypographyProps={{
-              fontWeight: "inherit",
-            }}
-          />
-          <ArrowDropDownIcon />
-        </ListItemIcon>
-      </ListItemButton>
-      <StyledMenu
-        id="simple-menu"
-        keepMounted
-        anchorEl={anchorEl}
-        // anchorOrigin={{
-        //   vertical: "bottom",
-        //   horizontal: "left",
-        // }}
-        open={Boolean(anchorEl)}
-        onClose={handleMenuClose}
-        // disableRestoreFocus
-        onClick={props.onClick}
-      >
-        {sub.map((item, i) => (
-          <MenuItem
-            onClick={() => {
-              handleMenuClose();
-              // props.onClick;
-            }}
-            // onClick={() => {
-            //   handleMenuClose();
-            //   handlePropClick();
-            // }}
-            component={Link}
-            to={item.link}
-            key={i}
-          >
-            {item.title}
-          </MenuItem>
-        ))}
-      </StyledMenu>
-      {/* </NavLink> */}
+        <ListItemButton
+          onClick={handleMenuClick}
+          className={activeClass}
+          // onMouseOver={handleMenuClick}
+          // onMouseEnter={handleMenuClick}
+          // onMouseLeave={handleMenuClose}
+          sx={{
+            borderRadius: "35px",
+            boxShadow: {
+              xs: "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
+              md: "none",
+            },
+            "&:hover": {
+              boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
+            },
+          }}
+        >
+          <ListItemIcon>
+            <EngineeringIcon />
+            <ListItemText
+              primary="Service"
+              primaryTypographyProps={{
+                fontWeight: "inherit",
+              }}
+            />
+            <ArrowDropDownIcon />
+          </ListItemIcon>
+        </ListItemButton>
+        <StyledMenu
+          id="simple-menu"
+          keepMounted
+          anchorEl={anchorEl}
+          // anchorOrigin={{
+          //   vertical: "bottom",
+          //   horizontal: "left",
+          // }}
+          open={Boolean(anchorEl)}
+          onClose={handleMenuClose}
+          // disableRestoreFocus
+          onClick={props.onClick}
+        >
+          {sub.map((item, i) => (
+            <MenuItem
+              onClick={() => {
+                handleMenuClose();
+                // props.onClick;
+              }}
+              // onClick={() => {
+              //   handleMenuClose();
+              //   handlePropClick();
+              // }}
+              component={Link}
+              to={item.link}
+              key={i}
+            >
+              {item.title}
+            </MenuItem>
+          ))}
+        </StyledMenu>
+      </NavLink>
       <NavLink
         to="/contact"
         className={({ isActive }) => (isActive ? "active" : "inactive")}
