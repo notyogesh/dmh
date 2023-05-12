@@ -13,8 +13,8 @@ import pricing from "../images/pricing.png";
 import warranty from "../images/warranty.png";
 import customize from "../images/customize.png";
 import customerservice from "../images/customerservice.png";
-import deer from "../images/onedeer1.png";
-import snow from "../images/snow2.png";
+// import deer from "../images/onedeer1.png";
+import snow from "../images/snow.png";
 
 const Acmv = () => {
   const acmvCardContent = [
@@ -138,7 +138,7 @@ const Acmv = () => {
         >
           Heating, Ventilating & Air conditioning Services
         </Typography>
-        <img
+        {/* <img
           src={deer}
           alt="deer"
           style={{
@@ -148,13 +148,13 @@ const Acmv = () => {
             right: "10vw",
             bottom: "10vh",
           }}
-        />
+        /> */}
         <img
           src={snow}
           alt="snow"
           style={{
             width: "100%",
-            height: "70vh",
+            height: "80vh",
             opacity: ".2",
             position: "absolute",
             right: "0",

@@ -65,10 +65,10 @@ const ListComp = (props) => {
 
   const [anchorEl, setAnchorEl] = useState();
   // const [open, setOpen] = useState(false);
-  const activeClass = window.location.pathname.startsWith("/service")
+  const activeClass = window.location.pathname.startsWith("/acmv")
     ? "active"
     : "inactive";
-
+  // console.log(activeClass);
   const handleMenuClick = (e) => {
     setAnchorEl(e.currentTarget);
   };
@@ -94,10 +94,13 @@ const ListComp = (props) => {
         <ListItemButton
           onClick={props.onClick}
           sx={{
-            borderRadius: 5,
+            borderRadius: "35px",
             boxShadow: {
               xs: "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
               md: "none",
+            },
+            "&:hover": {
+              boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
             },
           }}
         >
@@ -120,10 +123,13 @@ const ListComp = (props) => {
         <ListItemButton
           onClick={props.onClick}
           sx={{
-            borderRadius: 5,
+            borderRadius: "35px",
             boxShadow: {
               xs: "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
               md: "none",
+            },
+            "&:hover": {
+              boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
             },
           }}
         >
@@ -138,68 +144,74 @@ const ListComp = (props) => {
           </ListItemIcon>
         </ListItemButton>
       </NavLink>
-      <NavLink
-        // to="/service:"
-        className={activeClass}
+      {/* <NavLink
+       onClick={this.handleClick} 
+            e.preventdefaullt
+            to="/pages"
+        
+        className="active"
         // exact="true"
+      > */}
+      <ListItemButton
+        onClick={handleMenuClick}
+        className={activeClass}
+        // onMouseOver={handleMenuClick}
+        // onMouseEnter={handleMenuClick}
+        // onMouseLeave={handleMenuClose}
+        sx={{
+          borderRadius: "35px",
+          boxShadow: {
+            xs: "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
+            md: "none",
+          },
+          "&:hover": {
+            boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
+          },
+        }}
       >
-        <ListItemButton
-          onClick={handleMenuClick}
-          // className={activeClass}
-          // onMouseOver={handleMenuClick}
-          // onMouseEnter={handleMenuClick}
-          // onMouseLeave={handleMenuClose}
-          sx={{
-            borderRadius: 5,
-            boxShadow: {
-              xs: "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
-              md: "none",
-            },
-          }}
-        >
-          <ListItemIcon>
-            <EngineeringIcon />
-            <ListItemText
-              primary="Service"
-              primaryTypographyProps={{
-                fontWeight: "inherit",
-              }}
-            />
-            <ArrowDropDownIcon />
-          </ListItemIcon>
-        </ListItemButton>
-        <StyledMenu
-          id="simple-menu"
-          keepMounted
-          anchorEl={anchorEl}
-          // anchorOrigin={{
-          //   vertical: "bottom",
-          //   horizontal: "left",
-          // }}
-          open={Boolean(anchorEl)}
-          onClose={handleMenuClose}
-          // disableRestoreFocus
-          onClick={props.onClick}
-        >
-          {sub.map((item, i) => (
-            <MenuItem
-              onClick={() => {
-                handleMenuClose();
-                // props.onClick;
-              }}
-              // onClick={() => {
-              //   handleMenuClose();
-              //   handlePropClick();
-              // }}
-              component={Link}
-              to={item.link}
-              key={i}
-            >
-              {item.title}
-            </MenuItem>
-          ))}
-        </StyledMenu>
-      </NavLink>
+        <ListItemIcon>
+          <EngineeringIcon />
+          <ListItemText
+            primary="Service"
+            primaryTypographyProps={{
+              fontWeight: "inherit",
+            }}
+          />
+          <ArrowDropDownIcon />
+        </ListItemIcon>
+      </ListItemButton>
+      <StyledMenu
+        id="simple-menu"
+        keepMounted
+        anchorEl={anchorEl}
+        // anchorOrigin={{
+        //   vertical: "bottom",
+        //   horizontal: "left",
+        // }}
+        open={Boolean(anchorEl)}
+        onClose={handleMenuClose}
+        // disableRestoreFocus
+        onClick={props.onClick}
+      >
+        {sub.map((item, i) => (
+          <MenuItem
+            onClick={() => {
+              handleMenuClose();
+              // props.onClick;
+            }}
+            // onClick={() => {
+            //   handleMenuClose();
+            //   handlePropClick();
+            // }}
+            component={Link}
+            to={item.link}
+            key={i}
+          >
+            {item.title}
+          </MenuItem>
+        ))}
+      </StyledMenu>
+      {/* </NavLink> */}
       <NavLink
         to="/contact"
         className={({ isActive }) => (isActive ? "active" : "inactive")}
@@ -208,10 +220,13 @@ const ListComp = (props) => {
         <ListItemButton
           onClick={props.onClick}
           sx={{
-            borderRadius: 5,
+            borderRadius: "35px",
             boxShadow: {
               xs: "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
               md: "none",
+            },
+            "&:hover": {
+              boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
             },
           }}
         >

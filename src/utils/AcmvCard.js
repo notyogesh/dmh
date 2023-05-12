@@ -45,7 +45,10 @@ const AcmvCard = (props) => {
         {/* {props.icon} */}
       </Box>
       <Box sx={{ textAlign: "left", px: 4, pt: 2, pb: 3 }}>
-        <Typography variant="h6" sx={{ pb: 2, color: "#31344B" }}>
+        <Typography
+          variant="h5"
+          sx={{ pb: 2, color: "#31344B", fontWeight: 600 }}
+        >
           {props.head}
         </Typography>
         <Typography sx={{ fontFamily: "Nunito Sans", fontWeight: 400 }}>

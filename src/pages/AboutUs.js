@@ -8,7 +8,7 @@ import AboutUsCard from "../utils/AboutUsCard";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import PrecisionManufacturingIcon from "@mui/icons-material/PrecisionManufacturing";
-import Divider from "@mui/material/Divider";
+// import Divider from "@mui/material/Divider";
 import LeaderboardIcon from "@mui/icons-material/Leaderboard";
 import GradeIcon from "@mui/icons-material/Grade";
 import BeenhereIcon from "@mui/icons-material/Beenhere";
@@ -78,11 +78,11 @@ const AboutUs = () => {
             // width: "350px",
           }}
         >
-          DMH is a privately owned company based in Singapore that is involved
-          in the various field of construction and engineering industry.
-          Including air conditioning, kitchen exhaust duct system construction
-          and maintenance, Electrical work, aluminum and glass work, and
-          scaffolding work."
+          DMH is privately held singapore based company that is involved in the
+          various field of construction and engineering industry. Including air
+          conditioning, kitchen exhaust duct system construction and
+          maintenance, Electrical work, aluminum and glass work, and scaffolding
+          work."
         </Typography>
 
         <Button
@@ -133,7 +133,8 @@ const AboutUs = () => {
           justifyContent: "space-evenly",
           // boxShadow: "6px 6px 12px #b8b9be,-6px -6px 12px #fff",
           // border: "0.2px solid #d1d9e6",
-          py: 5,
+          pt: 5,
+          pb: 8,
           px: { xs: 2, md: 10 },
           mx: { xs: 2, md: 5 },
           gap: 5,
@@ -150,14 +151,15 @@ const AboutUs = () => {
           />
         ))}
       </Box>
-      <Divider />
+      {/* <Divider /> */}
       <Box
         sx={{
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
           justifyContent: "space-evenly",
 
-          py: 5,
+          pt: 5,
+          pb: 8,
           px: { xs: 2, md: 10 },
           mx: { xs: 2, md: 5 },
           gap: 5,

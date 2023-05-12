@@ -12,6 +12,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import Slide from "@mui/material/Slide";
 import Hero2 from "./Hero2";
 import Services from "../services/Services";
+// import blob from "../../images/blob.svg";
 
 // import IconButton from "@mui/material/IconButton";
 
@@ -70,6 +71,17 @@ const Hero = () => {
           >
             DMH Construction & Engineering Pte.Ltd
           </Typography>
+          {/* <img
+            src={blob}
+            alt="blob"
+            style={{
+              position: "absolute",
+              top: 30,
+              left: 30,
+              opacity: 0.5,
+              width: 400,
+            }}
+          /> */}
           <Box
             sx={{
               display: "flex",

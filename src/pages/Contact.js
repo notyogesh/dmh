@@ -29,7 +29,7 @@ const contacts = [
 ];
 const Contact = () => {
   return (
-    <Box sx={{ display: "flex", flexDirection: "column" }}>
+    <Box sx={{ display: "flex", flexDirection: "column", pb: 5 }}>
       <Box
         sx={{
           display: "flex",
