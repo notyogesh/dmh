@@ -34,6 +34,10 @@ export const menuItems = [
         link: "/service/kitchen-exhaust-system",
       },
       {
+        title: "Glass & Aluminum Work",
+        link: "/service/glass-aluminum-work",
+      },
+      {
         title: "Electrical Services",
         link: "/service/electrical-services",
       },
@@ -41,10 +45,7 @@ export const menuItems = [
         title: "Scaffolding work",
         link: "/service/scaffolding-work",
       },
-      {
-        title: "Glass & Aluminum Work",
-        link: "/service/glass-aluminum-work",
-      },
+
       {
         title: "Construction",
         link: "/service/construction",
@@ -66,6 +67,10 @@ export const sub = [
     link: "/kitchen-exhaust-system",
   },
   {
+    title: "Glass & Aluminum Work",
+    link: "/glass-aluminum-work",
+  },
+  {
     title: "Electrical Services",
     link: "/electrical-services",
   },
@@ -73,10 +78,7 @@ export const sub = [
     title: "Scaffolding work",
     link: "/scaffolding-work",
   },
-  {
-    title: "Glass & Aluminum Work",
-    link: "/glass-aluminum-work",
-  },
+
   {
     title: "Construction",
     link: "/construction",

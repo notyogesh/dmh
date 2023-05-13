@@ -8,6 +8,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Stack from "@mui/material/Stack";
 // import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
@@ -29,6 +30,11 @@ const socio = [
     name: "Instagram",
     icon: <InstagramIcon />,
     link: "https://instagram.com/dmh.group?igshid=YmMyMTA2M2Y=",
+  },
+  {
+    name: "Linkedin",
+    icon: <LinkedInIcon />,
+    link: "https://www.linkedin.com/company/dmhconstructionengineering/",
   },
   {
     name: "Email",

@@ -98,6 +98,7 @@ const ListComp = (props) => {
       >
         <ListItemButton
           onClick={props.onClick}
+          disableRipple={true}
           sx={{
             borderRadius: "35px",
             boxShadow: {
@@ -127,6 +128,7 @@ const ListComp = (props) => {
       >
         <ListItemButton
           onClick={props.onClick}
+          disableRipple={true}
           sx={{
             borderRadius: "35px",
             boxShadow: {
@@ -222,6 +224,7 @@ const ListComp = (props) => {
       >
         <ListItemButton
           onClick={props.onClick}
+          disableRipple={true}
           sx={{
             borderRadius: "35px",
             boxShadow: {

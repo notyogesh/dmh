@@ -1,27 +1,80 @@
 import React from "react";
 import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
+import tile from "../images/tile.png";
+
 const GlassAluminumWork = () => {
   return (
     <Box
       sx={{
         backgroundColor: "#f3f0f1",
         textAlign: "left",
-        px: { xs: 2, md: 20 },
-        py: 2,
-        minHeight: "100vh",
+        // px: { xs: 2, md: 20 },
+        // py: 2,
+        // minHeight: "100vh",
+        color: "#31344B",
       }}
     >
-      <Typography variant="h2" sx={{ ml: "auto", my: 2, textAlign: "center" }}>
-        Glass & Aluminum Work{" "}
-      </Typography>
-      {"      "}We are your trusted source for all your glass and aluminum
-      needs. With years of experience in the industry, we are proud to offer a
-      wide range of services including glass installation, aluminum fabrication,
-      repairs, and more. Our team of skilled professionals is dedicated to
-      providing top-quality workmanship and exceptional customer service.
-      <br />
-      <br />
+      {" "}
+      <Box
+        sx={{
+          pt: "20vh",
+          pb: "20vh",
+          display: "flex",
+          flexDirection: "column",
+          mb: 10,
+          // background: `url(${tile}) no-repeat `,
+          // background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1)),
+          backgroundImage: `linear-gradient(to bottom,  rgb(243,240,241) , transparent 50%), url(${tile})`,
+          // backgroundOrigin: " border-box",
+          backgroundSize: "cover",
+          backgroundOrigin: "right",
+          // backgroundSize: "100% 100%",
+          minHeight: "60vh",
+          backgroundPositionY: "bottom",
+        }}
+      >
+        {" "}
+        <Typography
+          variant="h3"
+          sx={{
+            textAlign: { xs: "center", md: "left" },
+            fontWeight: 600,
+            pl: { xs: 1, md: 25 },
+          }}
+        >
+          DMH
+        </Typography>
+        <Typography
+          variant="h4"
+          sx={{
+            textAlign: { xs: "center", md: "left" },
+            fontWeight: 500,
+            pl: { xs: 0, md: 5 },
+            fontSize: { xs: 30, sm: 35, md: 40 },
+          }}
+        >
+          Glass & Aluminum Work
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            textAlign: "center",
+            // px: 10,
+            pt: 5,
+            pb: 3,
+            fontWeight: 600,
+            px: { xs: 2, md: 20 },
+            // width: "350px",
+          }}
+        >
+          {/* We are your trusted source for all your glass and aluminum needs. With
+          years of experience in the industry, we are proud to offer a wide
+          range of services including glass installation, aluminum fabrication,
+          repairs, and more. Our team of skilled professionals is dedicated to
+          providing top-quality workmanship and exceptional customer service. */}
+        </Typography>
+      </Box>
       <Typography variant="h3" sx={{ ml: "auto", my: 3, textAlign: "center" }}>
         Services We Offer:
       </Typography>

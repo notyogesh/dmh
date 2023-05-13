@@ -13,6 +13,7 @@ import KitchenCard from "../utils/KitchenCard";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
+import AcUnitIcon from "@mui/icons-material/AcUnit";
 const KitchenExhaustSystem = () => {
   // const imageRef = useRef(null);
 
@@ -25,54 +26,7 @@ const KitchenExhaustSystem = () => {
   //   const scrollPos = window.pageYOffset / 10;
   //   imageRef.current.style.transform = `rotate(${scrollPos}deg)`;
   // }
-  const whyUs = [
-    {
-      head: "Expertise:",
-      body: "Our team of technicians has extensive experience in the field and stays up-to-date with the latest industry trends and regulations. We have the knowledge and skills to design and install ducting systems that meet the highest standards of quality and safety.",
-    },
-    {
-      head: "Customized Solutions:",
-      body: "We understand that every kitchen is unique, and we tailor our services to your specific requirements. Our team will work closely with you to understand your needs and design a ducting system that fits seamlessly into your kitchen layout and ventilation needs.",
-    },
-    {
-      head: "Quality Materials:",
-      body: "We use only high-quality materials that are durable, fire-resistant, and compliant with local building codes. Our ductwork is fabricated to precise specifications and installed with meticulous attention to detail, ensuring longevity and performance.",
-    },
-    {
-      head: "Professionalism:",
-      body: "We take pride in our professionalism and commitment to excellent customer service. Our team is reliable, punctual, and respectful of your property. We strive to exceed your expectations with our prompt, efficient, and courteous service.",
-    },
-    {
-      head: "Compliance",
-      body: "We understand the importance of complying with local building codes and regulations. Our team is knowledgeable about the latest codes and standards related to kitchen exhaust ducting installation, and we ensure that our work meets all relevant requirements.",
-    },
-  ];
-  const services = [
-    {
-      head: " Kitchen Exhaust Duct Design:",
-      body: "Our team of experts will assess your kitchen layout and design a customized exhaust ducting system that meets local building codes and industry standards. We consider factors such as the size of your kitchen, the type of cooking equipment you use, and the layout of your building to create an efficient and effective ducting system.",
-      img: install,
-      to: "/kitchen-exhaust-system",
-    },
-    {
-      head: "Duct Fabrication and Installation:",
-      body: "We use high-quality materials and advanced fabrication techniques to create custom ductwork that fits seamlessly into your kitchen. Our skilled technicians will install the ducting system with precision, ensuring proper alignment, sealing, and insulation for optimal performance.",
-      img: "https://ouch-cdn2.icons8.com/H1oT_UUstmkVWpR997EgIfgxb4nol9QH9eBHFLnkHBw/rs:fit:256:121/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjUy/L2EyMWM2ZmY1LTdi/ZjEtNDBmMi1iZmU1/LTkzMGUxOTFlMDc2/MC5zdmc.png",
-      to: "/glass-aluminum-work",
-    },
-    {
-      head: "Exhaust Fan Installation:",
-      body: "We can recommend, supply, and install high-quality exhaust fans that are suitable for your kitchen's needs. Properly sized and installed exhaust fans are crucial for effective ventilation, and our team will ensure that your fans are correctly positioned and connected to the ducting system for maximum efficiency. ",
-      img: kit,
-      to: "/scaffolding-work",
-    },
-    {
-      head: "Duct Cleaning and Maintenance:",
-      body: "We offer comprehensive construction and building services for commercial and residential properties. From concept to completion,  including design, planning, and construction management. We  ensure that each project is completed to the highest standards of quality and safety. Whether you're looking to build a new property from scratch or renovate an existing one.",
-      img: clean,
-      to: "/construction",
-    },
-  ];
+
   return (
     <Box
       sx={{
@@ -330,7 +284,8 @@ const KitchenExhaustSystem = () => {
                       fontWeight: 500,
                     }}
                   >
-                    {item.head}
+                    {" "}
+                    <AcUnitIcon /> {item.head}
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -352,3 +307,51 @@ const KitchenExhaustSystem = () => {
 };
 
 export default KitchenExhaustSystem;
+const whyUs = [
+  {
+    head: "Expertise:",
+    body: "Our team of technicians has extensive experience in the field and stays up-to-date with the latest industry trends and regulations. We have the knowledge and skills to design and install ducting systems that meet the highest standards of quality and safety.",
+  },
+  {
+    head: "Customized Solutions:",
+    body: "We understand that every kitchen is unique, and we tailor our services to your specific requirements. Our team will work closely with you to understand your needs and design a ducting system that fits seamlessly into your kitchen layout and ventilation needs.",
+  },
+  {
+    head: "Quality Materials:",
+    body: "We use only high-quality materials that are durable, fire-resistant, and compliant with local building codes. Our ductwork is fabricated to precise specifications and installed with meticulous attention to detail, ensuring longevity and performance.",
+  },
+  {
+    head: "Professionalism:",
+    body: "We take pride in our professionalism and commitment to excellent customer service. Our team is reliable, punctual, and respectful of your property. We strive to exceed your expectations with our prompt, efficient, and courteous service.",
+  },
+  {
+    head: "Compliance",
+    body: "We understand the importance of complying with local building codes and regulations. Our team is knowledgeable about the latest codes and standards related to kitchen exhaust ducting installation, and we ensure that our work meets all relevant requirements.",
+  },
+];
+const services = [
+  {
+    head: " Kitchen Exhaust Duct Design:",
+    body: "Our team of experts will assess your kitchen layout and design a customized exhaust ducting system that meets local building codes and industry standards. We consider factors such as the size of your kitchen, the type of cooking equipment you use, and the layout of your building to create an efficient and effective ducting system.",
+    img: install,
+    to: "/kitchen-exhaust-system",
+  },
+  {
+    head: "Duct Fabrication and Installation:",
+    body: "We use high-quality materials and advanced fabrication techniques to create custom ductwork that fits seamlessly into your kitchen. Our skilled technicians will install the ducting system with precision, ensuring proper alignment, sealing, and insulation for optimal performance.",
+    img: "https://ouch-cdn2.icons8.com/H1oT_UUstmkVWpR997EgIfgxb4nol9QH9eBHFLnkHBw/rs:fit:256:121/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjUy/L2EyMWM2ZmY1LTdi/ZjEtNDBmMi1iZmU1/LTkzMGUxOTFlMDc2/MC5zdmc.png",
+    to: "/glass-aluminum-work",
+  },
+  {
+    head: "Exhaust Fan Installation:",
+    body: "We can recommend, supply, and install high-quality exhaust fans that are suitable for your kitchen's needs. Properly sized and installed exhaust fans are crucial for effective ventilation, and our team will ensure that your fans are correctly positioned and connected to the ducting system for maximum efficiency. ",
+    img: kit,
+    to: "/scaffolding-work",
+  },
+  {
+    head: "Duct Cleaning and Maintenance:",
+    body: "We offer comprehensive construction and building services for commercial and residential properties. From concept to completion,  including design, planning, and construction management. We  ensure that each project is completed to the highest standards of quality and safety. Whether you're looking to build a new property from scratch or renovate an existing one.",
+    img: clean,
+    to: "/construction",
+  },
+];
