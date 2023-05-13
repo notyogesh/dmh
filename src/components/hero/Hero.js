@@ -9,7 +9,9 @@ import heroImg from "../../images/heroto.png";
 import HeroButton from "../../utils/HeroButton";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 // import { useInView } from "react-intersection-observer";
-import Slide from "@mui/material/Slide";
+// import Slide from "@mui/material/Slide";
+import Grow from "@mui/material/Grow";
+
 import Hero2 from "./Hero2";
 import Services from "../services/Services";
 // import blob from "../../images/blob.svg";
@@ -126,7 +128,7 @@ const Hero = () => {
           maxWidth="sm"
           // ref={imgRef}
         >
-          <Slide in={true} direction="left" timeout={2000}>
+          <Grow in={true} timeout={2000}>
             <img
               src={heroImg}
               alt="DMH"
@@ -141,7 +143,7 @@ const Hero = () => {
                 //   " -3px -3px 7px #ffffffb0,  3px 3px 5px rgba(94, 104, 121, 0.692)",
               }}
             />
-          </Slide>
+          </Grow>
         </Container>
       </Box>{" "}
       <Hero2 />

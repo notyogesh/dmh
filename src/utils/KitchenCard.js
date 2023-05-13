@@ -8,7 +8,7 @@ const KitchenCard = (props) => {
         display: { xs: "block", md: "flex" },
         my: 10,
         flexDirection: props.i % 2 === 0 ? "row-reverse" : "row",
-        p: 4,
+        p: { xs: 1, md: 4 },
       }}
     >
       <Box
@@ -54,7 +54,10 @@ const KitchenCard = (props) => {
           {" "}
           {props.head}
         </Typography>
-        <Typography variant="body1"> {props.body}</Typography>
+        <Typography variant="body1" sx={{ fontWeight: 600 }}>
+          {" "}
+          {props.body}
+        </Typography>
       </Box>
     </Box>
   );
