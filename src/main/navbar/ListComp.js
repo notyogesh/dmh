@@ -70,7 +70,10 @@ const ListComp = (props) => {
     : "inactive";
   // console.log(activeClass);
   const handleMenuClick = (e) => {
-    setAnchorEl(e.currentTarget);
+    // setAnchorEl(e.currentTarget);
+    if (anchorEl !== e.currentTarget) {
+      setAnchorEl(e.currentTarget);
+    }
   };
   const handleMenuClose = () => {
     setAnchorEl(null);
@@ -156,13 +159,14 @@ const ListComp = (props) => {
         to="/dd"
         className={({ isActive }) => (isActive ? "active" : "inactive")}
         // exact="true"
+        // onMouseLeave={handleMenuClose}
       >
         <ListItemButton
           onClick={handleMenuClick}
           className={activeClass}
           // onMouseOver={handleMenuClick}
           // onMouseEnter={handleMenuClick}
-          // onMouseLeave={handleMenuClose}
+          // onMouseLeave={() => setAnchorEl(null)}
           sx={{
             borderRadius: "35px",
             boxShadow: {
@@ -195,6 +199,7 @@ const ListComp = (props) => {
           // }}
           open={Boolean(anchorEl)}
           onClose={handleMenuClose}
+          MenuListProps={{ onMouseLeave: handleMenuClose }}
           // disableRestoreFocus
           onClick={props.onClick}
         >
@@ -225,6 +230,7 @@ const ListComp = (props) => {
         <ListItemButton
           onClick={props.onClick}
           disableRipple={true}
+          // onMouseLeave={handleMenuClose}
           sx={{
             borderRadius: "35px",
             boxShadow: {

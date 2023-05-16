@@ -19,7 +19,7 @@ const KitchenCard = (props) => {
           //   border: "1px solid #d1d9e6",
           flex: 1,
           width: "100%",
-          backgroundColor: "#FFF5FF",
+          backgroundColor: props.backgroundColor,
           // aspectRatio: "1 / 1",
           display: "flex",
           alignItems: "center",
@@ -34,7 +34,7 @@ const KitchenCard = (props) => {
             // flex: 1,
             // borderRadius: "50%",
             width: "70%",
-            backgroundColor: "#FFF5FF",
+            backgroundColor: props.backgroundColor,
           }}
         />
       </Box>

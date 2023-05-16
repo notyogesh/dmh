@@ -1,5 +1,6 @@
 {
   "name": "dmh",
+  "homepage": "https://websitetechniques.in/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
