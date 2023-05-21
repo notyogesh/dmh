@@ -2,19 +2,19 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import ServiceCard from "../../utils/ServiceCard";
 import { Box } from "@mui/material";
-
+import plumbing from "../../images/plumber.png"
 const Services = () => {
   const services = [
     {
       head: "ACMV",
       body: "(Air Conditioning and Mechanical Ventilation System) Heating, ventilation, and air conditioning  services,We offer a comprehensive range of HVAC services, including installation, maintenance, and repairs. ",
-      img: "https://buildingandinteriors.com/wp-content/uploads/2020/11/feature2.jpg",
+      img: "https://img.freepik.com/free-vector/air-conditioner-repair-repairman-with-tools_33099-272.jpg?size=626&ext=jpg&ga=GA1.1.2136575466.1684650788&semt=ais",
       to: "/acmv",
     },
     {
       head: "Plumbing & Electrical Services",
       body: " we offer reliable and efficient plumbing and electrical services to our clients. From minor repairs to major installations, we do it all",
-      img: "https://5.imimg.com/data5/SELLER/Default/2021/9/UI/SV/IP/50098890/electrical-plumbing-500x500.jpg",
+      img: plumbing,
       to: "/electrical-services",
     },
     {

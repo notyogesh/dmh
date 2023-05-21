@@ -3,7 +3,7 @@ import { Box, Button } from "@mui/material";
 import Typography from "@mui/material/Typography";
 // import HeatPumpIcon from '@mui/icons-material/HeatPump';
 // import smoke from "../images/smoke.png";
-import web from "../images/web.png";
+// import web from "../images/web.png";
 import Stack from "@mui/material/Stack";
 import clean from "../images/clean.png";
 import install from "../images/install.png";
@@ -121,7 +121,7 @@ const KitchenExhaustSystem = () => {
             d="M0,64L80,90.7C160,117,320,171,480,208C640,245,800,267,960,245.3C1120,224,1280,160,1360,128L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
           ></path>
         </svg>
-        <img
+        {/* <img
           src={web}
           alt="smoke"
           // willReadFrequently
@@ -140,7 +140,7 @@ const KitchenExhaustSystem = () => {
             left: "0",
             // right: "50%",
           }}
-        />
+        /> */}
       </Box>
       <Typography
         variant="h6"
@@ -273,7 +273,7 @@ const KitchenExhaustSystem = () => {
                 // background: `url(${smoke}) no-repeat right center `,
               }}
             >
-              <Accordion square>
+              <Accordion square >
                 <AccordionSummary
                   expandIcon={<AddCircleIcon />}
                   aria-controls="panel1a-content"

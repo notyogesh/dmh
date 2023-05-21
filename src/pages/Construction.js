@@ -1,20 +1,87 @@
 import React from "react";
 import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
+import gear from "../images/gear.png";
+
 const Construction = () => {
   return (
     <Box
+    sx={{
+      // backgroundColor: "#f3f0f1",
+      // textAlign: "left",
+      // px: { xs: 2, md: 20 },
+      // py: 2,
+      // minHeight: "100vh",
+      // color: "#E6E7EE",
+      // backgroundColor: "#E6E7EE",
+      backgroundColor: "#f3f0f1",
+      fontFamily: "Nunito Sans",
+      pb: 5,
+    }}
+    > <Box
+    sx={{
+      pt: { xs: "25vh", md: "20vh" },
+      pb: "20vh",
+      display: "flex",
+      flexDirection: "column",
+      mb: 10,
+      // background: `url(${tile}) no-repeat `,
+      // background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1)),
+      backgroundImage: `linear-gradient(to bottom,  rgb(243,240,241) , transparent 50%), url(${gear})`,
+      // backgroundOrigin: " border-box",
+      backgroundSize: "cover",
+      // backgroundOrigin: "right",
+      // backgroundSize: "100% 100%",
+      minHeight: "60vh",
+      // backgroundPositionY: "bottom",
+      // backdropFilter: "blur(50px)",
+      // backdropFilter:blur(8px),
+      transform: "scaleX(-1)",
+      // filter: "blur(8px)",
+    }}
+  >
+    {" "}
+    <Typography
+      variant="h3"
       sx={{
-        backgroundColor: "#f3f0f1",
-        textAlign: "left",
-        px: { xs: 2, md: 20 },
-        py: 2,
-        minHeight: "100vh",
+        textAlign: { xs: "center", md: "left" },
+        fontWeight: 600,
+        // pl: { xs: 1, md: 25 },
+        pl: { xs: 0, md: 5 },
+        transform: "scaleX(-1)",
       }}
     >
-      <Typography variant="h2" sx={{ ml: "auto", my: 3, textAlign: "center" }}>
-        Construction
-      </Typography>
+      DMH
+    </Typography>
+    <Typography
+      variant="h4"
+      sx={{
+        textAlign: { xs: "center", md: "left" },
+        fontWeight: 500,
+        pl: { xs: 0, md: 5 },
+        fontSize: { xs: 30, sm: 35, md: 40 },
+        transform: "scaleX(-1)",
+        // backdropFilter: "blur(20px)",
+      }}
+    >
+      Construction
+    </Typography>
+    <Typography
+      variant="body1"
+      sx={{
+        textAlign: "center",
+        // px: 10,
+        pt: 5,
+        pb: 3,
+        fontWeight: 600,
+        px: { xs: 2, md: 20 },
+        // width: "350px",
+      }}
+    >
+     
+    </Typography>
+  </Box>
+      
       Welcome to DMH Construction & Engineering Pvt Ltd, your trusted partner
       for all your construction and engineering needs. We are a full-service
       construction company that specializes in various areas of construction,

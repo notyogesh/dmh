@@ -1,20 +1,80 @@
 import React from "react";
 import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
+import paper from "../images/paper.png";
+
 const ScaffoldingWork = () => {
   return (
     <Box
+    sx={{
+      // backgroundColor: "#f3f0f1",
+      // textAlign: "left",
+      // px: { xs: 2, md: 20 },
+      // py: 2,
+      // minHeight: "100vh",
+      // color: "#E6E7EE",
+      // backgroundColor: "#E6E7EE",
+      backgroundColor: "#f3f0f1",
+      fontFamily: "Nunito Sans",
+      pb: 5,
+    }}
+    ><Box
+    sx={{
+      pt: { xs: "25vh", md: "20vh" },
+      pb: "20vh",
+      display: "flex",
+      flexDirection: "column",
+      mb: 10,
+    
+      backgroundImage: `linear-gradient(to bottom,  rgb(243,240,241) , transparent 50%), url(${paper})`,
+          // backgroundImage: `url(${paper})`,
+
+      // backgroundSize: "cover",
+      // backgroundOrigin: "right",
+ 
+      minHeight: "60vh",
+      // backgroundPositionY: "bottom",
+      // backdropFilter: "blur(20)",
+    }}
+  >
+    {" "}
+    <Typography
+      variant="h3"
       sx={{
-        backgroundColor: "#f3f0f1",
-        textAlign: "left",
-        px: { xs: 2, md: 20 },
-        py: 2,
-        minHeight: "100vh",
+        textAlign: { xs: "center", md: "center" },
+        fontWeight: 600,
+        // pl: { xs: 1, md: 25 },
       }}
     >
-      <Typography variant="h2" sx={{ ml: "auto", my: 3, textAlign: "center" }}>
-        Scaffolding Work{" "}
-      </Typography>
+      DMH
+    </Typography>
+    <Typography
+      variant="h4"
+      sx={{
+        textAlign: { xs: "center", md: "center" },
+        fontWeight: 500,
+        // pl: { xs: 0, md: 5 },
+        fontSize: { xs: 30, sm: 35, md: 40 },
+        // backdropFilter: "blur(20px)",
+      }}
+    >
+ Scaffolding Work{" "}    </Typography>
+    <Typography
+      variant="body1"
+      sx={{
+        textAlign: "center",
+        // px: 10,
+        pt: 5,
+        pb: 3,
+        fontWeight: 600,
+        px: { xs: 2, md: 20 },
+        // width: "350px",
+      }}
+    >
+   
+    </Typography>
+  </Box>
+      
       {"      "}At DMH, we are experts in providing top-quality scaffolding
       services for various construction, maintenance, and repair projects. With
       years of experience and a team of skilled professionals, we are committed

@@ -3,7 +3,19 @@ import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import tile from "../images/tile1.png";
 import KitchenCard from "../utils/KitchenCard";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import TuneIcon from "@mui/icons-material/Tune";
+import DashboardCustomizeIcon from "@mui/icons-material/DashboardCustomize";
+import BeenhereIcon from "@mui/icons-material/Beenhere";
+import AddCircleIcon from "@mui/icons-material/AddCircle"; 
 
+// import AssuredWorkloadIcon from "@mui/icons-material/AssuredWorkload";
+import Stack from "@mui/material/Stack";
+
+import Diversity2Icon from "@mui/icons-material/Diversity2";
+import ExtensionIcon from "@mui/icons-material/Extension";
 const GlassAluminumWork = () => {
   return (
     <Box
@@ -14,6 +26,7 @@ const GlassAluminumWork = () => {
         // py: 2,
         // minHeight: "100vh",
         color: "#31344B",
+        pb:5,
       }}
     >
       {" "}
@@ -71,13 +84,25 @@ const GlassAluminumWork = () => {
             // width: "350px",
           }}
         >
-          {/* We are your trusted source for all your glass and aluminum needs. With
+      
+         
+        </Typography>
+      </Box>
+      <Typography
+        variant="h6"
+        sx={{
+          textAlign: "center",
+          color: "#31344B",
+          px: { xs: 2, md: 20 },
+          pb: { xs: 2, md: 2 },
+        }}
+      >
+        We are your trusted source for all your glass and aluminum needs. With
           years of experience in the industry, we are proud to offer a wide
           range of services including glass installation, aluminum fabrication,
           repairs, and more. Our team of skilled professionals is dedicated to
-          providing top-quality workmanship and exceptional customer service. */}
-        </Typography>
-      </Box>
+          providing top-quality workmanship and exceptional customer service.
+      </Typography>
       <Typography variant="h3" sx={{ ml: "auto", my: 3, textAlign: "center" }}>
         Services We Offer:
       </Typography>
@@ -91,78 +116,68 @@ const GlassAluminumWork = () => {
           backgroundColor={"#F3F0F1"}
         />
       ))}
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Glass Installation:
-      </Typography>
-      Whether you need glass windows, doors, or partitions for your home or
-      business, we can handle it all. Our expert team will ensure precise
-      measurements, proper installation, and flawless finishing to give you
-      stunning results that enhance the aesthetics of your space.
-      <br />
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Aluminum Fabrication:
-      </Typography>
-      We specialize in custom aluminum fabrication for a wide range of
-      applications including windows, doors, storefronts, curtain walls, and
-      more. Our skilled craftsmen work with high-quality materials to create
-      durable and visually appealing aluminum structures that meet your specific
-      requirements.
-      <br /> <br />
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Repairs and Maintenance:
-      </Typography>
-      Accidents happen, and when your glass or aluminum structures are damaged,
-      you can count on us for reliable repairs and maintenance. Our team will
-      assess the damage, provide prompt and efficient repairs, and help you
-      maintain the longevity of your glass and aluminum fixtures.
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Custom Design:
-      </Typography>
-      We understand that every project is unique, and we offer custom design
-      services to bring your vision to life. Our design experts will work
-      closely with you to understand your needs, provide creative solutions, and
-      ensure that the final product exceeds your expectations.
-      <br /> <br />
-      <Typography variant="h3" sx={{ ml: "auto", my: 3, textAlign: "center" }}>
+        <Typography variant="h3" sx={{ ml: "auto", my: 3, textAlign: "center" }}>
         Why Choose Us:
       </Typography>
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Quality Workmanship:
-      </Typography>
-      Our team of skilled technicians is committed to delivering top-quality
-      workmanship. We use the finest materials, advanced techniques, and
-      industry-best practices to ensure that every project is completed to the
-      highest standards.
-      <br /> <br />
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Experience and Expertise:
-      </Typography>
-      With years of experience in the glass and aluminum industry, we have the
-      knowledge and expertise to handle projects of all sizes and complexities.
-      From residential to commercial, we have the skills and resources to meet
-      your requirements. <br /> <br />
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Excellent Customer Service:
-      </Typography>
-      We value our customers and strive to provide excellent customer service at
-      every step of the process. Our team is responsive, professional, and
-      dedicated to ensuring your complete satisfaction with our services.
-      <br /> <br />
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Competitive Pricing:
-      </Typography>
-      We understand the importance of budget in any project, and we offer
-      competitive pricing without compromising on quality. We provide detailed
-      quotes and transparent pricing to help you make informed decisions and get
-      the best value for your investment.
-      <br /> <br />
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Timely Completion:
-      </Typography>
-      We know that time is of the essence in any project, and we are committed
-      to completing your glass and aluminum work within the agreed-upon
-      timeline. We work efficiently, follow strict schedules, and ensure timely
-      project completion. <br />
+      <Box
+          sx={{
+            // boxShadow: "6px 6px 12px #b8b9be,-6px -6px 12px #fff",
+            // border: "1px solid #d1d9e6",
+            // pt: 5,
+            // pb: 2,
+            mt: 8,
+            backgroundColor: "#F3F0F1",
+            mx: { xs: 2, md: 20 },
+            borderRadius: "9px",
+          }}
+        >
+       {whyUsGlass.map((item, i) => (
+            <Box
+              key={i}
+              sx={{
+                textAlign: "left",
+                // color: "#4F4350",
+          
+              }}
+            >
+              <Accordion square sx={{backgroundColor:"#FFF5FF",border:"1px solid #f3f0f1"}}>
+                <AccordionSummary
+                  expandIcon={<AddCircleIcon />}
+                  aria-controls="panel1a-content"
+                  id={item.head + i}
+                >
+                  {" "}
+                  {/* <TuneIcon /> {item.head} */}
+                  <Stack direction="row" alignItems="center" sx={{ pl: 2 }}>
+                    {item.icon}
+                    <Typography
+                      variant="h5"
+                      sx={{
+                        pb: 2,
+                        px: 5,
+                        pt: 2,
+                        // mx: "auto",
+                        display: "flex",
+                        fontWeight: 500,
+                      }}
+                    >
+                      {item.head}
+                    </Typography>
+                  </Stack>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography
+                    variant="body1"
+                    sx={{ px: 5, pb: 4, fontWeight: 600 }}
+                  >
+                    {item.body}{" "}
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+            </Box>   ))}
+         </Box>
+    
+     
     </Box>
   );
 };
@@ -188,5 +203,34 @@ const servicesGlass = [
     head: "Custom Design:",
     body: "We understand that every project is unique, and we offer custom design services to bring your vision to life. Our design experts will work closely with you to understand your needs, provide creative solutions, and ensure that the final product exceeds your expectations.",
     img: "https://5.imimg.com/data5/SELLER/Default/2022/4/KC/XA/HU/22854980/bathroom-aluminium-glass-door-500x500.jpg",
+  },
+];
+const whyUsGlass= [
+  {
+    head: "Quality Workmanship:",
+    body: "Our team of skilled technicians is committed to delivering top-quality workmanship. We use the finest materials, advanced techniques, and industry-best practices to ensure that every project is completed to the highest standards.",
+    icon: <BeenhereIcon />,
+    // icon: <TuneIcon />,
+  },
+  {
+    head: "Experience and Expertise:",
+    body: "With years of experience in the glass and aluminum industry, we have the knowledge and expertise to handle projects of all sizes and complexities. From residential to commercial, we have the skills and resources to meet your requirements.",
+    icon: <TuneIcon />,
+    // icon: <ExtensionIcon />,
+  },
+  {
+    head: "Excellent Customer Service:",
+    body: "We value our customers and strive to provide excellent customer service at every step of the process. Our team is responsive, professional, and dedicated to ensuring your complete satisfaction with our services.",
+    icon: <ExtensionIcon />,
+  },
+  {
+    head: "Competitive Pricing:",
+    body: "We understand the importance of budget in any project, and we offer competitive pricing without compromising on quality. We provide detailed quotes and transparent pricing to help you make informed decisions and get the best value for your investment.",
+    icon: <DashboardCustomizeIcon />,
+  },
+  {
+    head: "Timely Completion:",
+    body: "We know that time is of the essence in any project, and we are committed to completing your glass and aluminum work within the agreed-upon timeline. We work efficiently, follow strict schedules, and ensure timely project completion.",
+    icon: <Diversity2Icon />,
   },
 ];

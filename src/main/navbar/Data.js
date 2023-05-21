@@ -71,13 +71,14 @@ export const sub = [
     link: "/glass-aluminum-work",
   },
   {
-    title: "Electrical Services",
-    link: "/electrical-services",
-  },
-  {
     title: "Scaffolding work",
     link: "/scaffolding-work",
   },
+  {
+    title: "Electrical Services",
+    link: "/electrical-services",
+  },
+ 
 
   {
     title: "Construction",

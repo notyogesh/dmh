@@ -34,7 +34,8 @@ const Contact = () => {
         sx={{
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
-          minHeight: "100vh",
+          pb:{xs:5,md:10},
+          // minHeight: "100vh",
           // backgroundColor: (theme) => theme.palette.primary.main,
         }}
       >

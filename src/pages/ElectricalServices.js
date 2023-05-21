@@ -1,26 +1,98 @@
 import React from "react";
 import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
+import peakpx from "../images/peakpx.jpg";
+
 const ElectricalServices = () => {
   return (
     <Box
-      sx={{
-        backgroundColor: "#f3f0f1",
-        textAlign: "left",
-        px: { xs: 2, md: 20 },
-        py: 2,
-        minHeight: "100vh",
-      }}
+    sx={{
+      // backgroundColor: "#f3f0f1",
+      // textAlign: "left",
+      // px: { xs: 2, md: 20 },
+      // py: 2,
+      // minHeight: "100vh",
+      // color: "#E6E7EE",
+      // backgroundColor: "#E6E7EE",
+      backgroundColor: "#f3f0f1",
+      fontFamily: "Nunito Sans",
+      pb: 5,
+    }}
     >
-      <Typography variant="h2" sx={{ ml: "auto", my: 3, textAlign: "center" }}>
-        Electrical Work
-      </Typography>
-      {"      "}We are your go-to destination for all your electrical needs. Our
+       <Box
+        sx={{
+          pt: { xs: "25vh", md: "20vh" },
+          pb: "20vh",
+          display: "flex",
+          flexDirection: "column",
+          mb: 10,
+          // background: `url(${tile}) no-repeat `,
+          // background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1)),
+          backgroundImage: `linear-gradient(to bottom,  rgb(243,240,241) , transparent 50%), url(${peakpx})`,
+          // backgroundOrigin: " border-box",
+          backgroundSize: "cover",
+          backgroundOrigin: "right",
+          // backgroundSize: "100% 100%",
+          minHeight: "60vh",
+          backgroundPositionY: "bottom",
+          backdropFilter: "blur(20)",
+        }}
+      >
+        {" "}
+        <Typography
+          variant="h3"
+          sx={{
+            // textAlign: { xs: "center", md: "left" },
+            fontWeight: 600,
+            // pl: { xs: 1, md: 25 },
+          }}
+        >
+          DMH
+        </Typography>
+        <Typography
+          variant="h4"
+          sx={{
+            // textAlign: { xs: "center", md: "left" },
+            fontWeight: 500,
+            // pl: { xs: 0, md: 5 },
+            fontSize: { xs: 30, sm: 35, md: 40 },
+            // backdropFilter: "blur(20px)",
+          }}
+        >
+            Electrical Work
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{
+            textAlign: "center",
+            // px: 10,
+            pt: 5,
+            pb: 3,
+            fontWeight: 600,
+            px: { xs: 2, md: 20 },
+            // width: "350px",
+          }}
+        >
+
+        </Typography>
+      </Box>
+      <Typography
+        variant="h6"
+        sx={{
+          textAlign: "center",
+          color: "#31344B",
+          px: { xs: 2, md: 20 },
+          pb: { xs: 2, md: 2 },
+        }}
+      >
+      We are your go-to destination for all your electrical needs. Our
       team of skilled and certified electricians is dedicated to providing
       reliable, safe, and efficient electrical services for residential,
       commercial, and industrial properties. Whether you need simple repairs,
       complex installations, or routine maintenance, we have the expertise and
       experience to get the job done right.
+      </Typography>
+      {"      "}
       <br />
       <br />
       <Typography variant="h3" sx={{ my: 3, textAlign: "center" }}>
