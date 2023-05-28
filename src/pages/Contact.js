@@ -34,7 +34,7 @@ const Contact = () => {
         sx={{
           display: "flex",
           flexDirection: { xs: "column", md: "row" },
-          pb:{xs:5,md:10},
+          pb: { xs: 5, md: 10 },
           // minHeight: "100vh",
           // backgroundColor: (theme) => theme.palette.primary.main,
         }}
@@ -47,6 +47,7 @@ const Contact = () => {
             pl: { xs: 2, md: 9 },
             mt: { xs: 5, md: 12 },
             color: "#31344B",
+
             // display: { xs: "none", md: "flex" }
           }}
         >
@@ -90,6 +91,7 @@ const Contact = () => {
               sx={{
                 fontWeight: "bold",
                 color: "#31344B",
+
                 // textShadow:
                 //   "-3px -3px 7px #ffffffb0, 3px 3px 5px rgba(94, 104, 121, 0.692)",
               }}

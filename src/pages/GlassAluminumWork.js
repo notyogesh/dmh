@@ -9,7 +9,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import TuneIcon from "@mui/icons-material/Tune";
 import DashboardCustomizeIcon from "@mui/icons-material/DashboardCustomize";
 import BeenhereIcon from "@mui/icons-material/Beenhere";
-import AddCircleIcon from "@mui/icons-material/AddCircle"; 
+import AddCircleIcon from "@mui/icons-material/AddCircle";
 
 // import AssuredWorkloadIcon from "@mui/icons-material/AssuredWorkload";
 import Stack from "@mui/material/Stack";
@@ -26,7 +26,7 @@ const GlassAluminumWork = () => {
         // py: 2,
         // minHeight: "100vh",
         color: "#31344B",
-        pb:5,
+        pb: 5,
       }}
     >
       {" "}
@@ -62,6 +62,7 @@ const GlassAluminumWork = () => {
         </Typography>
         <Typography
           variant="h4"
+          component="h1"
           sx={{
             textAlign: { xs: "center", md: "left" },
             fontWeight: 500,
@@ -83,10 +84,7 @@ const GlassAluminumWork = () => {
             px: { xs: 2, md: 20 },
             // width: "350px",
           }}
-        >
-      
-         
-        </Typography>
+        ></Typography>
       </Box>
       <Typography
         variant="h6"
@@ -98,10 +96,10 @@ const GlassAluminumWork = () => {
         }}
       >
         We are your trusted source for all your glass and aluminum needs. With
-          years of experience in the industry, we are proud to offer a wide
-          range of services including glass installation, aluminum fabrication,
-          repairs, and more. Our team of skilled professionals is dedicated to
-          providing top-quality workmanship and exceptional customer service.
+        years of experience in the industry, we are proud to offer a wide range
+        of services including glass installation, aluminum fabrication, repairs,
+        and more. Our team of skilled professionals is dedicated to providing
+        top-quality workmanship and exceptional customer service.
       </Typography>
       <Typography variant="h3" sx={{ ml: "auto", my: 3, textAlign: "center" }}>
         Services We Offer:
@@ -116,68 +114,69 @@ const GlassAluminumWork = () => {
           backgroundColor={"#F3F0F1"}
         />
       ))}
-        <Typography variant="h3" sx={{ ml: "auto", my: 3, textAlign: "center" }}>
+      <Typography variant="h3" sx={{ ml: "auto", my: 3, textAlign: "center" }}>
         Why Choose Us:
       </Typography>
       <Box
-          sx={{
-            // boxShadow: "6px 6px 12px #b8b9be,-6px -6px 12px #fff",
-            // border: "1px solid #d1d9e6",
-            // pt: 5,
-            // pb: 2,
-            mt: 8,
-            backgroundColor: "#F3F0F1",
-            mx: { xs: 2, md: 20 },
-            borderRadius: "9px",
-          }}
-        >
-       {whyUsGlass.map((item, i) => (
-            <Box
-              key={i}
-              sx={{
-                textAlign: "left",
-                // color: "#4F4350",
-          
-              }}
+        sx={{
+          // boxShadow: "6px 6px 12px #b8b9be,-6px -6px 12px #fff",
+          // border: "1px solid #d1d9e6",
+          // pt: 5,
+          // pb: 2,
+          mt: 8,
+          backgroundColor: "#F3F0F1",
+          mx: { xs: 2, md: 20 },
+          borderRadius: "9px",
+        }}
+      >
+        {whyUsGlass.map((item, i) => (
+          <Box
+            key={i}
+            sx={{
+              textAlign: "left",
+              // color: "#4F4350",
+            }}
+          >
+            <Accordion
+              square
+              sx={{ backgroundColor: "#DFE0DF", border: "1px solid #f3f0f1" }}
             >
-              <Accordion square sx={{backgroundColor:"#FFF5FF",border:"1px solid #f3f0f1"}}>
-                <AccordionSummary
-                  expandIcon={<AddCircleIcon />}
-                  aria-controls="panel1a-content"
-                  id={item.head + i}
-                >
-                  {" "}
-                  {/* <TuneIcon /> {item.head} */}
-                  <Stack direction="row" alignItems="center" sx={{ pl: 2 }}>
-                    {item.icon}
-                    <Typography
-                      variant="h5"
-                      sx={{
-                        pb: 2,
-                        px: 5,
-                        pt: 2,
-                        // mx: "auto",
-                        display: "flex",
-                        fontWeight: 500,
-                      }}
-                    >
-                      {item.head}
-                    </Typography>
-                  </Stack>
-                </AccordionSummary>
-                <AccordionDetails>
+              <AccordionSummary
+                expandIcon={<AddCircleIcon />}
+                aria-controls="panel1a-content"
+                id={item.head + i}
+              >
+                {" "}
+                {/* <TuneIcon /> {item.head} */}
+                <Stack direction="row" alignItems="center" sx={{ pl: 2 }}>
+                  {item.icon}
                   <Typography
-                    variant="body1"
-                    sx={{ px: 5, pb: 4, fontWeight: 600 }}
+                    variant="h5"
+                    sx={{
+                      pb: 2,
+                      px: 5,
+                      pt: 2,
+                      // mx: "auto",
+                      display: "flex",
+                      fontWeight: 500,
+                    }}
                   >
-                    {item.body}{" "}
+                    {item.head}
                   </Typography>
-                </AccordionDetails>
-              </Accordion>
-            </Box>   ))}
-         </Box>
-    
-     
+                </Stack>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography
+                  variant="body1"
+                  sx={{ px: 5, pb: 4, fontWeight: 600 }}
+                >
+                  {item.body}{" "}
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+          </Box>
+        ))}
+      </Box>
     </Box>
   );
 };
@@ -205,7 +204,7 @@ const servicesGlass = [
     img: "https://5.imimg.com/data5/SELLER/Default/2022/4/KC/XA/HU/22854980/bathroom-aluminium-glass-door-500x500.jpg",
   },
 ];
-const whyUsGlass= [
+const whyUsGlass = [
   {
     head: "Quality Workmanship:",
     body: "Our team of skilled technicians is committed to delivering top-quality workmanship. We use the finest materials, advanced techniques, and industry-best practices to ensure that every project is completed to the highest standards.",

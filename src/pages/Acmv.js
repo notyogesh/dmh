@@ -15,7 +15,7 @@ import customize from "../images/customize.png";
 import customerservice from "../images/customerservice.png";
 // import deer from "../images/onedeer1.png";
 import snow from "../images/snow.png";
-
+// import Nav from "../main/navbar/NavBar"
 const Acmv = () => {
   const acmvCardContent = [
     {
@@ -99,6 +99,7 @@ const Acmv = () => {
           // background: `url(${deer}) no-repeat center center fixed`,
         }}
       >
+        {/* <Nav/> */}
         <Snowfall />
         <Typography
           variant="h2"
@@ -113,7 +114,9 @@ const Acmv = () => {
           DMH
         </Typography>
         <Typography
+          // variant="h4"
           variant="h4"
+          component="h1"
           sx={{
             textAlign: "center",
             fontWeight: 500,

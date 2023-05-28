@@ -80,6 +80,7 @@ const KitchenExhaustSystem = () => {
           </Typography>
           <Typography
             variant="h3"
+            component="h1"
             sx={{
               textAlign: "center",
               fontWeight: 600,
@@ -273,7 +274,7 @@ const KitchenExhaustSystem = () => {
                 // background: `url(${smoke}) no-repeat right center `,
               }}
             >
-              <Accordion square >
+              <Accordion square>
                 <AccordionSummary
                   expandIcon={<AddCircleIcon />}
                   aria-controls="panel1a-content"
