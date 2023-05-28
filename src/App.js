@@ -3,6 +3,8 @@ import React, { Suspense } from "react";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./main/ErrorPage";
+import Loader from "./main/Loader";
+
 import CircularProgress from "@mui/material/CircularProgress";
 import Root from "./pages/Root";
 import Hero from "./components/hero/Hero";
@@ -24,69 +26,75 @@ import PrivacyPolicy from "./components/terms/PrivacyPolicy";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Root />,
+    element: <Loader />,
     errorElement: <ErrorPage />,
     children: [
       {
-        index: true,
-        element: <Hero />,
-      },
-      {
-        path: "/aboutus",
-        element: <AboutUs />,
-      },
-      // {
-      //   path: "/services",
-      //   // element: <Hero />,
-      //   // element: <Projects />,
-      //   // index: true,
-      //   children: [
-      {
-        path: "projects",
-        element: <Projects />,
-      },
-      {
-        path: "acmv",
-        element: <Acmv />,
-      },
-      {
-        path: "kitchen-exhaust-system",
-        element: <KitchenExhaustSystem />,
-      },
-      {
-        path: "electrical-services",
-        element: <ElectricalServices />,
-      },
-      {
-        path: "scaffolding-work",
-        element: <ScaffoldingWork />,
-      },
-      {
-        path: "glass-aluminum-work",
-        element: <GlassAluminumWork />,
-      },
-      {
-        path: "construction",
-        element: <Construction />,
-      },
-      //   ],
-      // },
-      // {
-      //   path: "/service",
-      //   element: <Projects />,
-      // },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/privacy-policy",
-        element: <PrivacyPolicy />,
-      },
-      {
-        path: "/terms&conditions",
-        element: <TermsAndConditions />,
+        path: "/",
+        element: <Root />,
+        // errorElement: <ErrorPage />,
+        children: [
+          {
+            index: true,
+            element: <Hero />,
+          },
+          {
+            path: "/aboutus",
+            element: <AboutUs />,
+          },
+          // {
+          //   path: "/services",
+          //   // element: <Hero />,
+          //   // element: <Projects />,
+          //   // index: true,
+          //   children: [
+          {
+            path: "projects",
+            element: <Projects />,
+          },
+          {
+            path: "acmv",
+            element: <Acmv />,
+          },
+          {
+            path: "kitchen-exhaust-system",
+            element: <KitchenExhaustSystem />,
+          },
+          {
+            path: "electrical-services",
+            element: <ElectricalServices />,
+          },
+          {
+            path: "scaffolding-work",
+            element: <ScaffoldingWork />,
+          },
+          {
+            path: "glass-aluminum-work",
+            element: <GlassAluminumWork />,
+          },
+          {
+            path: "construction",
+            element: <Construction />,
+          },
+          //   ],
+          // },
+          // {
+          //   path: "/service",
+          //   element: <Projects />,
+          // },
+          {
+            path: "/contact",
+            element: <Contact />,
+          },
+          {
+            path: "/privacy-policy",
+            element: <PrivacyPolicy />,
+          },
+          {
+            path: "/terms&conditions",
+            element: <TermsAndConditions />,
+          },
+        ],
       },
     ],
   },

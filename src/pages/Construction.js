@@ -89,7 +89,7 @@ const Construction = () => {
           mb: 10,
           // background: `url(${tile}) no-repeat `,
           // background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1)),
-          backgroundImage: `linear-gradient(to bottom,  rgb(243,240,241) , transparent 50%), url(${gear})`,
+          // backgroundImage: `linear-gradient(to bottom,  rgb(243,240,241) , transparent 50%), url(${gear})`,
           // backgroundOrigin: " border-box",
           backgroundSize: "cover",
           // backgroundOrigin: "right",
@@ -105,9 +105,10 @@ const Construction = () => {
         <Typography
           variant="h3"
           sx={{
-            textAlign: { xs: "center", md: "left" },
+            // textAlign: { xs: "center", md: "left" },
+            textAlign: "center",
             fontWeight: 600,
-            pl: { xs: 1, md: 25 },
+            // pl: { xs: 1, md: 25 },
             // pl: { xs: 0, md: 5 },
             transform: "scaleX(-1)",
           }}
@@ -118,9 +119,10 @@ const Construction = () => {
           variant="h4"
           component="h1"
           sx={{
-            textAlign: { xs: "center", md: "left" },
+            // textAlign: { xs: "center", md: "left" },
+            textAlign: "center",
             fontWeight: 500,
-            pl: { xs: 0, md: 15 },
+            // pl: { xs: 0, md: 15 },
             fontSize: { xs: 30, sm: 35, md: 40 },
             transform: "scaleX(-1)",
             // backdropFilter: "blur(20px)",
@@ -128,6 +130,19 @@ const Construction = () => {
         >
           Construction
         </Typography>
+        <img
+          src={gear}
+          alt="snow"
+          // willReadFrequently
+          style={{
+            width: "100%",
+            // height: "80vh",
+            opacity: ".2",
+            position: "absolute",
+            right: "0",
+            bottom: "0",
+          }}
+        />
         {/* <Typography
           variant="body1"
           sx={{
@@ -184,35 +199,35 @@ const Construction = () => {
                 {...a11yProps(1)}
               />
               <Tab label="BIDDING AND CONSTRUCTION" {...a11yProps(2)} />
-            </Tabs>{" "}
+            </Tabs>
           </AppBar>
         </Box>
         <TabPanel value={value} index={0}>
-          <Box sx={{ width: 500 }}>
-            <img
-              src="https://img.freepik.com/free-vector/flat-engineering-construction-illustrated_23-2148892788.jpg?w=2000"
-              alt="construction"
-              style={{ width: "inherit" }}
-            />
-          </Box>{" "}
+          {/* <Box sx={{ width: { xs: 300, md: 500 } }}> */}
+          <img
+            src="https://img.freepik.com/free-vector/flat-engineering-construction-illustrated_23-2148892788.jpg?w=2000"
+            alt="construction"
+            style={{ width: "50vw" }}
+          />
+          {/* </Box>{" "} */}
         </TabPanel>
         <TabPanel value={value} index={1}>
-          <Box sx={{ width: 500, mx: "auto" }}>
-            <img
-              src="https://img.freepik.com/free-vector/construction-concept-illustration_114360-6373.jpg?w=740&t=st=1685258991~exp=1685259591~hmac=ccffdda83407db55aa8d84f58f2c99711578588ffbe26b6a4cfcdd51fff4b1c6"
-              alt="construction"
-              style={{ width: "inherit" }}
-            />
-          </Box>{" "}
+          {/* <Box sx={{ width: 500, mx: "auto" }}> */}
+          <img
+            src="https://img.freepik.com/free-vector/construction-concept-illustration_114360-6373.jpg?w=740&t=st=1685258991~exp=1685259591~hmac=ccffdda83407db55aa8d84f58f2c99711578588ffbe26b6a4cfcdd51fff4b1c6"
+            alt="construction"
+            style={{ width: "50vw" }}
+          />
+          {/* </Box>{" "} */}
         </TabPanel>
         <TabPanel value={value} index={2}>
-          <Box sx={{ width: 500, mx: "auto" }}>
-            <img
-              src="https://img.freepik.com/free-vector/construction-concept-with-retro-style-concept-workers-machines-building-house-cartoon_1284-8104.jpg?size=626&ext=jpg&ga=GA1.1.2136575466.1684650788&semt=ais"
-              alt="construction"
-              style={{ width: "inherit" }}
-            />
-          </Box>{" "}
+          {/* <Box sx={{ width: 500, mx: "auto" }}> */}
+          <img
+            src="https://img.freepik.com/free-vector/construction-concept-with-retro-style-concept-workers-machines-building-house-cartoon_1284-8104.jpg?size=626&ext=jpg&ga=GA1.1.2136575466.1684650788&semt=ais"
+            alt="construction"
+            style={{ width: "50vw" }}
+          />
+          {/* </Box>{" "} */}
         </TabPanel>
       </Box>
       <Typography
@@ -241,14 +256,14 @@ const Construction = () => {
       <Box
         sx={{
           width: "100%",
-          p: 5,
+          // p: 5,
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
         }}
       >
         <SimpleImageSlider
-          width={900}
+          width={"90vw"}
           height={450}
           images={sliderImages}
           showBullets={true}

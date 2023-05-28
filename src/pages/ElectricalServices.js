@@ -39,7 +39,7 @@ const ElectricalServices = () => {
           // pt: { xs: "25vh", md: "20vh" },
           // pb: "20vh",
           display: "flex",
-          flexDirection: "row",
+          flexDirection: { xs: "column ", md: "row" },
           mb: 10,
           // background: `url(${tile}) no-repeat `,
           // background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1)),
@@ -54,7 +54,7 @@ const ElectricalServices = () => {
           // backgroundColor: "red",
         }}
       >
-        <Box sx={{ flex: 1, mt: "20vh" }}>
+        <Box sx={{ flex: 1, mt: { xs: "10vh", md: "20vh" } }}>
           <Typography
             variant="h3"
             sx={{
