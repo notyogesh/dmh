@@ -96,7 +96,7 @@ const Contact = () => {
                 //   "-3px -3px 7px #ffffffb0, 3px 3px 5px rgba(94, 104, 121, 0.692)",
               }}
             >
-              DAVID
+              JAMES
             </Typography>
 
             <Typography
