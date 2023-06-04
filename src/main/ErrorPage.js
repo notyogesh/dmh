@@ -85,7 +85,7 @@ const ErrorPage = () => {
             },
           }}
         >
-          Go to Home
+          Go Home
         </Button>
         <CssBaseline />
       </Box>

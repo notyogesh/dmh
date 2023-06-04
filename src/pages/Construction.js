@@ -107,8 +107,7 @@ const Construction = () => {
           sx={{
             // textAlign: { xs: "center", md: "left" },
             textAlign: "center",
-            fontWeight: 600,
-            // pl: { xs: 1, md: 25 },
+            fontWeight: "bold", // pl: { xs: 1, md: 25 },
             // pl: { xs: 0, md: 5 },
             transform: "scaleX(-1)",
           }}
@@ -121,7 +120,7 @@ const Construction = () => {
           sx={{
             // textAlign: { xs: "center", md: "left" },
             textAlign: "center",
-            fontWeight: 500,
+            fontWeight: "bold",
             // pl: { xs: 0, md: 15 },
             fontSize: { xs: 30, sm: 35, md: 40 },
             transform: "scaleX(-1)",
@@ -137,7 +136,7 @@ const Construction = () => {
           style={{
             width: "100%",
             // height: "80vh",
-            opacity: ".2",
+            opacity: ".15",
             position: "absolute",
             right: "0",
             bottom: "0",
