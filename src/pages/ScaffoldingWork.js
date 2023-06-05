@@ -1,34 +1,27 @@
 import React from "react";
-import { Box } from "@mui/material";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Box,
+  Stack,
+} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import paper from "../images/paper.png";
-import Tabs from "@mui/material/Tabs";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import KitchenCard from "../utils/KitchenCard";
-
-import Tab from "@mui/material/Tab";
-import TabPanel from "../utils/TabPanel";
+import AddCircleIcon from "@mui/icons-material/AddCircle";
+import TuneIcon from "@mui/icons-material/Tune";
+import DashboardCustomizeIcon from "@mui/icons-material/DashboardCustomize";
+import BeenhereIcon from "@mui/icons-material/Beenhere";
+import Diversity2Icon from "@mui/icons-material/Diversity2";
+import ExtensionIcon from "@mui/icons-material/Extension";
+// import TabPanel from "../utils/TabPanel";
 import Seo from "../main/Seo";
 // import { ContactSupportOutlined } from "@mui/icons-material";
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.number.isRequired,
-  value: PropTypes.number.isRequired,
-};
 
-function a11yProps(index) {
-  return {
-    id: `vertical-tab-${index}`,
-    "aria-controls": `vertical-tabpanel-${index}`,
-  };
-}
 // const tab =[{head:"one",body:"two"},{head:"three",body:"dgddeee"},{head:"gevgg",body:"dgeeevv"}]
 const ScaffoldingWork = () => {
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
   return (
     <Box
       sx={{
@@ -121,118 +114,59 @@ const ScaffoldingWork = () => {
       </Typography>
       <Box
         sx={{
-          flexGrow: 1,
-          // bgcolor: "#fff",
-          display: "flex",
-          // p: 2,
-          mx: 5,
-          textAlign: "left",
-          border: "1px solid #000",
+          mt: 8,
+          backgroundColor: "#F3F0F1",
+          mx: { xs: 2, md: 20 },
+          borderRadius: "9px",
         }}
-        // key={i}
       >
-        <Tabs
-          orientation="vertical"
-          variant="scrollable"
-          value={value}
-          onChange={handleChange}
-          aria-label="Vertical tabs example"
-          // textColor="secondary"
-          fontWeight="bold"
-          sx={{
-            borderRight: 1,
-            borderColor: "divider",
-            // width: "50%",
-            width: 600,
-            // background: "cyan",
-
-            color: "red",
-          }}
-        >
-          <Tab
-            label="Safety First:"
-            {...a11yProps(0)}
+        {whyUsScaffolding.map((item, i) => (
+          <Box
+            key={i}
             sx={{
-              whiteSpace: "nowrap",
-              // px: 5,
-              "&.Mui-selected": {
-                backgroundColor: "#444",
-              },
+              textAlign: "left",
+              // color: "#4F4350",
             }}
-          />
-          <Tab
-            label="Quality Materials:"
-            {...a11yProps(1)}
-            sx={{
-              whiteSpace: "nowrap",
-              "&.Mui-selected": {
-                backgroundColor: "#4B4A54",
-              },
-            }}
-          />
-          <Tab
-            label="Expertise and Experience:"
-            {...a11yProps(2)}
-            sx={{
-              whiteSpace: "nowrap",
-              "&.Mui-selected": {
-                backgroundColor: "#4B4A54",
-              },
-            }}
-          />
-          <Tab
-            label="Customization:"
-            {...a11yProps(3)}
-            sx={{
-              whiteSpace: "nowrap",
-              "&.Mui-selected": {
-                backgroundColor: "#4B4A54",
-              },
-            }}
-          />
-
-          <Tab
-            label="Timely Delivery:"
-            {...a11yProps(4)}
-            sx={{
-              whiteSpace: "nowrap",
-              "&.Mui-selected": {
-                backgroundColor: "#4B4A54",
-              },
-            }}
-          />
-        </Tabs>
-        <TabPanel value={value} index={0} sx={{ display: "flex", mt: "auto" }}>
-          Safety is our top priority. We strictly adhere to industry safety
-          standards and regulations, and our team of skilled professionals is
-          trained in safe scaffolding practices. We conduct regular safety
-          audits and inspections to ensure that our scaffolding structures are
-          safe for workers to use.
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          We use only high-quality materials in our scaffolding structures,
-          ensuring durability and stability. Our materials are sourced from
-          reputable suppliers and comply with relevant industry standards.
-        </TabPanel>
-        <TabPanel value={value} index={2}>
-          Our team of skilled scaffolding professionals has extensive experience
-          in the industry. We have successfully completed numerous scaffolding
-          projects of varying sizes and complexities, and we bring that
-          expertise to every job we undertake.
-        </TabPanel>
-        <TabPanel value={value} index={3}>
-          We understand that every project is unique, and we offer customized
-          scaffolding solutions to meet your specific requirements. Our design
-          and engineering team works closely with you to create scaffolding
-          structures that are tailored to your project's needs, ensuring maximum
-          efficiency and safety.
-        </TabPanel>
-        <TabPanel value={value} index={4}>
-          We understand the importance of meeting project deadlines, and we
-          strive to deliver our scaffolding services on time and within budget.
-          Our team works efficiently to ensure that your scaffolding is erected,
-          used, and dismantled as per your project schedule.
-        </TabPanel>
+          >
+            <Accordion
+              square
+              sx={{ backgroundColor: "#DFE0DF", border: "1px solid #f3f0f1" }}
+            >
+              <AccordionSummary
+                expandIcon={<AddCircleIcon />}
+                aria-controls="panel1a-content"
+                id={item.head + i}
+              >
+                {" "}
+                {/* <TuneIcon /> {item.head} */}
+                <Stack direction="row" alignItems="center" sx={{ pl: 2 }}>
+                  {item.icon}
+                  <Typography
+                    variant="h5"
+                    sx={{
+                      pb: 2,
+                      px: 5,
+                      pt: 2,
+                      // mx: "auto",
+                      display: "flex",
+                      fontWeight: 500,
+                    }}
+                  >
+                    {item.head}
+                  </Typography>
+                </Stack>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography
+                  variant="body1"
+                  sx={{ px: 5, pb: 4, fontWeight: 600 }}
+                >
+                  {item.body}{" "}
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+          </Box>
+        ))}
       </Box>
       {/* <Typography variant="h4" sx={{ my: 2, textAlign: "center" }}>
         Contact Us:
@@ -270,5 +204,34 @@ const servicesScaffolding = [
     head: "Design and Engineering:",
     body: "We have experienced design and engineering professionals who can create customized scaffolding solutions tailored to your project's specific requirements. We use state-of-the-art tools and software to design safe and efficient scaffolding structures that meet all applicable regulations.",
     img: "https://cdn-resources.accasoftware.com/accasoftware/images/certus-scaffolding/certus-scaffolding-cover.webp",
+  },
+];
+const whyUsScaffolding = [
+  {
+    head: "Safety First",
+    body: "Safety is our top priority. We strictly adhere to industry safety standards and regulations, and our team of skilled professionals is trained in safe scaffolding practices. We conduct regular safety audits and inspections to ensure that our scaffolding structures are safe for workers to use.",
+    icon: <BeenhereIcon />,
+    // icon: <TuneIcon />,
+  },
+  {
+    head: "Quality Materials",
+    body: "We use only high-quality materials in our scaffolding structures, ensuring durability and stability. Our materials are sourced from reputable suppliers and comply with relevant industry standards.",
+    icon: <TuneIcon />,
+    // icon: <ExtensionIcon />,
+  },
+  {
+    head: "Expertise and Experience",
+    body: "Our team of skilled scaffolding professionals has extensive experience in the industry. We have successfully completed numerous scaffolding projects of varying sizes and complexities, and we bring that expertise to every job we undertake.",
+    icon: <ExtensionIcon />,
+  },
+  {
+    head: "Customization",
+    body: "We understand that every project is unique, and we offer customized scaffolding solutions to meet your specific requirements. Our design and engineering team works closely with you to create scaffolding structures that are tailored to your project's needs, ensuring maximum efficiency and safety.",
+    icon: <DashboardCustomizeIcon />,
+  },
+  {
+    head: "Timely Delivery",
+    body: "We understand the importance of meeting project deadlines, and we strive to deliver our scaffolding services on time and within budget. Our team works efficiently to ensure that your scaffolding is erected, used, and dismantled as per your project schedule.",
+    icon: <Diversity2Icon />,
   },
 ];

@@ -126,10 +126,6 @@ const GlassAluminumWork = () => {
       </Typography>
       <Box
         sx={{
-          // boxShadow: "6px 6px 12px #b8b9be,-6px -6px 12px #fff",
-          // border: "1px solid #d1d9e6",
-          // pt: 5,
-          // pb: 2,
           mt: 8,
           backgroundColor: "#F3F0F1",
           mx: { xs: 2, md: 20 },
