@@ -16,6 +16,7 @@ import Stack from "@mui/material/Stack";
 
 import Diversity2Icon from "@mui/icons-material/Diversity2";
 import ExtensionIcon from "@mui/icons-material/Extension";
+import Seo from "../main/Seo";
 const GlassAluminumWork = () => {
   return (
     <Box
@@ -30,6 +31,12 @@ const GlassAluminumWork = () => {
       }}
     >
       {" "}
+      <Seo
+        title="Glass & Aluminum works - DMH"
+        description="DMH Glass & Aluminum Services: Transforming Spaces with Precision and Elegance. Explore the exceptional glass and aluminum services offered by DMH. Our skilled team specializes in designing, fabricating, and installing stunning glass and aluminum solutions for residential, commercial, and architectural projects. "
+        name="D M H"
+        type="Glass & Aluminum services Page"
+      />
       <Box
         sx={{
           pt: { xs: "25vh", md: "20vh" },

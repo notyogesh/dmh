@@ -11,6 +11,7 @@ import EmailIcon from "@mui/icons-material/Email";
 // import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import ContactButton from "../utils/ContactButton";
+import Seo from "../main/Seo";
 // import FaxIcon from "@mui/icons-material/Fax";
 // import Paper from "@mui/material/Paper";
 const contacts = [
@@ -40,6 +41,12 @@ const Contact = () => {
         }}
       >
         <CssBaseline />
+        <Seo
+          title="Contact Us - DMH"
+          description=" Contact us today for inquiries, project requests, or any questions you may have.  Experience prompt and reliable communication as we guide you through your all of our service journey."
+          name="D M H"
+          type="Contact us  page "
+        />
         <Box
           sx={{
             flex: 1,

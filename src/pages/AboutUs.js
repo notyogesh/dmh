@@ -12,6 +12,7 @@ import PrecisionManufacturingIcon from "@mui/icons-material/PrecisionManufacturi
 import LeaderboardIcon from "@mui/icons-material/Leaderboard";
 import GradeIcon from "@mui/icons-material/Grade";
 import BeenhereIcon from "@mui/icons-material/Beenhere";
+import Seo from "../main/Seo";
 
 const AboutUs = () => {
   const aboutCardContent = [
@@ -61,6 +62,13 @@ const AboutUs = () => {
         m: 1,
       }}
     >
+      {" "}
+      <Seo
+        title="D M H - About Us"
+        description=" Discover our comprehensive range of services, from residential and commercial construction to specialized electrical, glass, aluminum, and more. "
+        name="D M H"
+        type="about us page "
+      />
       <Box
         sx={{ pt: "20vh", display: "flex", flexDirection: "column", mb: 10 }}
       >

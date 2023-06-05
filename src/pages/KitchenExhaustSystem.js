@@ -19,6 +19,7 @@ import BeenhereIcon from "@mui/icons-material/Beenhere";
 // import AssuredWorkloadIcon from "@mui/icons-material/AssuredWorkload";
 import Diversity2Icon from "@mui/icons-material/Diversity2";
 import ExtensionIcon from "@mui/icons-material/Extension";
+import Seo from "../main/Seo";
 const KitchenExhaustSystem = () => {
   // const imageRef = useRef(null);
 
@@ -47,6 +48,12 @@ const KitchenExhaustSystem = () => {
         pb: 5,
       }}
     >
+      <Seo
+        title="Kitchen Exhaust System - DMH"
+        description="DMH Kitchen Exhaust System: Clean, Efficient, and Reliable Ventilation Solutions. Discover the power of DMH's advanced kitchen exhaust systems. Our specialized solutions effectively remove smoke, grease, odors, and airborne contaminants from commercial kitchens, ensuring a healthy and safe environment."
+        name="D M H"
+        type="Kitchen Exhaust System Page"
+      />
       <Box
         sx={{
           pt: "20vh",

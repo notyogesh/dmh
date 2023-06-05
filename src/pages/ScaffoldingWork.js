@@ -8,6 +8,7 @@ import KitchenCard from "../utils/KitchenCard";
 
 import Tab from "@mui/material/Tab";
 import TabPanel from "../utils/TabPanel";
+import Seo from "../main/Seo";
 // import { ContactSupportOutlined } from "@mui/icons-material";
 TabPanel.propTypes = {
   children: PropTypes.node,
@@ -37,6 +38,13 @@ const ScaffoldingWork = () => {
         color: "#31344B",
       }}
     >
+      {" "}
+      <Seo
+        title="Scaffolding Work - DMH"
+        description="DMH Scaffolding Work: Elevate Your Projects with Safe and Reliable Solutions. Explore DMH's comprehensive scaffolding services for construction, maintenance, and renovation projects. Our skilled team provides sturdy and secure scaffolding structures that ensure safe access and support for workers at various heights."
+        name="D M H"
+        type="Kitchen Exhaust System Page"
+      />
       <Box
         sx={{
           pt: { xs: "25vh", md: "20vh" },
@@ -108,7 +116,6 @@ const ScaffoldingWork = () => {
           backgroundColor={"#F3F0F1"}
         />
       ))}
-
       <Typography variant="h3" sx={{ ml: "auto", my: 3, textAlign: "center" }}>
         Why Choose Us:
       </Typography>

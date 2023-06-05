@@ -15,6 +15,7 @@ import TuneIcon from "@mui/icons-material/Tune";
 
 // import AssuredWorkloadIcon from "@mui/icons-material/AssuredWorkload";
 import Stack from "@mui/material/Stack";
+import Seo from "../main/Seo";
 // import repair from "../images/repair.png";
 
 const ElectricalServices = () => {
@@ -34,6 +35,12 @@ const ElectricalServices = () => {
         pb: 5,
       }}
     >
+      <Seo
+        title="Electrical Services - DMH"
+        description="DMH Electrical Services: Unleash the Power of Excellence in Electrical Solutions. Discover top-notch electrical services provided by DMH. Our experienced and certified electricians offer a wide range of services including installations, repairs, and maintenance for residential, commercial, and industrial projects. "
+        name="D M H"
+        type="Electrical Services Page"
+      />
       <Box
         sx={{
           // pt: { xs: "25vh", md: "20vh" },

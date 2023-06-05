@@ -27,6 +27,7 @@ const Projects = () => {
       }}
     >
       <CssBaseline />
+
       <Typography
         variant="h4"
         sx={{ fontWeight: "bold", py: 4, color: "inherit" }}

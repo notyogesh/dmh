@@ -14,6 +14,7 @@ import customize from "../images/customize.png";
 import customerservice from "../images/customerservice.png";
 // import deer from "../images/onedeer1.png";
 import snow from "../images/snow.png";
+import Seo from "../main/Seo";
 // import Nav from "../main/navbar/NavBar"
 const Acmv = () => {
   const acmvCardContent = [
@@ -79,6 +80,12 @@ const Acmv = () => {
         //
       }}
     >
+      <Seo
+        title="AirConditioning & Mechanical Vendilation System"
+        description=" DMH AirConditioning & Mechanical Vendilation System , Heating , Vendilating & Air Conditioning Services"
+        name="D M H"
+        type=" AirConditioning & Mechanical Vendilation System service  page "
+      />
       <Box
         sx={{
           pt: "20vh",

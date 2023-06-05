@@ -12,6 +12,7 @@ import AboutUsCard from "../utils/AboutUsCard";
 import LeaderboardIcon from "@mui/icons-material/Leaderboard";
 import GradeIcon from "@mui/icons-material/Grade";
 import BeenhereIcon from "@mui/icons-material/Beenhere";
+import Seo from "../main/Seo";
 const whyUsConstruction = [
   {
     head: "Quality Control",
@@ -80,6 +81,12 @@ const Construction = () => {
       }}
     >
       {" "}
+      <Seo
+        title="Construction - DMH construction work"
+        description=" DMH Construction Work: Unparalleled Excellence in Building and Renovation Projects. Trust our skilled team of professionals to bring your vision to life."
+        name="D M H"
+        type="Construction  service  page "
+      />
       <Box
         sx={{
           pt: { xs: "25vh", md: "20vh" },
@@ -122,6 +129,7 @@ const Construction = () => {
             textAlign: "center",
             fontWeight: "bold",
             // pl: { xs: 0, md: 15 },
+            letterSpacing: "1.5px",
             fontSize: { xs: 30, sm: 35, md: 40 },
             transform: "scaleX(-1)",
             // backdropFilter: "blur(20px)",
@@ -279,6 +287,7 @@ const Construction = () => {
         sx={{
           textAlign: "center",
           color: "#31344B",
+          pt: 5,
           px: { xs: 2, md: 20 },
           pb: { xs: 2, md: 2 },
         }}

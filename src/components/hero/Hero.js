@@ -44,7 +44,7 @@ const Hero = () => {
         {" "}
         <Seo
           title="D M H"
-          description="Construction &       Engineering Pte.Ltd"
+          description="Construction &  Engineering Pte.Ltd, Discover our comprehensive range of services, from residential and commercial construction to specialized electrical, glass, aluminum, scaffolding , Air conditioning & Mechanical Vendilation services."
           name="D M H"
           type="landing page "
         />

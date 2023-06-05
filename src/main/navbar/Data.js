@@ -27,8 +27,15 @@ export const menuItems = [
     end: <ArrowDropDownIcon />,
     id: "3",
     sub: [
+      {
+        title: "Construction",
+        link: "/service/construction",
+      },
       // { title: "Services", link: "/service/projects" },
-      { title: "Acmv", link: "/service/acmv" },
+      {
+        title: "AirConditioning & Mechanical Vendilation System",
+        link: "/service/acmv",
+      },
       {
         title: "Kitchen Exhaust System",
         link: "/service/kitchen-exhaust-system",
@@ -45,11 +52,6 @@ export const menuItems = [
         title: "Scaffolding work",
         link: "/service/scaffolding-work",
       },
-
-      {
-        title: "Construction",
-        link: "/service/construction",
-      },
     ],
   },
   {
@@ -61,7 +63,14 @@ export const menuItems = [
 ];
 export const sub = [
   // { title: "Services", link: "/service/projects" },
-  { title: "Acmv", link: "/acmv" },
+  {
+    title: "Construction",
+    link: "/construction",
+  },
+  {
+    title: "AirConditioning & Mechanical Vendilation System",
+    link: "/airconditioning&mechanical-vendilation-system",
+  },
   {
     title: "Kitchen Exhaust System",
     link: "/kitchen-exhaust-system",
@@ -77,9 +86,5 @@ export const sub = [
   {
     title: "Electrical Services",
     link: "/electrical-services",
-  },
-  {
-    title: "Construction",
-    link: "/construction",
   },
 ];
