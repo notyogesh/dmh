@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import gear from "../images/gear-min.png";
+// import gear from "../images/gear-min.png";
 import Box from "@mui/material/Box";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
@@ -13,6 +13,8 @@ import LeaderboardIcon from "@mui/icons-material/Leaderboard";
 import GradeIcon from "@mui/icons-material/Grade";
 import BeenhereIcon from "@mui/icons-material/Beenhere";
 import Seo from "../main/Seo";
+import construction from "../images/construction.png";
+
 const whyUsConstruction = [
   {
     head: "Quality Control",
@@ -83,28 +85,22 @@ const Construction = () => {
       {" "}
       <Seo
         title="Construction - DMH construction work"
-        description=" DMH Construction Work: Unparalleled Excellence in Building and Renovation Projects. Trust our skilled team of professionals to bring your vision to life."
+        description=" DMH Construction , Unparalleled Excellence in Building and Renovation Projects. Trust our skilled team of professionals to bring your vision to life."
         name="D M H"
         type="Construction  service  page "
       />
-      <Box
+      {/* <Box
         sx={{
           pt: { xs: "25vh", md: "20vh" },
           pb: "20vh",
           display: "flex",
           flexDirection: "column",
           mb: 10,
-          // background: `url(${tile}) no-repeat `,
-          // background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1)),
-          // backgroundImage: `linear-gradient(to bottom,  rgb(243,240,241) , transparent 50%), url(${gear})`,
-          // backgroundOrigin: " border-box",
+          
           backgroundSize: "cover",
-          // backgroundOrigin: "right",
-          // backgroundSize: "100% 100%",
+          
           minHeight: "60vh",
-          // backgroundPositionY: "bottom",
-          // backdropFilter: "blur(50px)",
-          // backdropFilter:blur(8px),
+          
           transform: "scaleX(-1)",
           // filter: "blur(8px)",
         }}
@@ -150,18 +146,54 @@ const Construction = () => {
             bottom: "0",
           }}
         />
-        {/* <Typography
-          variant="body1"
-          sx={{
-            textAlign: "center",
-            // px: 10,
-            pt: 5,
-            pb: 3,
-            fontWeight: 600,
-            px: { xs: 2, md: 20 },
-            // width: "350px",
-          }}
-        ></Typography> */}
+       
+      </Box> */}
+      <Box
+        sx={{
+          // pt: { xs: "25vh", md: "20vh" },
+          // pb: "20vh",
+          display: "flex",
+          flexDirection: { xs: "column ", md: "row" },
+          mb: 15,
+        }}
+      >
+        <Box sx={{ flex: "40%", mt: { xs: "10vh", md: "20vh" } }}>
+          <Typography
+            variant="h3"
+            sx={{
+              // textAlign: { xs: "center", md: "left" },
+              fontWeight: 600,
+              // pl: { xs: 1, md: 25 },
+            }}
+          >
+            DMH
+          </Typography>
+          <Typography
+            variant="h4"
+            component="h1"
+            sx={{
+              // textAlign: { xs: "center", md: "left" },
+              fontWeight: 600,
+              // pl: { xs: 0, md: 5 },
+              fontSize: { xs: 30, sm: 35, md: 40 },
+              // backdropFilter: "blur(20px)",
+              letterSpacing: "1.2px",
+            }}
+          >
+            Construction
+          </Typography>
+        </Box>
+        <Box sx={{ flex: "60%" }}>
+          <img
+            src={construction}
+            alt="construction"
+            style={{
+              width: "100%",
+              filter: "grayscale(25%)",
+              // filter: "hue-rotate(340deg)",
+            }}
+          />
+        </Box>
       </Box>
       <Typography
         variant="h6"

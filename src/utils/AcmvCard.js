@@ -4,8 +4,8 @@ import { Box, Typography } from "@mui/material";
 // import { InView } from "react-intersection-observer";
 
 const AcmvCard = (props) => {
-  const width = props.i < 2 ? 500 : props.i < 5 ? 325 : 500;
-
+  // const width = props.i < 2 ? 500 : props.i < 5 ? 325 : 500;
+  const width = 500;
   return (
     <Box
       sx={{

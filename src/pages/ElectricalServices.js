@@ -48,17 +48,6 @@ const ElectricalServices = () => {
           display: "flex",
           flexDirection: { xs: "column ", md: "row" },
           mb: 10,
-          // background: `url(${tile}) no-repeat `,
-          // background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(255,0,0,1)),
-          // backgroundImage: `linear-gradient(to bottom,  rgb(243,240,241) , transparent 50%), url(${peakpx})`,
-          // backgroundOrigin: " border-box",
-          // backgroundSize: "cover",
-          // backgroundOrigin: "right",
-          // backgroundSize: "100% 100%",
-          // minHeight: "60vh",
-          // backgroundPositionY: "bottom",
-          // backdropFilter: "blur(20)",
-          // backgroundColor: "red",
         }}
       >
         <Box sx={{ flex: 1, mt: { xs: "10vh", md: "20vh" } }}>
