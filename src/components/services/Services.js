@@ -12,7 +12,7 @@ const Services = () => {
       to: "/construction",
     },
     {
-      head: "ACMV",
+      head: "AirConditioning & Mechanical Vendilation System",
       body: "(Air Conditioning and Mechanical Ventilation System) Heating, ventilation, and air conditioning  services,We offer a comprehensive range of HVAC services, including installation, maintenance, and repairs. ",
       img: "https://img.freepik.com/free-vector/air-conditioner-repair-repairman-with-tools_33099-272.jpg?size=626&ext=jpg&ga=GA1.1.2136575466.1684650788&semt=ais",
       to: "/airconditioning&mechanical-vendilation-system",
