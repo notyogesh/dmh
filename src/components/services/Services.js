@@ -2,14 +2,20 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import ServiceCard from "../../utils/ServiceCard";
 import { Box } from "@mui/material";
-import plumbing from "../../images/plumber.png"
+import plumbing from "../../images/plumber.png";
 const Services = () => {
   const services = [
+    {
+      head: "Construction Design & Build",
+      body: "We offer comprehensive construction and building services for commercial and residential properties. From concept to completion,  including design, planning, and construction management. We  ensure that each project is completed to the highest standards of quality and safety. Whether you're looking to build a new property from scratch or renovate an existing one.",
+      img: "https://www.doegedevelopment.com/wp-content/uploads/commercial-design-build.jpg",
+      to: "/construction",
+    },
     {
       head: "ACMV",
       body: "(Air Conditioning and Mechanical Ventilation System) Heating, ventilation, and air conditioning  services,We offer a comprehensive range of HVAC services, including installation, maintenance, and repairs. ",
       img: "https://img.freepik.com/free-vector/air-conditioner-repair-repairman-with-tools_33099-272.jpg?size=626&ext=jpg&ga=GA1.1.2136575466.1684650788&semt=ais",
-      to: "/acmv",
+      to: "/airconditioning&mechanical-vendilation-system",
     },
     {
       head: "Plumbing & Electrical Services",
@@ -34,12 +40,6 @@ const Services = () => {
       body: "We provide scaffolding work services for a range of industries, including construction, maintenance, and renovation. Providing safe and reliable access to hard-to-reach areas. We use high-quality materials and equipment, and strictly adhere to safety regulations to ensure the protection of our clients and workers. ",
       img: "https://images.unsplash.com/photo-1555945071-f36c590968bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNjYWZmb2xkaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
       to: "/scaffolding-work",
-    },
-    {
-      head: "Construction Design & Build",
-      body: "We offer comprehensive construction and building services for commercial and residential properties. From concept to completion,  including design, planning, and construction management. We  ensure that each project is completed to the highest standards of quality and safety. Whether you're looking to build a new property from scratch or renovate an existing one.",
-      img: "https://www.doegedevelopment.com/wp-content/uploads/commercial-design-build.jpg",
-      to: "/construction",
     },
   ];
   return (

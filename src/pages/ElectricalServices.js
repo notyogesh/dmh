@@ -12,11 +12,11 @@ import AddCircleIcon from "@mui/icons-material/AddCircle";
 import Diversity2Icon from "@mui/icons-material/Diversity2";
 import ExtensionIcon from "@mui/icons-material/Extension";
 import TuneIcon from "@mui/icons-material/Tune";
-
 // import AssuredWorkloadIcon from "@mui/icons-material/AssuredWorkload";
 import Stack from "@mui/material/Stack";
 import Seo from "../main/Seo";
 // import repair from "../images/repair.png";
+import repair from "../images/repair.png";
 
 const ElectricalServices = () => {
   return (
@@ -245,7 +245,7 @@ const servicesElectrical = [
   {
     head: "Electrical Repairs:",
     body: "From fixing faulty outlets and switches to repairing damaged wiring and circuits, our technicians can diagnose and repair all types of electrical issues quickly and efficiently. We use state-of-the-art tools and techniques to ensure that your electrical system is safe and up to code.",
-    img: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZWxlY3RyaWNhbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    img: repair,
   },
 
   {

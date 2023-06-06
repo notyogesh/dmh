@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import gear from "../images/gear.png";
+import gear from "../images/gear-min.png";
 import Box from "@mui/material/Box";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
@@ -139,7 +139,7 @@ const Construction = () => {
         </Typography>
         <img
           src={gear}
-          alt="snow"
+          alt="construction"
           // willReadFrequently
           style={{
             width: "100%",

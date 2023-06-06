@@ -198,7 +198,7 @@ const servicesScaffolding = [
   {
     head: "Scaffolding Inspection and Maintenance:",
     body: "We provide regular inspection and maintenance services for scaffolding structures to identify and address any potential safety hazards. Our team conducts thorough inspections and performs necessary repairs or replacements to keep the scaffolding in optimal condition throughout the project.",
-    img: "https://www.safework.nsw.gov.au/__data/assets/image/0008/1099637/Complete-scaffolds-2.jpg",
+    img: "https://img.freepik.com/free-vector/scaffold-concept-illustration_114360-6964.jpg?w=740&t=st=1685982365~exp=1685982965~hmac=a7511afe8f6d2a430e4cbfb9e6eb80252fb349a3c77e836921ddd520c88369da",
   },
   {
     head: "Design and Engineering:",
