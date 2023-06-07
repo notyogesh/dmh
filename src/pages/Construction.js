@@ -13,7 +13,7 @@ import LeaderboardIcon from "@mui/icons-material/Leaderboard";
 import GradeIcon from "@mui/icons-material/Grade";
 import BeenhereIcon from "@mui/icons-material/Beenhere";
 import Seo from "../main/Seo";
-import construction from "../images/construction.png";
+import construction from "../images/construction1.png";
 
 const whyUsConstruction = [
   {

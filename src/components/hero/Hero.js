@@ -47,6 +47,7 @@ const Hero = () => {
           description="Construction &  Engineering Pte.Ltd, Discover our comprehensive range of services, from residential and commercial construction to specialized electrical, glass, aluminum, scaffolding , Air conditioning & Mechanical Vendilation services."
           name="D M H"
           type="landing page "
+          // <link rel="canonical" href="https://www.tacobell.com/" />
         />
         <CssBaseline />
         <Container

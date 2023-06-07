@@ -91,7 +91,7 @@ const AboutUs = () => {
           various field of construction and engineering industry. Including air
           conditioning, kitchen exhaust duct system construction and
           maintenance, Electrical work, aluminum and glass work, and scaffolding
-          work."
+          work.
         </Typography>
 
         <Button
