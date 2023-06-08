@@ -88,7 +88,7 @@ const ScaffoldingWork = () => {
           textAlign: "center",
           color: "#31344B",
           px: { xs: 2, md: 20 },
-          pb: { xs: 2, md: 2 },
+          pb: { xs: 2, md: 10 },
         }}
       >
         At DMH, we are experts in providing top-quality scaffolding services for
@@ -96,7 +96,7 @@ const ScaffoldingWork = () => {
         experience and a team of skilled professionals, we are committed to
         delivering safe and reliable scaffolding solutions to our clients.
       </Typography>
-      <Typography variant="h3" sx={{ ml: "auto", my: 3, textAlign: "center" }}>
+      <Typography variant="h3" sx={{ textAlign: "center" }}>
         Our Services:
       </Typography>
       {servicesScaffolding.map((item, i) => (

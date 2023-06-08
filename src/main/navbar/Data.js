@@ -68,8 +68,8 @@ export const sub = [
     link: "/construction",
   },
   {
-    title: "AirConditioning & Mechanical Vendilation System",
-    link: "/airconditioning&mechanical-vendilation-system",
+    title: "AirConditioning & Mechanical Ventilation System",
+    link: "/airconditioning-mechanical-ventilation-system",
   },
   {
     title: "Kitchen Exhaust System",

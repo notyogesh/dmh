@@ -18,7 +18,7 @@ const ServiceCard = (props) => {
         sx={{
           p: 4,
           borderRadius: "63% 37% 30% 70%/50% 45% 55% 50%",
-          boxShadow: "6px 6px 12px #b8b9be,-6px -6px 12px #fff",
+          boxShadow: "6px 6px 12px #b8b9be,-6px -6px 12px #F3F0F1",
           border: "1px solid #d1d9e6",
           flex: 1,
           width: "100%",
@@ -71,7 +71,7 @@ const ServiceCard = (props) => {
             color: "#44476a",
             textTransform: "capitalize",
             // textShadow: "1px 1px 1px #FFF",
-            boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
+            boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #F3F0F1",
             border: "1px solid #d1d9e6",
             "&:hover": {
               backgroundColor: "#f3f0f1",

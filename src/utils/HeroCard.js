@@ -12,7 +12,7 @@ const HeroCard = (props) => {
         px: 1,
         py: 3,
         mb: { xs: 2, md: 0 },
-        boxShadow: "6px 6px 12px #b8b9be,-6px -6px 12px #fff",
+        boxShadow: "6px 6px 12px #b8b9be,-6px -6px 12px #F3F0F1",
         border: "0.2px solid #d1d9e6",
         alignItems: "center",
         flex: 1,

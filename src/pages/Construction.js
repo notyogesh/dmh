@@ -13,7 +13,7 @@ import LeaderboardIcon from "@mui/icons-material/Leaderboard";
 import GradeIcon from "@mui/icons-material/Grade";
 import BeenhereIcon from "@mui/icons-material/Beenhere";
 import Seo from "../main/Seo";
-import construction from "../images/construction1.png";
+import construction from "../images/construction2.png";
 
 const whyUsConstruction = [
   {
@@ -375,7 +375,7 @@ const Construction = () => {
             icon={item.icon}
             key={i}
             body={item.body}
-            boxShadow="6px 6px 12px #b8b9be,-6px -6px 12px #fff"
+            boxShadow="6px 6px 12px #b8b9be,-6px -6px 12px #f3f0f1"
           />
         ))}
       </Box>

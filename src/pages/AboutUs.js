@@ -105,7 +105,7 @@ const AboutUs = () => {
             color: "#44476a",
             textTransform: "capitalize",
             mx: "auto",
-            boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
+            boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #f3f0f1",
             border: "1px solid #d1d9e6",
             "&:hover": {
               boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
@@ -180,13 +180,13 @@ const AboutUs = () => {
             icon={item.icon}
             key={i}
             body={item.body}
-            boxShadow="6px 6px 12px #b8b9be,-6px -6px 12px #fff"
+            boxShadow="6px 6px 12px #b8b9be,-6px -6px 12px #f3f0f1"
           />
         ))}
       </Box>
       <Box
         sx={{
-          boxShadow: "6px 6px 12px #b8b9be,-6px -6px 12px #fff",
+          boxShadow: "6px 6px 12px #b8b9be,-6px -6px 12px #f3f0f1",
           border: "0.2px solid #d1d9e6",
           p: { xs: 1, md: 5 },
 

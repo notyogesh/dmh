@@ -18,7 +18,9 @@ const SocialButton = (props) => {
           color: "#6D7587",
           fontWeight: 600,
           // backgroundColor: "#E0E0E0",
-          boxShadow: "14px 14px 20px #cbced1, -14px -14px 20px white",
+          border: "1px solid #d1d9e6",
+          // boxShadow: "14px 14px 20px #cbced1, -14px -14px 20px #F3F0F1",
+          boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #F3F0F1",
           borderRadius: "20px",
           "&:hover": {
             // backgroundColor: "#E0E0E0",

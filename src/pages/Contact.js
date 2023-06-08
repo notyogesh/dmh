@@ -22,9 +22,9 @@ const contacts = [
     textTransform: "lowercase",
   },
   {
-    name: "dmhconstructionengineering@gmail.com",
+    name: "sales@dmhgroup.com.sg",
     icon: <EmailIcon />,
-    link: "mailto:dmhconstructionengineering@gmail.com",
+    link: "mailto:sales@dmhgroup.com.sg",
     textTransform: "lowercase",
   },
 ];
@@ -172,7 +172,7 @@ const Contact = () => {
           p: 4,
           mx: "auto",
           // borderRadius: "50% 50% 40% 60%/60% 45% 55% 40%",
-          boxShadow: "6px 6px 12px #b8b9be,-6px -6px 12px #fff",
+          boxShadow: "6px 6px 12px #b8b9be,-6px -6px 12px #F3F0F1",
           border: "1px solid #d1d9e6",
           // justifyContent: "center",
           // alignItems: "center",

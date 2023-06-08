@@ -39,7 +39,7 @@ const socio = [
   {
     name: "Email",
     icon: <EmailIcon />,
-    link: "mailto:dmhconstructionengineering@gmail.com",
+    link: "mailto:sales@dmhgroup.com.sg",
   },
 ];
 const Footer = () => {
@@ -53,7 +53,7 @@ const Footer = () => {
           mt: "auto",
           display: "flex",
           flexDirection: { xs: "column-reverse", md: "row" },
-          backgroundColor: (theme) => theme.palette.background.default,
+          // backgroundColor: (theme) => theme.palette.background.default,
         }}
       >
         <Box
@@ -69,7 +69,7 @@ const Footer = () => {
         >
           <FooterButton to="privacy-policy">Privacy Policy</FooterButton>
           {/* <Divider /> */}
-          <FooterButton to="terms&conditions">Terms & Condition </FooterButton>
+          <FooterButton to="terms-conditions">Terms & Condition </FooterButton>
           {/* <Divider orientation="vertical" flexItem /> */}
           <FooterButton>
             {" "}
@@ -106,13 +106,14 @@ const Footer = () => {
           >
             <Typography
               variant="h6"
-              color="#333333"
+              color="#565656"
               className="text"
               sx={{
                 my: 2,
                 mt: 1,
-                textShadow: "1px 1px 3px #565656",
+                // textShadow: "1px 1px 3px #565656",
                 // backgroundColor: " #565656",
+                // textDecoration: "underline",
               }}
             >
               Social Links

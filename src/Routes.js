@@ -43,7 +43,7 @@ export const router = createBrowserRouter([
             element: <Projects />,
           },
           {
-            path: "airconditioning&mechanical-vendilation-system",
+            path: "airconditioning-mechanical-ventilation-system",
             element: <Acmv />,
           },
           {
@@ -81,7 +81,7 @@ export const router = createBrowserRouter([
             element: <PrivacyPolicy />,
           },
           {
-            path: "/terms&conditions",
+            path: "/terms-conditions",
             element: <TermsAndConditions />,
           },
         ],
