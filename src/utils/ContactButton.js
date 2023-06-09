@@ -18,7 +18,7 @@ const ContactButton = (props) => {
           textShadow: "1px 1px 1px #FFF",
           border: "1px solid #d1d9e6",
           // boxShadow: "14px 14px 20px #cbced1, -14px -14px 20px white",
-          boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #fff",
+          boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #F3F0F1",
           // boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
           borderRadius: "9px",
           "&:hover": {
