@@ -38,11 +38,11 @@ html {
 
   /* border-radius: 20px; */
 }
-.wave {
+/* .wave {
   position: absolute;
   bottom: 0;
   z-index: 1;
-}
+} */
 .divider {
   display: none;
 }

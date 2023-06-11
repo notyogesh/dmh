@@ -7,6 +7,8 @@ import Stack from "@mui/material/Stack";
 import clean from "../images/clean.png";
 import install from "../images/install.png";
 import kit from "../images/kit.png";
+import cabinet from "../images/cabinet.png";
+
 import AddCircleIcon from "@mui/icons-material/AddCircle"; // import curvyback from "../images/wave2.svg";
 import KitchenCard from "../utils/KitchenCard";
 import Accordion from "@mui/material/Accordion";
@@ -41,9 +43,10 @@ const KitchenExhaustSystem = () => {
         // px: { xs: 2, md: 20 },
         // py: 2,
         // minHeight: "100vh",
-        // color: "#E6E7EE",
-        // backgroundColor: "#E6E7EE",
-        backgroundColor: "#FFF5FF",
+        // color: "#FFF4FB",
+        color: "#31344B",
+        backgroundColor: "#E6E7EE",
+        // backgroundColor: "#BDA5AD",
         fontFamily: "Nunito Sans",
         pb: 5,
       }}
@@ -69,7 +72,7 @@ const KitchenExhaustSystem = () => {
           // backgroundOrigin: " border-box",
           // backgroundSize: "cover",
           // backgroundSize: "100% 100%",
-          minHeight: "60vh",
+          // minHeight: "60vh",
         }}
       >
         <Box sx={{ flex: 1 }}>
@@ -91,6 +94,7 @@ const KitchenExhaustSystem = () => {
             sx={{
               textAlign: "center",
               fontWeight: 600,
+
               // flex: 1,
               // textShadow: "2px 1px 2px #000",
             }}
@@ -118,17 +122,7 @@ const KitchenExhaustSystem = () => {
             Breathe easy with Us !
           </Button>
         </Box>
-        <svg
-          className="wave"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
-        >
-          <path
-            fill="#FFF5FF"
-            // fill-opacity="1"
-            d="M0,64L80,90.7C160,117,320,171,480,208C640,245,800,267,960,245.3C1120,224,1280,160,1360,128L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-          ></path>
-        </svg>
+
         {/* <img
           src={web}
           alt="smoke"
@@ -150,6 +144,14 @@ const KitchenExhaustSystem = () => {
           }}
         /> */}
       </Box>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#F3F0F1"
+          fillOpacity="1"
+          d="M0,32L34.3,42.7C68.6,53,137,75,206,122.7C274.3,171,343,245,411,245.3C480,245,549,171,617,144C685.7,117,754,139,823,170.7C891.4,203,960,245,1029,256C1097.1,267,1166,245,1234,202.7C1302.9,160,1371,96,1406,64L1440,32L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"
+        ></path>
+      </svg>
+
       <Typography
         variant="h6"
         sx={{
@@ -162,7 +164,9 @@ const KitchenExhaustSystem = () => {
           // width: "350px",
           zIndex: 2,
           // backgroundColor: "#31344B",
-          color: "#4F4350",
+          // fontFamily: "Nunito Sans",
+          //
+          // color: "#4F4350",
         }}
       >
         We are your go-to experts for professional and reliable kitchen exhaust
@@ -171,41 +175,23 @@ const KitchenExhaustSystem = () => {
         all your kitchen ventilation needs. Whether you're a homeowner or a
         business owner, we have the expertise to deliver exceptional results.
       </Typography>
+      {/* <CssBaseline /> */}
       <KitchenCard
         head="It's important?"
         body="Proper kitchen exhaust ducting installation is critical for the efficient and safe operation of your kitchen ventilation system. A well-designed and properly installed ducting system helps to remove grease, smoke, heat, and odors from your kitchen, creating a healthy and comfortable environment for your family, employees, or customers. It also helps to comply with local building codes and regulations, ensuring the safety and well-being of your property and those inside"
         img={itsimportant}
       ></KitchenCard>
       <Box
-        sx={{
-          // background: `url(${smoke})   `,
-          // opacity: ".5",
-          position: "relative",
-        }}
+      // sx={{
+      //   // background: `url(${smoke})   `,
+      //   // opacity: ".5",
+      //   position: "relative",
+      // }}
       >
-        {/* <img
-          src={smoke}
-          alt="smoke"
-          // ref={imageRef}
-          // willReadFrequently
-          style={{
-            width: "100%",
-            aspectRatio: 1 / 1,
-            opacity: ".2",
-            position: "fixed",
-            top: "0",
-            backgroundSize: "cover",
-            left: "0",
-            // transform: "rotate(270deg)",
-            // transition: "transform 0.2s ease-out",
-            // right: "50%",
-          }}
-        /> */}
-
         <Box
           sx={{
-            backgroundColor: "#31344B",
-            color: "#FFF5FF",
+            // backgroundColor: "#31344B",
+            // color: "#FFF5FF",
             pb: 3,
             pt: 1,
             position: "relative",
@@ -221,9 +207,8 @@ const KitchenExhaustSystem = () => {
           <Typography variant="subtitle1" sx={{ px: { xs: 2, md: 30 } }}>
             As a leading provider of kitchen exhaust ducting installation
             services, we offer a wide range of solutions tailored to your
-            specific needs.
+            specific needs. Our services include,
           </Typography>
-          Our services include:
         </Box>
         {services.map((item, i) => (
           <KitchenCard
@@ -232,13 +217,13 @@ const KitchenExhaustSystem = () => {
             img={item.img}
             key={i}
             i={i}
-            backgroundColor={"#FFF5FF"}
+            backgroundColor={"#E6E7EE"}
           />
         ))}
         <Box
           sx={{
-            backgroundColor: "#31344B",
-            color: "#FFF5FF",
+            // backgroundColor: "#31344B",
+            // color: "#FFF5FF",
             pb: 3,
             pt: 3,
           }}
@@ -249,8 +234,7 @@ const KitchenExhaustSystem = () => {
               // my: 2,
               textAlign: "center",
               fontWeight: 600,
-              backgroundColor: "#31344B",
-              color: "#FFF5FF",
+
               pb: 2,
               // pt: 3,
             }}
@@ -267,7 +251,7 @@ const KitchenExhaustSystem = () => {
             // pt: 5,
             // pb: 2,
             mt: 8,
-            backgroundColor: "#F3F0F1",
+            // backgroundColor: red,
             mx: { xs: 2, md: 20 },
             borderRadius: "9px",
           }}
@@ -278,10 +262,11 @@ const KitchenExhaustSystem = () => {
               sx={{
                 textAlign: "left",
                 color: "#4F4350",
+
                 // background: `url(${smoke}) no-repeat right center `,
               }}
             >
-              <Accordion square>
+              <Accordion square sx={{ bgcolor: "#CBC9D5" }}>
                 <AccordionSummary
                   expandIcon={<AddCircleIcon />}
                   aria-controls="panel1a-content"
@@ -382,7 +367,7 @@ const services = [
   {
     head: "Box Cabinet installation",
     body: "With our box/cabinet centrifugal fan installation, you can expect optimal airflow management and improved air quality, providing a comfortable and safe environment. Our experts will customize the installation to fit your specific requirements, ensuring seamless integration with existing systems and maximizing the fan's performance.",
-    img: "http://lti.com.sg/wp-content/uploads/2014/08/Cabinet-Fan.png",
+    img: cabinet,
   },
   {
     head: "Duct Cleaning and Maintenance:",
