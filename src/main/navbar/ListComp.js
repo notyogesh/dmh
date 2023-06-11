@@ -156,7 +156,7 @@ const ListComp = (props) => {
       </NavLink>
       <NavLink
         onClick={navHandleClick}
-        to="/dd"
+        to="/construction"
         className={({ isActive }) => (isActive ? "active" : "inactive")}
         // exact="true"
         // onMouseLeave={handleMenuClose}

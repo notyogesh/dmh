@@ -204,7 +204,7 @@ const servicesGlass = [
   {
     head: "Custom Design:",
     body: "We understand that every project is unique, and we offer custom design services to bring your vision to life. Our design experts will work closely with you to understand your needs, provide creative solutions, and ensure that the final product exceeds your expectations.",
-    img: "https://5.imimg.com/data5/SELLER/Default/2022/4/KC/XA/HU/22854980/bathroom-aluminium-glass-door-500x500.jpg",
+    img: "https://img.freepik.com/free-photo/full-frame-shot-patterned-wall_1359-435.jpg?w=740&t=st=1686468757~exp=1686469357~hmac=cde2b240d6bef9c7d7fddcec8ebb71853e989272824c15de3c61b5c84dc15f97",
   },
 ];
 const whyUsGlass = [

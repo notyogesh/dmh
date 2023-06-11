@@ -1,9 +1,8 @@
 import React from "react";
 import { Box, Button } from "@mui/material";
 import Typography from "@mui/material/Typography";
-// import HeatPumpIcon from '@mui/icons-material/HeatPump';
-// import smoke from "../images/smoke.png";
-// import web from "../images/web.png";
+
+import firesystem from "../images/firesystem.png";
 import Stack from "@mui/material/Stack";
 import clean from "../images/clean.png";
 import install from "../images/install.png";
@@ -20,6 +19,7 @@ import BeenhereIcon from "@mui/icons-material/Beenhere";
 import Diversity2Icon from "@mui/icons-material/Diversity2";
 import ExtensionIcon from "@mui/icons-material/Extension";
 import Seo from "../main/Seo";
+import itsimportant from "../images/itsimportant.png";
 const KitchenExhaustSystem = () => {
   // const imageRef = useRef(null);
 
@@ -174,7 +174,7 @@ const KitchenExhaustSystem = () => {
       <KitchenCard
         head="It's important?"
         body="Proper kitchen exhaust ducting installation is critical for the efficient and safe operation of your kitchen ventilation system. A well-designed and properly installed ducting system helps to remove grease, smoke, heat, and odors from your kitchen, creating a healthy and comfortable environment for your family, employees, or customers. It also helps to comply with local building codes and regulations, ensuring the safety and well-being of your property and those inside"
-        img="https://ouch-cdn2.icons8.com/ei-wRarjKvOFs-LObA0jx2y0OKJ_jryu1vY-NUSF17A/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMzI5/L2RkMWFlNzFhLWMy/MGQtNGZkOC1iOWI1/LWNkNDc4NTMzMDkz/MS5zdmc.png"
+        img={itsimportant}
       ></KitchenCard>
       <Box
         sx={{
@@ -365,9 +365,24 @@ const services = [
     img: "https://ouch-cdn2.icons8.com/H1oT_UUstmkVWpR997EgIfgxb4nol9QH9eBHFLnkHBw/rs:fit:256:121/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjUy/L2EyMWM2ZmY1LTdi/ZjEtNDBmMi1iZmU1/LTkzMGUxOTFlMDc2/MC5zdmc.png",
   },
   {
-    head: "Exhaust Fan Installation:",
+    head: "Fresh Air System",
     body: "We can recommend, supply, and install high-quality exhaust fans that are suitable for your kitchen's needs. Properly sized and installed exhaust fans are crucial for effective ventilation, and our team will ensure that your fans are correctly positioned and connected to the ducting system for maximum efficiency. ",
     img: kit,
+  },
+  {
+    head: "Electrostatic Air Cleaner",
+    body: "Our electrostatic air cleaner installation offers cleaner and healthier air by effectively capturing and removing airborne particles, allergens, and pollutants. we ensuring your specific needs make  optimal placement and integration with your existing system",
+    img: "https://www.aosaus.com.au/wp-content/uploads/2014/02/Electrostatic-Air-Filter-RY5000-Stacked.png",
+  },
+  {
+    head: "Fire suppression system for Kitchen",
+    body: "Our customizable fire suppression solutions are designed and installed by certified professionals, guaranteeing compliance with regulations and tailored protection for your specific needs.With automatic activation and a specialized suppression agent, our system rapidly extinguishes fires, minimizing damage and protecting lives and property. Integrated alarms and shutdown capabilities enhance safety by alerting occupants and shutting down equipment, preventing fire spread and re-ignition",
+    img: firesystem,
+  },
+  {
+    head: "Box Cabinet installation",
+    body: "With our box/cabinet centrifugal fan installation, you can expect optimal airflow management and improved air quality, providing a comfortable and safe environment. Our experts will customize the installation to fit your specific requirements, ensuring seamless integration with existing systems and maximizing the fan's performance.",
+    img: "http://lti.com.sg/wp-content/uploads/2014/08/Cabinet-Fan.png",
   },
   {
     head: "Duct Cleaning and Maintenance:",
