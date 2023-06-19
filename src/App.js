@@ -12,11 +12,6 @@ import { router } from "./Routes";
 // const Contact = React.lazy(() => import("./pages/Contact"));
 
 const App = () => {
-  // const location = useLocation();
-  // // Scroll to top if path changes
-  // useLayoutEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, [location.pathname]);
   return (
     <div>
       <Suspense fallback={<CircularProgress variant="determinate" />}>

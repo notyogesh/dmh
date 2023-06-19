@@ -10,7 +10,9 @@ import EngineeringIcon from "@mui/icons-material/Engineering";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { styled } from "@mui/material/styles";
-
+// import NotesIcon from "@mui/icons-material/Notes";
+// import NotesIcon from "@mui/icons-material/TextSnippet";
+import NotesIcon from "@mui/icons-material/NoteAlt";
 import {
   // Box,
   ListItemButton,
@@ -40,7 +42,7 @@ const StyledMenu = styled((props) => (
     minWidth: 180,
     color: " rgb(55, 65, 81)",
     border: "1px solid #d1d9e6",
-    boxShadow: "6px 6px 12px #b8b9be, -6px -6px 12px #F3F0F1",
+    // boxShadow: "6px 6px 12px #b8b9be, -6px -6px 12px #F3F0F1",
     // boxShadow:
     //   "rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
     "& .MuiMenu-list": {
@@ -114,7 +116,7 @@ const ListComp = (props) => {
           }}
         >
           <ListItemIcon>
-            <HomeIcon sx={{ transform: "translateY(10%)" }} />
+            <HomeIcon sx={{ transform: "translateY(8%)" }} />
             <ListItemText
               primary="Home"
               primaryTypographyProps={{
@@ -221,6 +223,37 @@ const ListComp = (props) => {
             </MenuItem>
           ))}
         </StyledMenu>
+      </NavLink>
+      <NavLink
+        to="/blogs"
+        className={({ isActive }) => (isActive ? "active" : "inactive")}
+        exact="true"
+      >
+        <ListItemButton
+          onClick={props.onClick}
+          disableRipple={true}
+          // onMouseLeave={handleMenuClose}
+          sx={{
+            borderRadius: "35px",
+            boxShadow: {
+              xs: "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
+              md: "none",
+            },
+            "&:hover": {
+              boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
+            },
+          }}
+        >
+          <ListItemIcon>
+            <NotesIcon sx={{ transform: "translateY(12%)" }} />
+            <ListItemText
+              primary="Blogs"
+              primaryTypographyProps={{
+                fontWeight: "inherit",
+              }}
+            />
+          </ListItemIcon>
+        </ListItemButton>
       </NavLink>
       <NavLink
         to="/contact"

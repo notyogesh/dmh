@@ -1,11 +1,7 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import Btn1 from "./Btn1";
 const ServiceCard = (props) => {
-  const navigate = useNavigate();
-  const to = () => {
-    navigate(props.to);
-  };
   return (
     <Box
       sx={{
@@ -56,31 +52,10 @@ const ServiceCard = (props) => {
           {" "}
           {props.body}
         </Typography>
-        <Button
-          onClick={to}
-          //   variant="contained"
-          elevation={3}
-          sx={{
-            backgroundColor: "#f3f0f1",
 
-            display: "flex",
-            // marginTop: "auto",
-            mt: 5,
-            ml: "auto",
-
-            color: "#44476a",
-            textTransform: "capitalize",
-            // textShadow: "1px 1px 1px #FFF",
-            boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #F3F0F1",
-            border: "1px solid #d1d9e6",
-            "&:hover": {
-              backgroundColor: "#f3f0f1",
-              boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
-            },
-          }}
-        >
+        <Btn1 to={props.to} sx={{ ml: "auto", mt: 5, px: 1 }}>
           Learn More
-        </Button>
+        </Btn1>
       </Box>
     </Box>
   );

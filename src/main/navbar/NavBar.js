@@ -5,7 +5,7 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
 // import AdbIcon from "@mui/icons-material/Adb";
-import logo from "../../images/logo.png";
+import logo from "../../images/logo1.png";
 // import LightDark from "./LightDark";
 import { Drawer, Box } from "@mui/material";
 import ListComp from "./ListComp";
@@ -44,9 +44,9 @@ function NavBar(props) {
           src={logo}
           alt="logo"
           style={{
-            borderRadius: "50%",
+            // borderRadius: "50%",
             width: "40px",
-            border: "1px solid #000",
+            // border: "1px solid #000",
             // boxShadow:
             //   " -3px -3px 7px #ffffffb0,  3px 3px 5px rgba(94, 104, 121, 0.692)",
           }}

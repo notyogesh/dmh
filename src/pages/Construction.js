@@ -14,7 +14,6 @@ import GradeIcon from "@mui/icons-material/Grade";
 import BeenhereIcon from "@mui/icons-material/Beenhere";
 import Seo from "../main/Seo";
 import construction from "../images/construction2.png";
-
 const whyUsConstruction = [
   {
     head: "Quality Control",
@@ -61,7 +60,7 @@ const sliderImages = [
 const Construction = () => {
   const [value, setValue] = useState(0);
   // const [imageNum, setImageNum] = useState(1);
-
+  // const width =
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -89,65 +88,6 @@ const Construction = () => {
         name="D M H"
         type="Construction  service  page "
       />
-      {/* <Box
-        sx={{
-          pt: { xs: "25vh", md: "20vh" },
-          pb: "20vh",
-          display: "flex",
-          flexDirection: "column",
-          mb: 10,
-          
-          backgroundSize: "cover",
-          
-          minHeight: "60vh",
-          
-          transform: "scaleX(-1)",
-          // filter: "blur(8px)",
-        }}
-      >
-        <Typography
-          variant="h3"
-          sx={{
-            // textAlign: { xs: "center", md: "left" },
-            textAlign: "center",
-            fontWeight: "bold", // pl: { xs: 1, md: 25 },
-            // pl: { xs: 0, md: 5 },
-            transform: "scaleX(-1)",
-          }}
-        >
-          DMH
-        </Typography>
-        <Typography
-          variant="h4"
-          component="h1"
-          sx={{
-            // textAlign: { xs: "center", md: "left" },
-            textAlign: "center",
-            fontWeight: "bold",
-            // pl: { xs: 0, md: 15 },
-            letterSpacing: "1.5px",
-            fontSize: { xs: 30, sm: 35, md: 40 },
-            transform: "scaleX(-1)",
-            // backdropFilter: "blur(20px)",
-          }}
-        >
-          Construction
-        </Typography>
-        <img
-          src={gear}
-          alt="construction"
-          // willReadFrequently
-          style={{
-            width: "100%",
-            // height: "80vh",
-            opacity: ".15",
-            position: "absolute",
-            right: "0",
-            bottom: "0",
-          }}
-        />
-       
-      </Box> */}
       <Box
         sx={{
           // pt: { xs: "25vh", md: "20vh" },
@@ -294,7 +234,8 @@ const Construction = () => {
       </Typography>
       <Box
         sx={{
-          width: "100%",
+          width: { xs: "90vw", md: "70vw" },
+          mx: "auto",
           // p: 5,
           display: "flex",
           justifyContent: "center",
@@ -302,7 +243,7 @@ const Construction = () => {
         }}
       >
         <SimpleImageSlider
-          width={"90vw"}
+          width={"inherit"}
           height={450}
           images={sliderImages}
           showBullets={true}

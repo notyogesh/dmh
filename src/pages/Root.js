@@ -8,6 +8,7 @@ import { Outlet } from "react-router-dom";
 import Footer from "../main/Footer";
 import Box from "@mui/material/Box";
 import ScrollToTop from "../main/ScrollToTop";
+import Loader from "../main/Loader";
 // import Hero2 from "../components/hero/Hero2";
 
 const Root = () => {
@@ -28,16 +29,18 @@ const Root = () => {
     <Box style={{ textAlign: "center" }}>
       <ThemeProvider theme={theme}>
         <ScrollToTop>
-          <Box
-            sx={{
-              // m: 2,
-              // p: 1,
-              minHeight: "100vh",
-            }}
-          >
-            <Navbar onClick={changeTheme} />
-            <Outlet />
-          </Box>
+          <Loader>
+            <Box
+              sx={{
+                // m: 2,
+                // p: 1,
+                minHeight: "100vh",
+              }}
+            >
+              <Navbar onClick={changeTheme} />
+              <Outlet />
+            </Box>
+          </Loader>
         </ScrollToTop>
         <Divider />
         {/* <Hero2 /> */}

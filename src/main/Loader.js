@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
 // import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
-import { Outlet, useLocation } from "react-router-dom";
-import logo from "../images/logo.png";
+// import { Outlet, useLocation } from "react-router-dom";
+import logo from "../images/logo1.png";
 const Loader = ({ children }) => {
   const [isFetching, setIsFetching] = useState(true);
-  const { pathname } = useLocation();
-  //   console.log(pathname);
+  // const { pathname } = useLocation();
+
   useEffect(() => {
     setIsFetching(true);
     setTimeout(function () {
       setIsFetching(false);
-    }, 1000);
-  }, [pathname]);
+    }, 100);
+  }, []);
 
   if (isFetching) {
     return (
@@ -29,8 +29,8 @@ const Loader = ({ children }) => {
       </Box>
     );
   }
-
-  return children ?? <Outlet />;
+  return children;
+  // return children ?? <Outlet />;
 };
 
 export default Loader;

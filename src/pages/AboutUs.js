@@ -1,9 +1,9 @@
 import React from "react";
 
 import Typography from "@mui/material/Typography";
-import { Box, Button } from "@mui/material";
+import Box from "@mui/material/Box";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import AboutUsCard from "../utils/AboutUsCard";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
@@ -13,7 +13,8 @@ import LeaderboardIcon from "@mui/icons-material/Leaderboard";
 import GradeIcon from "@mui/icons-material/Grade";
 import BeenhereIcon from "@mui/icons-material/Beenhere";
 import Seo from "../main/Seo";
-
+import mission from "../images/mission.png";
+import Btn1 from "../utils/Btn1";
 const AboutUs = () => {
   const aboutCardContent = [
     {
@@ -94,26 +95,14 @@ const AboutUs = () => {
           work.
         </Typography>
 
-        <Button
+        <Btn1
           to="/contact"
-          elevation={3}
-          component={Link}
-          startIcon={<ContactPageIcon />}
-          sx={{
-            backgroundColor: "#f3f0f1",
-            my: 5,
-            color: "#44476a",
-            textTransform: "capitalize",
-            mx: "auto",
-            boxShadow: "3px 3px 6px #b8b9be, -3px -3px 6px #f3f0f1",
-            border: "1px solid #d1d9e6",
-            "&:hover": {
-              boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
-            },
-          }}
+          icon={<ContactPageIcon />}
+          sx={{ mx: "auto", my: 5 }}
         >
+          {" "}
           Contact Us
-        </Button>
+        </Btn1>
       </Box>
       <Typography
         variant="h4"
@@ -204,18 +193,24 @@ const AboutUs = () => {
         >
           DMH Mission Statement{" "}
         </Typography>
-        <Box sx={{ display: { xs: "block", md: "flex" }, gap: 5 }}>
+        <Box
+          sx={{
+            display: { xs: "block", md: "flex" },
+            gap: 5,
+          }}
+        >
           <img
-            src="https://img.icons8.com/ios-filled/200/null/mission-of-a-company.png"
+            src={mission}
             alt="mission"
-            // wisth
+            style={{ width: 325, marginBottom: "-80px", marginLeft: "-90px" }}
           />
           <Typography
             variant="body1"
             sx={{
               textAlign: "center",
               fontWeight: 500,
-              pt: 3,
+              pt: { xs: 12, md: 3 },
+              // flex: 1,
               // color:" "#6D7587""
               // px: { xs: 2, md: 20 },
               // pb: { xs: 2, md: 15 },
