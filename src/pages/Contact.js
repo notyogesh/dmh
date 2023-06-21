@@ -50,34 +50,39 @@ const Contact = () => {
         <Box
           sx={{
             flex: 1,
-            textAlign: { xs: "center", md: "left" },
-            pl: { xs: 2, md: 9 },
-            mt: { xs: 5, md: 12 },
+            // textAlign: { xs: "center", md: "center" },
+            // pl: { xs: 2, md: 15 },
+            pt: { xs: 5, md: 12 },
             color: "#31344B",
-
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            // backgroundColor: "red",
             // display: { xs: "none", md: "flex" }
           }}
         >
-          <Typography variant="h3" sx={{ fontWeight: "lighter" }}>
-            Contact Us
-          </Typography>
-          <Typography
-            variant="h2"
-            sx={{
-              pb: 3,
-              fontWeight: "bolder",
-              fontSize: { xs: 30, sm: 40, md: 50 },
-            }}
-            // className="contact"
-          >
-            We're here for you
-          </Typography>
-          <Typography variant="h5" sx={{ pl: { xs: 3, md: 10 } }}>
-            Monday-Friday : <span>9am-6pm (SST)</span>
-          </Typography>
+          <Box sx={{ textAlign: { xs: "center", md: "left" } }}>
+            <Typography variant="h3" sx={{ fontWeight: "lighter" }}>
+              Contact Us
+            </Typography>
+            <Typography
+              variant="h2"
+              sx={{
+                pb: 3,
+                fontWeight: "bolder",
+                fontSize: { xs: 30, sm: 40, md: 50 },
+              }}
+            >
+              We're here for you
+            </Typography>
+            <Typography variant="h5" sx={{ pl: { xs: 1, md: 10 } }}>
+              Monday-Friday : <span>9am-6pm (SST)</span>
+            </Typography>{" "}
+          </Box>
+
           {/* <Button onClick={handleWhatsAppButtonClick}>Live chat</Button> */}
         </Box>
-        <Box sx={{ flex: 1, mt: 5 }} id="contact">
+        <Box sx={{ flex: 1, pt: 5 }}>
           {/* <Card sx={{ minWidth: 275 }}> */}
           <Card
             sx={{

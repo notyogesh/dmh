@@ -2,6 +2,8 @@ import React from "react";
 import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import electrical from "../images/electrical.png";
+import lightningsol from "../images/lightningsol.png";
+
 import KitchenCard from "../utils/KitchenCard";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -17,6 +19,9 @@ import Stack from "@mui/material/Stack";
 import Seo from "../main/Seo";
 // import repair from "../images/repair.png";
 import repair from "../images/repair.png";
+import safetyelectrical from "../images/safetyelectrical.png";
+import elecinstall from "../images/electinstall.png";
+import elecup from "../images/elecup.png";
 
 const ElectricalServices = () => {
   return (
@@ -175,47 +180,7 @@ const ElectricalServices = () => {
           </Box>
         ))}
       </Box>
-      {/* <Typography variant="h3" sx={{ my: 3, textAlign: "center" }}>
-        Why Choose Us:
-      </Typography>
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Experienced and Certified Electricians:
-      </Typography>
-      Our team of electricians are highly trained, certified, and experienced in
-      handling all types of electrical work. They stay updated with the latest
-      industry standards and technologies to provide you with the best
-      solutions.
-      <br /> <br />
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Quality Workmanship:
-      </Typography>
-      We take pride in delivering top-quality workmanship on every project we
-      undertake. We pay attention to detail and use high-quality materials to
-      ensure the durability and longevity of our electrical installations and
-      repairs.
-      <br /> <br />
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Reliable and Prompt Service:
-      </Typography>
-      We understand the importance of timely service. Our team is prompt and
-      reliable, arriving on time and completing the work efficiently without
-      compromising on quality.
-      <br /> <br />
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Excellent Customer Service:
-      </Typography>
-      Our customers are our top priority. We strive to provide exceptional
-      customer service, addressing your concerns, answering your questions, and
-      providing honest and transparent communication throughout the project.
-      <br /> <br />
-      <Typography variant="h4" sx={{ my: 2 }}>
-        Competitive Pricing:
-      </Typography>
-      We offer competitive and transparent pricing for our services, with no
-      hidden charges. We provide detailed quotes upfront and work within your
-      budget to provide cost-effective solutions without compromising on quality
-      or safety. */}
-      <br /> <br />
+
       {/* <Typography variant="h4" sx={{ my: 2, textAlign: "center" }}>
         Contact Us:
       </Typography>
@@ -240,22 +205,22 @@ const servicesElectrical = [
   {
     head: "Electrical Installations:",
     body: "If you're building a new home, renovating your existing space, or need to upgrade your electrical system, we can handle all types of installations. We can install new electrical panels, outlets, switches, lighting fixtures, and more, tailored to your specific needs and budget.",
-    img: "https://plus.unsplash.com/premium_photo-1675644727106-8153435e9379?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGxpZ2h0JTIwYnVsYnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    img: elecinstall,
   },
   {
     head: "Electrical Upgrades:",
     body: "As technology evolves, so do electrical systems. If you need to upgrade your electrical panel, increase your electrical capacity, or install dedicated circuits for high-powered appliances, our team can provide expert advice and professional installation services to meet your requirements.",
-    img: "https://plus.unsplash.com/premium_photo-1679607691186-4550451e13b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWxlY3RyaWNhbCUyMGZ1dHVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    img: elecup,
   },
   {
     head: "Lighting Solutions:",
     body: "Lighting plays a crucial role in enhancing the ambiance and functionality of any space. We offer a wide range of lighting solutions, including indoor and outdoor lighting, LED lighting, recessed lighting, landscape lighting, and more. Our team can help you choose the right lighting options to suit your aesthetic preferences and energy-saving goals.",
-    img: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZWxjdHJpY2FsJTIwYWR2YW5jZWQlMjB0ZWNobm9sb2d5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60https://cdn-resources.accasoftware.com/accasoftware/images/certus-scaffolding/certus-scaffolding-cover.webp",
+    img: lightningsol,
   },
   {
     head: "Safety Inspections:",
     body: "Electrical safety is our top priority. Our technicians can conduct thorough electrical safety inspections to identify potential hazards, code violations, and other issues that may compromise the safety of your electrical system. We can provide recommendations and implement necessary repairs or upgrades to ensure your home or business is safe from electrical hazards.",
-    img: "https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2FmZXR5fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+    img: safetyelectrical,
   },
 ];
 const whyUsElectrical = [

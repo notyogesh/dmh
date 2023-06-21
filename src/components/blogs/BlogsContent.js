@@ -26,13 +26,15 @@ const BlogsContent = () => {
         name="D M H"
         type="Blogs page "
       />
-      <Box sx={{ display: "flex", p: { xs: 1, md: 5 } }}>
+      <Box sx={{ display: "flex", px: { xs: 1, md: 5 } }}>
         <Btn1 to="/blogs" icon={<TextSnippetIcon />} sx={{ ml: "auto" }}>
           All Blogs
         </Btn1>
       </Box>
 
-      <Box sx={{ p: { xs: 1, md: 5 } }}>
+      <Box
+        sx={{ px: { xs: 1, md: 5 }, pb: { xs: 1, md: 5 }, color: "#31344B" }}
+      >
         <Box sx={{ width: { xs: "90vw", md: "50vw" }, mx: "auto" }}>
           <img
             src={filteredData.img}
@@ -41,10 +43,13 @@ const BlogsContent = () => {
           />
         </Box>
 
-        <Typography variant="h4" sx={{ py: 2 }}>
+        <Typography
+          variant="h4"
+          sx={{ py: 2, bgcolor: "#31344B", color: "#F3F0F1" }}
+        >
           {filteredData.head}
         </Typography>
-        <Box>{filteredData.body}</Box>
+        <Box sx={{ p: { xs: 1, md: 5 } }}>{filteredData.body}</Box>
       </Box>
 
       {/* <Typography variant="h3">{state.data.head}</Typography> */}

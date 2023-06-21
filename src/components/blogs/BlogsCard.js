@@ -34,10 +34,11 @@ const BlogsCard = (props) => {
           </Typography> */}
         </CardContent>
       </CardActionArea>
+
       <CardActions>
         <Button
-          component={Link}
-          to={props.to}
+          // component={Link}
+          // to={props.to}
           sx={{ ml: "auto", color: "#44476a" }}
         >
           Learn more

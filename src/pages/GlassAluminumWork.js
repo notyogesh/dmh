@@ -10,6 +10,8 @@ import TuneIcon from "@mui/icons-material/Tune";
 import DashboardCustomizeIcon from "@mui/icons-material/DashboardCustomize";
 import BeenhereIcon from "@mui/icons-material/Beenhere";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
+import glassinstall from "../images/glassinstall.png";
+import glassrepair from "../images/glassrepair.png";
 
 // import AssuredWorkloadIcon from "@mui/icons-material/AssuredWorkload";
 import Stack from "@mui/material/Stack";
@@ -189,22 +191,22 @@ const servicesGlass = [
   {
     head: "Glass Installation:",
     body: "Whether you need glass windows, doors, or partitions for your home or business, we can handle it all. Our expert team will ensure precise measurements, proper installation, and flawless finishing to give you stunning results that enhance the aesthetics of your space.",
-    img: "https://www.glasstradecentre.com.au/wp-content/uploads/2020/11/blog-list-img-2.webp",
+    img: glassinstall,
   },
   {
     head: "Aluminum Fabrication:",
     body: "We specialize in custom aluminum fabrication for a wide range of applications including windows, doors, storefronts, curtain walls, and more. Our skilled craftsmen work with high-quality materials to create durable and visually appealing aluminum structures that meet your specific requirements.",
-    img: "https://www.jaipuraluminiumworks.com/service-image/aluminium-window-fabrication-work.jpg",
+    img: "https://img.freepik.com/free-photo/empty-closed-door_1339-6351.jpg?size=626&ext=jpg&uid=R105808813&ga=GA1.2.2136575466.1684650788&semt=ais",
   },
   {
     head: "Repairs and Maintenance:",
     body: "Accidents happen, and when your glass or aluminum structures are damaged, you can count on us for reliable repairs and maintenance. Our team will assess the damage, provide prompt and efficient repairs, and help you maintain the longevity of your glass and aluminum fixtures.",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAOk3Pr0Q746dPly36Z40A4whhv8u8PnyAbaViwnfT3_Uah2HzC2Im7jsQXpRexvEkO8c&usqp=CAU",
+    img: glassrepair,
   },
   {
     head: "Custom Design:",
     body: "We understand that every project is unique, and we offer custom design services to bring your vision to life. Our design experts will work closely with you to understand your needs, provide creative solutions, and ensure that the final product exceeds your expectations.",
-    img: "https://img.freepik.com/free-photo/full-frame-shot-patterned-wall_1359-435.jpg?w=740&t=st=1686468757~exp=1686469357~hmac=cde2b240d6bef9c7d7fddcec8ebb71853e989272824c15de3c61b5c84dc15f97",
+    img: "https://img.freepik.com/free-photo/directly-shot-glass-skylight_1359-921.jpg?size=626&ext=jpg&uid=R105808813&ga=GA1.2.2136575466.1684650788&semt=ais",
   },
 ];
 const whyUsGlass = [
