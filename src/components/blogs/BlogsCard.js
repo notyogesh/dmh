@@ -23,7 +23,7 @@ const BlogsCard = (props) => {
           component="img"
           height="190"
           image={props.img}
-          alt="green iguana"
+          alt={props.head}
         />
         <CardContent>
           <Typography gutterBottom variant="h5">

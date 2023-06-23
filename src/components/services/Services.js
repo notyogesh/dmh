@@ -3,6 +3,8 @@ import Typography from "@mui/material/Typography";
 import ServiceCard from "../../utils/ServiceCard";
 import { Box } from "@mui/material";
 import plumbing from "../../images/plumber.png";
+import aircon3 from "../../images/aircon5.png";
+
 const Services = () => {
   const services = [
     {
@@ -14,7 +16,7 @@ const Services = () => {
     {
       head: "AirConditioning & Mechanical Ventilation System",
       body: "(Air Conditioning and Mechanical Ventilation System) Heating, ventilation, and air conditioning  services,We offer a comprehensive range of HVAC services, including installation, maintenance, and repairs. ",
-      img: "https://img.freepik.com/free-vector/air-conditioner-repair-repairman-with-tools_33099-272.jpg?size=626&ext=jpg&ga=GA1.1.2136575466.1684650788&semt=ais",
+      img: aircon3,
       to: "/airconditioning-mechanical-ventilation-system",
     },
     {

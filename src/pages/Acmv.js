@@ -1,17 +1,18 @@
 import React from "react";
 import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import AcmvCard from "../utils/AcmvCard";
+// import AcmvCard from "../utils/AcmvCard";
 // import VisibilityIcon from "@mui/icons-material/Visibility";
 import Snowfall from "react-snowfall";
-import aircon from "../images/aircon.png";
-import maintenance from "../images/maintenance.png";
-import quality from "../images/quality.png";
+import acinstall from "../images/acinstall.png";
+import repairmain from "../images/repairmain.png";
+import qualityac from "../images/qualityac.png";
+import KitchenCard from "../utils/KitchenCard";
 
-import pricing from "../images/pricing.png";
+import lowprice from "../images/lowprice.png";
 import warranty from "../images/warranty.png";
-import customize from "../images/customize.png";
-import customerservice from "../images/customerservice.png";
+import cussolution from "../images/cussolution.png";
+import customersupport from "../images/customersupport.png";
 // import deer from "../images/onedeer1.png";
 import snow from "../images/snow.png";
 import Seo from "../main/Seo";
@@ -22,32 +23,32 @@ const Acmv = () => {
       head: "Air-Con Installation",
       body: " Our certified technicians are trained to install all types and brands of air conditioning systems. From split systems to ducted systems, we have the expertise to handle any installation job with precision and care. We follow industry standards and best practices to ensure that your air conditioning system is installed correctly for optimal performance and energy efficiency.",
 
-      img: aircon,
+      img: acinstall,
     },
     {
       head: "Repair & Maintenance",
       body: "  Regular maintenance is proven to improve the operation & efficiency of the equipment, is a legal requirment ( for certain equipment ) and helps prevent operational issues, saving you both time & money.  We look forward to discussing your maintenances requirements & treating you to the DMH Experience !",
 
-      img: maintenance,
+      img: repairmain,
     },
 
     {
       head: " Quality Products:",
       body: " We only work with reputable brands and suppliers to ensure that you get the best quality air conditioning systems for your installation. Our products are energy-efficient, environmentally friendly, and designed to provide reliable cooling for years to come. We can also provide guidance on selecting the right type and size of air conditioning system that suits your property and usage patterns.",
 
-      img: quality,
+      img: qualityac,
     },
     {
       head: "Customized Solutions:",
       body: "  We understand that every property is unique, and cooling requirements may vary. That's why we offer customized solutions tailored to your specific needs. Our team will assess your property, take into consideration factors such as room size, layout, insulation, and your budget, and recommend the best aircon installation solution that fits your requirements.",
 
-      img: customize,
+      img: cussolution,
     },
     {
       head: "Pricing",
       body: " We believe in providing transparent and competitive pricing for our aircon installation services. Our team will provide you with a detailed quote that includes all costs upfront, so you know exactly what to expect. We strive to offer affordable options without compromising on quality or service.",
 
-      img: pricing,
+      img: lowprice,
     },
     // {
     //   head: "  Timely Installation:",
@@ -59,7 +60,7 @@ const Acmv = () => {
       head: " Excellent Customer Service:",
       body: "   We are committed to providing exceptional customer service throughout the aircon installation process. Our friendly and knowledgeable team is available to answer all your questions, provide expert advice, and address any concerns you may have. We believe in building long-term relationships with our customers based on trust, reliability, and satisfaction.",
 
-      img: customerservice,
+      img: customersupport,
     },
     {
       head: " Warranty",
@@ -73,7 +74,8 @@ const Acmv = () => {
       sx={{
         // backgroundColor: "#f3f0f1",
         // textAlign: "left",
-        color: "#8E8E8E",
+        // color: "#8E8E8E",
+        color: "#31344B",
         // px: { xs: 2, md: 20 },
         // py: 2,
         // minHeight: "100vh",
@@ -92,6 +94,7 @@ const Acmv = () => {
           pb: "35vh",
           display: "flex",
           flexDirection: "column",
+          // color: "#8E8E8E",
           // mb: 10,
           // minHeight: { xs: "90vh", md: "" },
           // backgroundImage: `linear-gradient(to bottom, #f3f0f1 0%, #76777C 100%)`,
@@ -180,7 +183,6 @@ const Acmv = () => {
           }
         }
       > */}
-
       <Typography
         variant="h3"
         sx={{ pb: 2, pt: 10, color: "#31344B", fontWeight: 500 }}
@@ -204,8 +206,7 @@ const Acmv = () => {
         your cooling needs. Here's what you need to know about our aircon
         installation services:{" "}
       </Typography>
-
-      <Box
+      {/* <Box
         sx={{
           // backgroundImage: `linear-gradient(to top, #f3f0f1 0%, #76777C 100%)`,
           display: "flex",
@@ -215,17 +216,18 @@ const Acmv = () => {
           gap: 2,
           flexWrap: "wrap",
         }}
-      >
-        {acmvCardContent.map((item, i) => (
-          <AcmvCard
-            head={item.head}
-            key={i}
-            i={i}
-            body={item.body}
-            img={item.img}
-          />
-        ))}{" "}
-      </Box>
+      > */}
+      {acmvCardContent.map((item, i) => (
+        <KitchenCard
+          head={item.head}
+          key={i}
+          i={i}
+          body={item.body}
+          img={item.img}
+          backgroundColor={"#F3F0F1"}
+        />
+      ))}{" "}
+      {/* </Box> */}
     </Box>
   );
 };
