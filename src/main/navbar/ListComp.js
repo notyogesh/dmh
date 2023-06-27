@@ -7,12 +7,12 @@ import BiotechIcon from "@mui/icons-material/Biotech";
 import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import EngineeringIcon from "@mui/icons-material/Engineering";
-import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import { styled } from "@mui/material/styles";
 // import NotesIcon from "@mui/icons-material/Notes";
 // import NotesIcon from "@mui/icons-material/TextSnippet";
 import NotesIcon from "@mui/icons-material/NoteAlt";
+// import ListItemButton from "../../utils/ListItemButton1";
+import ListItemButton1 from "../../utils/ListItemButton";
 import {
   // Box,
   ListItemButton,
@@ -21,60 +21,30 @@ import {
 } from "@mui/material";
 // import { Box } from "@mui/material";
 // import { useTheme } from "@mui/material/styles";
-import { sub } from "./Data";
-const StyledMenu = styled((props) => (
-  <Menu
-    elevation={0}
-    anchorOrigin={{
-      vertical: "bottom",
-      horizontal: "right",
-    }}
-    transformOrigin={{
-      vertical: "top",
-      horizontal: "right",
-    }}
-    {...props}
-  />
-))(({ theme }) => ({
-  "& .MuiPaper-root": {
-    borderRadius: 6,
-    marginTop: theme.spacing(1),
-    minWidth: 180,
-    color: " rgb(55, 65, 81)",
-    border: "1px solid #d1d9e6",
-    // boxShadow: "6px 6px 12px #b8b9be, -6px -6px 12px #F3F0F1",
-    // boxShadow:
-    //   "rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
-    "& .MuiMenu-list": {
-      padding: "4px 0",
-    },
-    "& .MuiMenuItem-root": {
-      "& .MuiSvgIcon-root": {
-        // fontSize: 18,
-        // color: theme.palette.text.secondary,
-        marginRight: theme.spacing(1.5),
-      },
-      "&:hover": {
-        // m: 1,
-        boxShadow:
-          "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
-      },
-    },
-  },
-}));
+import { sub, sub2 } from "./Data";
+import StyledMenu from "./StyledMenu";
+
 const ListComp = (props) => {
   // const theme = useTheme();
 
   const [anchorEl, setAnchorEl] = useState();
+  const [anchorEl2, setAnchorEl2] = useState();
+
   // const [open, setOpen] = useState(false);
-  const activeClass = window.location.pathname.startsWith("/acmv")
-    ? "active"
-    : "inactive";
-  // console.log(activeClass);
+  // const activeClass = window.location.pathname.startsWith("/acmv")
+  //   ? "active"
+  //   : "inactive";
+
   const handleMenuClick = (e) => {
     // setAnchorEl(e.currentTarget);
     if (anchorEl !== e.currentTarget) {
       setAnchorEl(e.currentTarget);
+    }
+  };
+  const handleMenuClick2 = (e) => {
+    // setAnchorEl(e.currentTarget);
+    if (anchorEl2 !== e.currentTarget) {
+      setAnchorEl2(e.currentTarget);
     }
   };
   const handleMenuClose = () => {
@@ -86,6 +56,11 @@ const ListComp = (props) => {
 
     // handleMenuClick();
   };
+  const handleMenuClose2 = () => {
+    setAnchorEl2(null);
+    // props.onClick();
+  };
+
   // function handlePropClick() {
   //   props.onClick();
   // }
@@ -101,20 +76,7 @@ const ListComp = (props) => {
         className={({ isActive }) => (isActive ? "active" : "inactive")}
         exact="true"
       >
-        <ListItemButton
-          onClick={props.onClick}
-          disableRipple={true}
-          sx={{
-            borderRadius: "35px",
-            boxShadow: {
-              xs: "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
-              md: "none",
-            },
-            "&:hover": {
-              boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
-            },
-          }}
-        >
+        <ListItemButton1 onClick={props.onClick}>
           <ListItemIcon>
             <HomeIcon sx={{ transform: "translateY(8%)" }} />
             <ListItemText
@@ -124,27 +86,14 @@ const ListComp = (props) => {
               }}
             />
           </ListItemIcon>
-        </ListItemButton>
+        </ListItemButton1>
       </NavLink>
       <NavLink
         to="/aboutus"
         className={({ isActive }) => (isActive ? "active" : "inactive")}
         exact="true"
       >
-        <ListItemButton
-          onClick={props.onClick}
-          disableRipple={true}
-          sx={{
-            borderRadius: "35px",
-            boxShadow: {
-              xs: "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
-              md: "none",
-            },
-            "&:hover": {
-              boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
-            },
-          }}
-        >
+        <ListItemButton1 onClick={props.onClick}>
           <ListItemIcon>
             <BiotechIcon />
             <ListItemText
@@ -154,7 +103,7 @@ const ListComp = (props) => {
               }}
             />
           </ListItemIcon>
-        </ListItemButton>
+        </ListItemButton1>
       </NavLink>
       <NavLink
         onClick={navHandleClick}
@@ -165,7 +114,7 @@ const ListComp = (props) => {
       >
         <ListItemButton
           onClick={handleMenuClick}
-          className={activeClass}
+          // className={activeClass}
           // onMouseOver={handleMenuClick}
           // onMouseEnter={handleMenuClick}
           // onMouseLeave={() => setAnchorEl(null)}
@@ -225,14 +174,18 @@ const ListComp = (props) => {
         </StyledMenu>
       </NavLink>
       <NavLink
-        to="/blogs"
+        onClick={navHandleClick}
+        to="/resources"
         className={({ isActive }) => (isActive ? "active" : "inactive")}
-        exact="true"
+        // exact="true"
+        // onMouseLeave={handleMenuClose}
       >
         <ListItemButton
-          onClick={props.onClick}
-          disableRipple={true}
-          // onMouseLeave={handleMenuClose}
+          onClick={handleMenuClick2}
+          // className={activeClass}
+          // onMouseOver={handleMenuClick}
+          // onMouseEnter={handleMenuClick}
+          // onMouseLeave={() => setAnchorEl(null)}
           sx={{
             borderRadius: "35px",
             boxShadow: {
@@ -247,34 +200,54 @@ const ListComp = (props) => {
           <ListItemIcon>
             <NotesIcon sx={{ transform: "translateY(12%)" }} />
             <ListItemText
-              primary="Blogs"
+              primary="Resources"
               primaryTypographyProps={{
                 fontWeight: "inherit",
               }}
             />
+            <ArrowDropDownIcon />
           </ListItemIcon>
         </ListItemButton>
+        <StyledMenu
+          // id="simple-menu"
+          keepMounted
+          anchorEl={anchorEl2}
+          // anchorOrigin={{
+          //   vertical: "bottom",
+          //   horizontal: "left",
+          // }}
+          open={Boolean(anchorEl2)}
+          onClose={handleMenuClose2}
+          MenuListProps={{ onMouseLeave: handleMenuClose }}
+          // disableRestoreFocus
+          onClick={props.onClick}
+        >
+          {sub2.map((item, i) => (
+            <MenuItem
+              onClick={() => {
+                handleMenuClose2();
+                // props.onClick;
+              }}
+              // onClick={() => {
+              //   handleMenuClose();
+              //   handlePropClick();
+              // }}
+              component={Link}
+              to={item.link}
+              key={i}
+            >
+              {item.title}
+            </MenuItem>
+          ))}
+        </StyledMenu>
       </NavLink>
+
       <NavLink
         to="/contact"
         className={({ isActive }) => (isActive ? "active" : "inactive")}
         exact="true"
       >
-        <ListItemButton
-          onClick={props.onClick}
-          disableRipple={true}
-          // onMouseLeave={handleMenuClose}
-          sx={{
-            borderRadius: "35px",
-            boxShadow: {
-              xs: "inset -5px -5px 7px #ffffffb0,inset  3px 3px 5px rgba(94, 104, 121, 0.692)",
-              md: "none",
-            },
-            "&:hover": {
-              boxShadow: "inset 2px 2px 5px #b8b9be, inset -3px -3px 7px #fff",
-            },
-          }}
-        >
+        <ListItemButton1 onClick={props.onClick}>
           <ListItemIcon>
             <ConnectWithoutContactIcon />
             <ListItemText
@@ -284,7 +257,7 @@ const ListComp = (props) => {
               }}
             />
           </ListItemIcon>
-        </ListItemButton>
+        </ListItemButton1>
       </NavLink>
     </List>
   );

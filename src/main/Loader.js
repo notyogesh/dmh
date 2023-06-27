@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 // import CircularProgress from "@mui/material/CircularProgress";
 import Box from "@mui/material/Box";
 // import { Outlet, useLocation } from "react-router-dom";
-import logo from "../images/logo1.png";
+import logo from "../images/logo.png";
 const Loader = ({ children }) => {
   const [isFetching, setIsFetching] = useState(true);
   // const { pathname } = useLocation();

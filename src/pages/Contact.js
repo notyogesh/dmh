@@ -145,6 +145,7 @@ const Contact = () => {
                 boxShadow: "inset 2px 2px 5px #b8b9be,inset -3px -3px 7px #fff",
               }}
             >
+              {/* <address> */}
               {contacts.map((item, i) => (
                 <ContactButton
                   name={item.name}
@@ -167,6 +168,7 @@ const Contact = () => {
                 <br />
                 Singapore - 179098
               </ContactButton>
+              {/* </address> */}
             </Stack>
           </Card>
         </Box>

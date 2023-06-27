@@ -88,3 +88,14 @@ export const sub = [
     link: "/electrical-services",
   },
 ];
+export const sub2 = [
+  // { title: "Services", link: "/service/projects" },
+  {
+    title: "Blogs",
+    link: "/blogs",
+  },
+  {
+    title: "Gallery",
+    link: "/gallery",
+  },
+];

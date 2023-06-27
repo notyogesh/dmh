@@ -16,6 +16,7 @@ import TermsAndConditions from "./components/terms/TermsAndConditions";
 import PrivacyPolicy from "./components/terms/PrivacyPolicy";
 import Blogs from "./components/blogs/Blogs";
 import BlogsContent from "./components/blogs/BlogsContent";
+import Gallery from "./pages/Gallery";
 export const router = createBrowserRouter([
   // {
   //   element: <Loader />,
@@ -71,6 +72,10 @@ export const router = createBrowserRouter([
       {
         path: "blogs",
         element: <Blogs />,
+      },
+      {
+        path: "gallery",
+        element: <Gallery />,
       },
       {
         path: "blogs/:blogName",

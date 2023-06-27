@@ -5,7 +5,7 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
 // import AdbIcon from "@mui/icons-material/Adb";
-import logo from "../../images/logo1.png";
+import logo from "../../images/logo.png";
 // import LightDark from "./LightDark";
 import { Drawer, Box } from "@mui/material";
 import ListComp from "./ListComp";
