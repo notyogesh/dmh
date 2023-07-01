@@ -22,6 +22,7 @@ import {
 // background-color: #f3f3f3;
 // #212121;
 // #333333
+// 1C2B33
 export const customTheme = (mode) => ({
   typography: {
     allVariants: {
