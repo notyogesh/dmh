@@ -42,10 +42,11 @@ const Contact = () => {
       >
         <CssBaseline />
         <Seo
-          title="Contact Us - DMH"
+          title="Contact Us | DMH"
           description=" Contact us today for inquiries, project requests, or any questions you may have.  Experience prompt and reliable communication as we guide you through your all of our service journey."
           name="D M H"
           type="Contact us  page "
+          url="https://dmhgroup.com.sg/contact"
         />
         <Box
           sx={{
@@ -62,7 +63,11 @@ const Contact = () => {
           }}
         >
           <Box sx={{ textAlign: { xs: "center", md: "left" } }}>
-            <Typography variant="h3" sx={{ fontWeight: "lighter" }}>
+            <Typography
+              variant="h3"
+              component="h1"
+              sx={{ fontWeight: "lighter" }}
+            >
               Contact Us
             </Typography>
             <Typography

@@ -23,9 +23,13 @@ const socio = [
   {
     name: "Facebook",
     icon: <FacebookIcon />,
-    link: "https://www.facebook.com/profile.php?id=100092418425772",
+    link: "https://www.facebook.com/dmhconstructionengineering",
   },
-  { name: "Twitter", icon: <TwitterIcon />, link: "http://www.twitter.com" },
+  {
+    name: "Twitter",
+    icon: <TwitterIcon />,
+    link: "https://twitter.com/DMH_group_",
+  },
   {
     name: "Instagram",
     icon: <InstagramIcon />,

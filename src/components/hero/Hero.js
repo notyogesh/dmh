@@ -47,6 +47,8 @@ const Hero = () => {
           description="Discover our comprehensive range of services, from construction to electrical, glass, aluminum, scaffolding , Air conditioning & Mechanical Ventilation services."
           name="D M H"
           type="landing page"
+          url="https://dmhgroup.com.sg/"
+          keywords="dmh, construction, engineering"
         >
           <link rel="canonical" href="https://www.dmhgroup.com.sg/" />
         </Seo>
@@ -58,7 +60,7 @@ const Hero = () => {
         >
           <Typography
             variant="h3"
-            // component="h1"
+            component="h1"
             gutterBottom
             sx={{
               color: "#31344B",
@@ -135,6 +137,7 @@ const Hero = () => {
               src={heroImg}
               alt="DMH"
               // className={imgIsVisible ? "animateImg" : ""}
+              title="DMH"
               loading="lazy"
               style={{
                 // borderRadius: "50%",

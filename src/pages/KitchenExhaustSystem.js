@@ -50,10 +50,11 @@ const KitchenExhaustSystem = () => {
       }}
     >
       <Seo
-        title="Kitchen Exhaust System - DMH"
+        title="Kitchen Exhaust System | DMH"
         description="DMH Kitchen Exhaust System: Clean, Efficient, and Reliable Ventilation Solutions. Discover the power of DMH's advanced kitchen exhaust systems. Our specialized solutions effectively remove smoke, grease, odors, and airborne contaminants from commercial kitchens, ensuring a healthy and safe environment."
         name="D M H"
         type="Kitchen Exhaust System Page"
+        url="https://dmhgroup.com.sg/kitchen-exhaust-system"
       />
       <Box
         sx={{
@@ -120,27 +121,6 @@ const KitchenExhaustSystem = () => {
             Breathe easy with Us !
           </Button>
         </Box>
-
-        {/* <img
-          src={web}
-          alt="smoke"
-          // willReadFrequently
-          style={{
-            width: "100%",
-            // height: "300px",
-            // marginTop: "-20px",
-            // paddingRight: "10%",
-            // flex: 1,
-            // aspectRatio: 1 / 1,
-            // height: "80vh",
-            // zIndex: 1,
-            opacity: ".2",
-            position: "absolute",
-            top: "0",
-            left: "0",
-            // right: "50%",
-          }}
-        /> */}
       </Box>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path

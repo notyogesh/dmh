@@ -40,10 +40,11 @@ const ElectricalServices = () => {
       }}
     >
       <Seo
-        title="Electrical Services - DMH"
+        title="Electrical Services | DMH"
         description="DMH Electrical Services: Unleash the Power of Excellence in Electrical Solutions. Discover top-notch electrical services provided by DMH. Our experienced and certified electricians offer a wide range of services including installations, repairs, and maintenance for residential, commercial, and industrial projects. "
         name="D M H"
         type="Electrical Services Page"
+        url="https://dmhgroup.com.sg/electrical-services"
       />
       <Box
         sx={{

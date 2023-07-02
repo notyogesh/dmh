@@ -87,6 +87,7 @@ const Construction = () => {
         description=" DMH Construction , Unparalleled Excellence in Building and Renovation Projects. Trust our skilled team of professionals to bring your vision to life."
         name="D M H"
         type="Construction  service  page "
+        url="https://dmhgroup.com.sg/construction"
       />
       <Box
         sx={{

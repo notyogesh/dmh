@@ -33,10 +33,11 @@ const ScaffoldingWork = () => {
     >
       {" "}
       <Seo
-        title="Scaffolding Work - DMH"
+        title="Scaffolding Work | DMH"
         description="DMH Scaffolding Work: Elevate Your Projects with Safe and Reliable Solutions. Explore DMH's comprehensive scaffolding services for construction, maintenance, and renovation projects. Our skilled team provides sturdy and secure scaffolding structures that ensure safe access and support for workers at various heights."
         name="D M H"
         type="Kitchen Exhaust System Page"
+        url="https://dmhgroup.com.sg/scaffolding-work"
       />
       <Box
         sx={{

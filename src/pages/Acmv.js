@@ -83,10 +83,11 @@ const Acmv = () => {
       }}
     >
       <Seo
-        title="AirConditioning & Mechanical Vendilation System"
+        title="AirConditioning & Mechanical Vendilation System | DMH "
         description=" DMH AirConditioning & Mechanical Vendilation System , Heating , Vendilating & Air Conditioning Services"
         name="D M H"
         type=" AirConditioning & Mechanical Vendilation System service  page "
+        url="https://dmhgroup.com.sg/airconditioning-mechanical-ventilation-system"
       />
       <Box
         sx={{
@@ -125,7 +126,7 @@ const Acmv = () => {
         <Typography
           // variant="h4"
           variant="h4"
-          component="h1"
+          component="h2"
           sx={{
             textAlign: "center",
             fontWeight: 500,
@@ -136,6 +137,7 @@ const Acmv = () => {
         </Typography>
         <Typography
           variant="body1"
+          component="h1"
           sx={{
             textAlign: "center",
             // px: 10,

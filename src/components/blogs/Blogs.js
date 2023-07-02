@@ -16,10 +16,11 @@ const Blogs = () => {
       }}
     >
       <Seo
-        title="Blogs - D M H"
+        title="Blogs | D M H"
         description="A comprehensive resource for all things related to air conditioning, electrical systems, construction, kitchen exhaust, scaffolding, and glass & aluminum work."
         name="D M H"
         type="Blogs page "
+        url="https://dmhgroup.com.sg/blogs"
       />
       {blogs.map((item, i) => (
         <BlogsCard

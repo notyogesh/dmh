@@ -34,10 +34,11 @@ const GlassAluminumWork = () => {
     >
       {" "}
       <Seo
-        title="Glass & Aluminum works - DMH"
+        title="Glass & Aluminum works | DMH"
         description="DMH Glass & Aluminum Services: Transforming Spaces with Precision and Elegance. Explore the exceptional glass and aluminum services offered by DMH. Our skilled team specializes in designing, fabricating, and installing stunning glass and aluminum solutions for residential, commercial, and architectural projects. "
         name="D M H"
         type="Glass & Aluminum services Page"
+        url="https://dmhgroup.com.sg/glass-aluminum-work"
       />
       <Box
         sx={{

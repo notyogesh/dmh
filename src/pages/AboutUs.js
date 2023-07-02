@@ -65,10 +65,11 @@ const AboutUs = () => {
     >
       {" "}
       <Seo
-        title="D M H - About Us"
+        title="About Us | D M H"
         description=" Discover our comprehensive range of services, from residential and commercial construction to specialized electrical, glass, aluminum, and more. "
         name="D M H"
-        type="about us page "
+        type="About us page"
+        url="https://dmhgroup.com.sg/aboutus"
       />
       <Box
         sx={{ pt: "20vh", display: "flex", flexDirection: "column", mb: 10 }}
