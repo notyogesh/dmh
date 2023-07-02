@@ -44,11 +44,12 @@ const Hero = () => {
         {" "}
         <Seo
           title="D M H"
-          description="Construction &  Engineering Pte.Ltd, Discover our comprehensive range of services, from residential and commercial construction to specialized electrical, glass, aluminum, scaffolding , Air conditioning & Mechanical Vendilation services."
+          description="Discover our comprehensive range of services, from construction to electrical, glass, aluminum, scaffolding , Air conditioning & Mechanical Ventilation services."
           name="D M H"
-          type="landing page "
-          // <link rel="canonical" href="https://www.tacobell.com/" />
-        />
+          type="landing page"
+        >
+          <link rel="canonical" href="https://www.dmhgroup.com.sg/" />
+        </Seo>
         <CssBaseline />
         <Container
           component="main"

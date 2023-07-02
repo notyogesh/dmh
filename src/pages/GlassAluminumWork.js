@@ -10,8 +10,8 @@ import TuneIcon from "@mui/icons-material/Tune";
 import DashboardCustomizeIcon from "@mui/icons-material/DashboardCustomize";
 import BeenhereIcon from "@mui/icons-material/Beenhere";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
-import glassinstall from "../images/glassinstall.png";
-import glassrepair from "../images/glassrepair.png";
+// import glassinstall from "../images/glassinstall.png";
+// import glassrepair from "../images/glassrepair.png";
 
 // import AssuredWorkloadIcon from "@mui/icons-material/AssuredWorkload";
 import Stack from "@mui/material/Stack";
@@ -191,7 +191,7 @@ const servicesGlass = [
   {
     head: "Glass Installation:",
     body: "Whether you need glass windows, doors, or partitions for your home or business, we can handle it all. Our expert team will ensure precise measurements, proper installation, and flawless finishing to give you stunning results that enhance the aesthetics of your space.",
-    img: glassinstall,
+    img: "https://drive.google.com/uc?export=download&id=1SwrUN73lRxOd-3QFEp5zUinShdfrMeca",
   },
   {
     head: "Aluminum Fabrication:",
@@ -201,7 +201,7 @@ const servicesGlass = [
   {
     head: "Repairs and Maintenance:",
     body: "Accidents happen, and when your glass or aluminum structures are damaged, you can count on us for reliable repairs and maintenance. Our team will assess the damage, provide prompt and efficient repairs, and help you maintain the longevity of your glass and aluminum fixtures.",
-    img: glassrepair,
+    img: "https://drive.google.com/uc?export=download&id=1mcbTFkfkakzZy2cYb3a7KY3J4tV9_d6U",
   },
   {
     head: "Custom Design:",

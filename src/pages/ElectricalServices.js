@@ -2,8 +2,7 @@ import React from "react";
 import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import electrical from "../images/electrical.png";
-import lightningsol from "../images/lightningsol.png";
-
+// import lightningsol from "../images/lightningsol.png";
 import KitchenCard from "../utils/KitchenCard";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -18,10 +17,10 @@ import TuneIcon from "@mui/icons-material/Tune";
 import Stack from "@mui/material/Stack";
 import Seo from "../main/Seo";
 // import repair from "../images/repair.png";
-import repair from "../images/repair.png";
-import safetyelectrical from "../images/safetyelectrical.png";
-import elecinstall from "../images/electinstall.png";
-import elecup from "../images/elecup.png";
+// import repair from "../images/repair.png";
+// import safetyelectrical from "../images/safetyelectrical.png";
+// import elecinstall from "../images/electinstall.png";
+// import elecup from "../images/elecup.png";
 
 const ElectricalServices = () => {
   return (
@@ -199,28 +198,28 @@ const servicesElectrical = [
   {
     head: "Electrical Repairs:",
     body: "From fixing faulty outlets and switches to repairing damaged wiring and circuits, our technicians can diagnose and repair all types of electrical issues quickly and efficiently. We use state-of-the-art tools and techniques to ensure that your electrical system is safe and up to code.",
-    img: repair,
+    img: "https://drive.google.com/uc?export=download&id=1bdAeolqzyyBQjdCqtsPC2Gnha2esdubW",
   },
 
   {
     head: "Electrical Installations:",
     body: "If you're building a new home, renovating your existing space, or need to upgrade your electrical system, we can handle all types of installations. We can install new electrical panels, outlets, switches, lighting fixtures, and more, tailored to your specific needs and budget.",
-    img: elecinstall,
+    img: "https://drive.google.com/uc?export=download&id=1qWS1p8XTjY_kN3GFdyAdMnxGC3zv0QBz",
   },
   {
     head: "Electrical Upgrades:",
     body: "As technology evolves, so do electrical systems. If you need to upgrade your electrical panel, increase your electrical capacity, or install dedicated circuits for high-powered appliances, our team can provide expert advice and professional installation services to meet your requirements.",
-    img: elecup,
+    img: "https://drive.google.com/uc?export=download&id=170iMDPW4mQBV2XYJ76_CZUETODJ7P1RC",
   },
   {
     head: "Lighting Solutions:",
     body: "Lighting plays a crucial role in enhancing the ambiance and functionality of any space. We offer a wide range of lighting solutions, including indoor and outdoor lighting, LED lighting, recessed lighting, landscape lighting, and more. Our team can help you choose the right lighting options to suit your aesthetic preferences and energy-saving goals.",
-    img: lightningsol,
+    img: "https://drive.google.com/uc?export=download&id=1ujrVfrtBXsylw_Z84XwN8zPwBLwGHt-Q",
   },
   {
     head: "Safety Inspections:",
     body: "Electrical safety is our top priority. Our technicians can conduct thorough electrical safety inspections to identify potential hazards, code violations, and other issues that may compromise the safety of your electrical system. We can provide recommendations and implement necessary repairs or upgrades to ensure your home or business is safe from electrical hazards.",
-    img: safetyelectrical,
+    img: "https://drive.google.com/uc?export=download&id=1yQ-DY2Y45u3p2b0JoX3oWEQvuTmHimGV",
   },
 ];
 const whyUsElectrical = [

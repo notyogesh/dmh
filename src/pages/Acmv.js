@@ -4,15 +4,15 @@ import Typography from "@mui/material/Typography";
 // import AcmvCard from "../utils/AcmvCard";
 // import VisibilityIcon from "@mui/icons-material/Visibility";
 import Snowfall from "react-snowfall";
-import acinstall from "../images/acinstall.png";
-import repairmain from "../images/repairmain.png";
-import qualityac from "../images/qualityac.png";
+// import acinstall from "../images/acinstall.png";
+// import repairmain from "../images/repairmain.png";
+// import qualityac from "../images/qualityac.png";
 import KitchenCard from "../utils/KitchenCard";
 
-import lowprice from "../images/lowprice.png";
-import warranty from "../images/warranty.png";
-import cussolution from "../images/cussolution.png";
-import customersupport from "../images/customersupport.png";
+// import lowprice from "../images/lowprice.png";
+// import warranty from "../images/warranty.png";
+// import cussolution from "../images/cussolution.png";
+// import customersupport from "../images/customersupport.png";
 // import deer from "../images/onedeer1.png";
 import snow from "../images/snow.png";
 import Seo from "../main/Seo";
@@ -23,32 +23,32 @@ const Acmv = () => {
       head: "Air-Con Installation",
       body: " Our certified technicians are trained to install all types and brands of air conditioning systems. From split systems to ducted systems, we have the expertise to handle any installation job with precision and care. We follow industry standards and best practices to ensure that your air conditioning system is installed correctly for optimal performance and energy efficiency.",
 
-      img: acinstall,
+      img: "https://drive.google.com/uc?export=download&id=1Sa_30H_i27TmZNk0LTSJfflkiVB5to74",
     },
     {
       head: "Repair & Maintenance",
       body: "  Regular maintenance is proven to improve the operation & efficiency of the equipment, is a legal requirment ( for certain equipment ) and helps prevent operational issues, saving you both time & money.  We look forward to discussing your maintenances requirements & treating you to the DMH Experience !",
 
-      img: repairmain,
+      img: "https://drive.google.com/uc?export=download&id=1oZvLD3CK4WO-H10PfUjFIqD3F0wwh16-",
     },
 
     {
       head: " Quality Products:",
       body: " We only work with reputable brands and suppliers to ensure that you get the best quality air conditioning systems for your installation. Our products are energy-efficient, environmentally friendly, and designed to provide reliable cooling for years to come. We can also provide guidance on selecting the right type and size of air conditioning system that suits your property and usage patterns.",
 
-      img: qualityac,
+      img: "https://drive.google.com/uc?export=download&id=1ru6zxQJiQlOablf680SqIw1YD-uQZ-pB",
     },
     {
       head: "Customized Solutions:",
       body: "  We understand that every property is unique, and cooling requirements may vary. That's why we offer customized solutions tailored to your specific needs. Our team will assess your property, take into consideration factors such as room size, layout, insulation, and your budget, and recommend the best aircon installation solution that fits your requirements.",
 
-      img: cussolution,
+      img: "https://drive.google.com/uc?export=download&id=1maCe-_Yx6fuyQFRC4TsOpeyeq41u7iFP",
     },
     {
       head: "Pricing",
       body: " We believe in providing transparent and competitive pricing for our aircon installation services. Our team will provide you with a detailed quote that includes all costs upfront, so you know exactly what to expect. We strive to offer affordable options without compromising on quality or service.",
 
-      img: lowprice,
+      img: "https://drive.google.com/uc?export=download&id=1avdLzelIo7B44SeKVZLp9x3zPRD4BVMp",
     },
     // {
     //   head: "  Timely Installation:",
@@ -60,13 +60,13 @@ const Acmv = () => {
       head: " Excellent Customer Service:",
       body: "   We are committed to providing exceptional customer service throughout the aircon installation process. Our friendly and knowledgeable team is available to answer all your questions, provide expert advice, and address any concerns you may have. We believe in building long-term relationships with our customers based on trust, reliability, and satisfaction.",
 
-      img: customersupport,
+      img: "https://drive.google.com/uc?export=download&id=1ovsHgt-KmPJxk37KZ0OYn6FWsrq-3TZr",
     },
     {
       head: " Warranty",
       body: "  We stand by the quality of our work and the products we install. That's why we offer warranties on our installation services and the air conditioning systems we install. In case of any issues or concerns, our team is readily available to provide prompt and reliable support to ensure your complete satisfaction. If you're looking for a reliable aircon installation service, you've come to the right place. Contact us today to schedule an appointment or request a quote, and let us help you achieve a comfortable and cool indoor environment for your home or business. ",
 
-      img: warranty,
+      img: "https://drive.google.com/uc?export=download&id=1Run9v4ky8q3rM_JkFx2Ah82ULQVXVbxo",
     },
   ];
   return (

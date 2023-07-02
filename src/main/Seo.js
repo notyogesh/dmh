@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
-const Seo = ({ title, description, name, type }) => {
+const Seo = ({ title, description, name, type, children }) => {
   const helmetContext = {};
 
   return (
@@ -10,6 +10,7 @@ const Seo = ({ title, description, name, type }) => {
         {/* Standard metadata tags */}
         <title>{title}</title>
         <meta name="description" content={description} />
+        {children}
         {/* End standard metadata tags */}
         {/* Facebook tags */}
         <meta property="og:type" content={type} />

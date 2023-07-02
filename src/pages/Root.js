@@ -20,7 +20,7 @@ const Root = () => {
   const theme = useMemo(
     () =>
       isDarkTheme
-        ? createTheme(customTheme("dark"))
+        ? createTheme(customTheme("light"))
         : createTheme(customTheme("light")),
     [isDarkTheme]
   );
