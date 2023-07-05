@@ -82,7 +82,12 @@ const ElectricalServices = () => {
           </Typography>
         </Box>
         <Box sx={{ flex: 1 }}>
-          <img src={electrical} alt="electrical" style={{ width: "50%" }} />
+          <img
+            src={electrical}
+            alt="electrical"
+            loading="eager"
+            style={{ width: "50%" }}
+          />
         </Box>
       </Box>
       <Typography

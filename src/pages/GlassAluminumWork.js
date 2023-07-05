@@ -53,6 +53,7 @@ const GlassAluminumWork = () => {
           // backgroundOrigin: " border-box",
           backgroundSize: "cover",
           backgroundOrigin: "right",
+          backgroundLoading: "eager",
           // backgroundSize: "100% 100%",
           minHeight: "60vh",
           backgroundPositionY: "bottom",
@@ -83,7 +84,7 @@ const GlassAluminumWork = () => {
         >
           Glass & Aluminum Work
         </Typography>
-        <Typography
+        {/* <Typography
           variant="body1"
           sx={{
             textAlign: "center",
@@ -94,7 +95,7 @@ const GlassAluminumWork = () => {
             px: { xs: 2, md: 20 },
             // width: "350px",
           }}
-        ></Typography>
+        ></Typography> */}
       </Box>
       <Typography
         variant="h6"

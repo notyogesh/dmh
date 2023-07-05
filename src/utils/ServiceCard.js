@@ -24,7 +24,7 @@ const ServiceCard = (props) => {
         <img
           src={props.img}
           alt={props.head}
-          loading="lazy"
+          loading="eager"
           style={{
             flex: 1,
             borderRadius: "63% 37% 30% 70%/50% 45% 55% 50%",

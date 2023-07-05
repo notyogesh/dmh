@@ -166,6 +166,7 @@ const Acmv = () => {
         <img
           src={snow}
           alt="snow"
+          loading="eager"
           // willReadFrequently
           style={{
             width: "100%",

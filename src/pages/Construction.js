@@ -128,6 +128,7 @@ const Construction = () => {
           <img
             src={construction}
             alt="construction"
+            loading="eager"
             style={{
               width: "100%",
               filter: "grayscale(25%)",

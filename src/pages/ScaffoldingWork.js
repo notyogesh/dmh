@@ -49,7 +49,7 @@ const ScaffoldingWork = () => {
 
           backgroundImage: `linear-gradient(to bottom,  rgb(243,240,241) , transparent 50%), url(${paper})`,
           // backgroundImage: `url(${paper})`,
-
+          backgroundLoading: "eager",
           // backgroundSize: "cover",
           // backgroundOrigin: "right",
 
