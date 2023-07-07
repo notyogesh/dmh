@@ -1,7 +1,8 @@
 import React from "react";
 import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import tile from "../images/tile1.png";
+import tile from "../images/tile1.webp";
+// https://drive.google.com/uc?export=download&id=1hm5Ds2LP8wx6WTQdCa7vW-M6yAhLvuFa
 import KitchenCard from "../utils/KitchenCard";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";

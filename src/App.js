@@ -1,4 +1,7 @@
-import React, { Suspense, useEffect } from "react";
+import React, {
+  Suspense,
+  // useEffect
+} from "react";
 // import "./App.css";
 
 import { RouterProvider } from "react-router-dom";
@@ -12,13 +15,13 @@ import { router } from "./Routes";
 // const Contact = React.lazy(() => import("./pages/Contact"));
 
 const App = () => {
-  const handleHttpsRedirect = () => {
-    window.location.replace("https://www.dmhgroup.com.sg");
-  };
+  // const handleHttpsRedirect = () => {
+  //   window.location.replace("https://www.dmhgroup.com.sg");
+  // };
 
-  useEffect(() => {
-    handleHttpsRedirect();
-  }, []);
+  // useEffect(() => {
+  //   handleHttpsRedirect();
+  // }, []);
   return (
     <div>
       <Suspense fallback={<CircularProgress variant="determinate" />}>

@@ -14,7 +14,7 @@ import KitchenCard from "../utils/KitchenCard";
 // import cussolution from "../images/cussolution.png";
 // import customersupport from "../images/customersupport.png";
 // import deer from "../images/onedeer1.png";
-import snow from "../images/snow.png";
+import snow from "../images/snow.webp";
 import Seo from "../main/Seo";
 // import Nav from "../main/navbar/NavBar"
 const Acmv = () => {
@@ -66,7 +66,7 @@ const Acmv = () => {
       head: " Warranty",
       body: "  We stand by the quality of our work and the products we install. That's why we offer warranties on our installation services and the air conditioning systems we install. In case of any issues or concerns, our team is readily available to provide prompt and reliable support to ensure your complete satisfaction. If you're looking for a reliable aircon installation service, you've come to the right place. Contact us today to schedule an appointment or request a quote, and let us help you achieve a comfortable and cool indoor environment for your home or business. ",
 
-      img: "https://drive.google.com/uc?export=download&id=1Run9v4ky8q3rM_JkFx2Ah82ULQVXVbxo",
+      img: "https://drive.google.com/uc?export=download&id=1HdbS-Szv6oZbZ2YqEry8QAlm8ERWjKKq",
     },
   ];
   return (

@@ -13,7 +13,9 @@ import LeaderboardIcon from "@mui/icons-material/Leaderboard";
 import GradeIcon from "@mui/icons-material/Grade";
 import BeenhereIcon from "@mui/icons-material/Beenhere";
 import Seo from "../main/Seo";
-import construction from "../images/construction2.png";
+import construction from "../images/construction2.webp";
+import constructionMin from "../images/construction2-min.webp";
+
 const whyUsConstruction = [
   {
     head: "Quality Control",
@@ -40,27 +42,11 @@ function a11yProps(index) {
     "aria-controls": `simple-tabpanel-${index}`,
   };
 }
-const sliderImages = [
-  {
-    url: "https://images.squarespace-cdn.com/content/v1/5d486b45c39bd4000167ac0c/1643322193541-DGLOUOAGECLI1RAOL4MD/LEIGHFAV.jpeg?format=1500w",
-  },
-  {
-    url: "https://images.squarespace-cdn.com/content/v1/5d486b45c39bd4000167ac0c/1644134566039-LZJ8RKUP2DJX1RRTSJUH/newcypress.jpg?format=1500w",
-  },
-  {
-    url: "https://images.squarespace-cdn.com/content/v1/5d486b45c39bd4000167ac0c/1644132678375-3X1J387TWUTW1ZKID1MV/mosaic.jpeg?format=1500w",
-  },
-  {
-    url: "https://images.squarespace-cdn.com/content/v1/5d486b45c39bd4000167ac0c/1643322194418-HF0QSKDB209A76VEX2X5/PIPPINFAV.jpg?format=1500w",
-  },
-  {
-    url: "https://images.squarespace-cdn.com/content/v1/5d486b45c39bd4000167ac0c/1565130411823-W8TDKVRHR16WTJRFS4EO/seresenior.jpg?format=1500w",
-  },
-];
+
 const Construction = () => {
   const [value, setValue] = useState(0);
   // const [imageNum, setImageNum] = useState(1);
-  // const width =
+  const constructionImage = construction || constructionMin;
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -126,7 +112,7 @@ const Construction = () => {
         </Box>
         <Box sx={{ flex: "60%" }}>
           <img
-            src={construction}
+            src={constructionImage}
             alt="construction"
             loading="eager"
             style={{
@@ -333,3 +319,20 @@ const Construction = () => {
 };
 
 export default Construction;
+const sliderImages = [
+  {
+    url: "https://images.squarespace-cdn.com/content/v1/5d486b45c39bd4000167ac0c/1643322193541-DGLOUOAGECLI1RAOL4MD/LEIGHFAV.jpeg?format=1500w",
+  },
+  {
+    url: "https://images.squarespace-cdn.com/content/v1/5d486b45c39bd4000167ac0c/1644134566039-LZJ8RKUP2DJX1RRTSJUH/newcypress.jpg?format=1500w",
+  },
+  {
+    url: "https://images.squarespace-cdn.com/content/v1/5d486b45c39bd4000167ac0c/1644132678375-3X1J387TWUTW1ZKID1MV/mosaic.jpeg?format=1500w",
+  },
+  {
+    url: "https://images.squarespace-cdn.com/content/v1/5d486b45c39bd4000167ac0c/1643322194418-HF0QSKDB209A76VEX2X5/PIPPINFAV.jpg?format=1500w",
+  },
+  {
+    url: "https://images.squarespace-cdn.com/content/v1/5d486b45c39bd4000167ac0c/1565130411823-W8TDKVRHR16WTJRFS4EO/seresenior.jpg?format=1500w",
+  },
+];

@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { Button } from "@mui/material";
 import Seo from "../../main/Seo";
-import heroImg from "../../images/heroto.png";
+import heroImg from "../../images/heroto.webp";
 import HeroButton from "../../utils/HeroButton";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 // import { useInView } from "react-intersection-observer";

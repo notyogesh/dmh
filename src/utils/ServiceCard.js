@@ -36,7 +36,7 @@ const ServiceCard = (props) => {
         sx={{
           flex: 1,
           textAlign: "center",
-          px: 5,
+          px: { xs: 1, md: 5 },
           pt: 2,
           position: "relative",
           display: "flex",

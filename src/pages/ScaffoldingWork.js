@@ -7,7 +7,7 @@ import {
   Stack,
 } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import paper from "../images/paper.png";
+import paper from "../images/paper.webp";
 // import PropTypes from "prop-types";
 import KitchenCard from "../utils/KitchenCard";
 import AddCircleIcon from "@mui/icons-material/AddCircle";

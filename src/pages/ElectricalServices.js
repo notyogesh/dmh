@@ -1,7 +1,7 @@
 import React from "react";
 import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
-import electrical from "../images/electrical.png";
+import electrical from "../images/electrical.webp";
 // import lightningsol from "../images/lightningsol.png";
 import KitchenCard from "../utils/KitchenCard";
 import Accordion from "@mui/material/Accordion";
