@@ -1,9 +1,18 @@
 import React from "react";
-import { Container, Box, Paper, Divider } from "@mui/material";
+import {
+  Container,
+  Box,
+  //  Paper,
+  Divider,
+} from "@mui/material";
 import { Typography } from "@mui/material";
-import { images } from "./GalleryImageData";
+import { imagesData } from "./GalleryImageData";
+import ImageGallery from "react-image-gallery";
+import "react-image-gallery/styles/css/image-gallery.css";
+
 const GalleryComp = () => {
   // const reversedImageArray = [...images].reverse();
+
   return (
     <Box
       sx={{ backgroundColor: "#F3F0F1", p: { xs: 1, md: 5 }, color: "#31344B" }}
@@ -26,7 +35,7 @@ const GalleryComp = () => {
           </Typography>
         </div>
 
-        {images
+        {imagesData
           .slice(0)
           .reverse()
           .map((item, i) => (
@@ -34,10 +43,24 @@ const GalleryComp = () => {
               key={i}
               sx={{ display: "flex", flexDirection: "column", pt: 3 }}
             >
-              <Typography variant="h4" align="center" gutterBottom>
+              <Typography
+                variant="h4"
+                align="center"
+                sx={{ textDecoration: "underline" }}
+                gutterBottom
+              >
                 {item.head}
               </Typography>
-              <Box sx={{ display: "flex", overflowX: "auto", padding: "16px" }}>
+              <ImageGallery
+                items={item.images}
+                showNav={true}
+                showPlayButton={false}
+                autoPlay
+                thumbnailPosition="left"
+                showFullscreenButton={false}
+              />
+
+              {/* <Box sx={{ display: "flex", overflowX: "auto", padding: "16px" }}>
                 {" "}
                 {item.img.map((im, i) => (
                   <Box key={i} sx={{ flex: "0 0 auto", marginRight: "16px" }}>
@@ -50,7 +73,7 @@ const GalleryComp = () => {
                     </Paper>
                   </Box>
                 ))}
-              </Box>{" "}
+              </Box>{" "} */}
               <Divider sx={{ py: 2 }} />
             </Box>
           ))}

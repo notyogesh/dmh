@@ -38,7 +38,7 @@ const Services = () => {
     {
       head: "Scaffolding Work",
       body: "We provide scaffolding work services for a range of industries, including construction, maintenance, and renovation. Providing safe and reliable access to hard-to-reach areas. We use high-quality materials and equipment, and strictly adhere to safety regulations to ensure the protection of our clients and workers. ",
-      img: "https://drive.google.com/uc?export=download&id=1MiKpn4cQol0HrQFdmUnYpgwDcbqTzadq",
+      img: "https://drive.google.com/uc?export=download&id=1meN6hCR4NbBSNZ1JTLAbcAxgJodXGxlD",
       to: "/scaffolding-work",
     },
   ];
