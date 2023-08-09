@@ -41,7 +41,7 @@ const GalleryComp = () => {
           .map((item, i) => (
             <Box
               key={i}
-              sx={{ display: "flex", flexDirection: "column", pt: 3 }}
+              sx={{ display: "flex", flexDirection: "column", pt: 2 }}
             >
               <Typography
                 variant="h4"
@@ -50,6 +50,14 @@ const GalleryComp = () => {
                 gutterBottom
               >
                 {item.head}
+              </Typography>
+              <Typography
+                variant="body1"
+                align="center"
+                gutterBottom
+                sx={{ pb: 2 }}
+              >
+                {item.address}
               </Typography>
               <ImageGallery
                 items={item.images}
