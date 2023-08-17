@@ -50,7 +50,7 @@ const Hero = () => {
           url="https://dmhgroup.com.sg/"
           keywords="dmh, construction, engineering"
         >
-          <link rel="canonical" href="https://www.dmhgroup.com.sg/" />
+          <link rel="canonical" href="https://www.dmhgroup.com.sg/index.html" />
         </Seo>
         <CssBaseline />
         <Container

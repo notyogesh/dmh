@@ -45,7 +45,7 @@ export const imagesData = [
     ],
   },
   {
-    head: "Ceiling ducted fancoil unit installation",
+    head: "Ceiling Ducted Fancoil Unit Installation",
     address:
       "8A, Admiralty Street, #05-36 FoodXChange @Admiralty Singapore - 757 437",
     images: [
