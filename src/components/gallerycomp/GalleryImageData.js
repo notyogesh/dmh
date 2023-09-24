@@ -91,4 +91,105 @@ export const imagesData = [
       },
     ],
   },
+  {
+    head: "AC Installation",
+    images: [
+      {
+        original:
+          "https://drive.google.com/uc?export=download&id=1riwJO4hkE6hzdtU6tAs-C-oB0jAIaPo0",
+        thumbnail:
+          "https://drive.google.com/uc?export=download&id=1riwJO4hkE6hzdtU6tAs-C-oB0jAIaPo0",
+        originalHeight: "300",
+        thumbnailClass: "thumbnail",
+      },
+      {
+        original:
+          "https://drive.google.com/uc?export=download&id=1jDygkQehZSGEsHPjqbuSiVx-pWm0Hb5h",
+        thumbnail:
+          "https://drive.google.com/uc?export=download&id=1jDygkQehZSGEsHPjqbuSiVx-pWm0Hb5h",
+        originalHeight: "300",
+        thumbnailClass: "thumbnail",
+      },
+      {
+        original:
+          "https://drive.google.com/uc?export=download&id=1XsLP3hbWVpIOsOX8OQyrBRqW5hPTGM9B",
+        thumbnail:
+          "https://drive.google.com/uc?export=download&id=1XsLP3hbWVpIOsOX8OQyrBRqW5hPTGM9B",
+        originalHeight: "300",
+        thumbnailClass: "thumbnail",
+      },
+      {
+        original:
+          "https://drive.google.com/uc?export=download&id=1DouHHmjBuR6-e3765V916bL8ES_sRudt",
+        thumbnail:
+          "https://drive.google.com/uc?export=download&id=1DouHHmjBuR6-e3765V916bL8ES_sRudt",
+        originalHeight: "300",
+        thumbnailClass: "thumbnail",
+      },
+      {
+        original:
+          "https://drive.google.com/uc?export=download&id=1Pdbzb0UG0w0Bflgm1xFGvvX_O6ey8NLF",
+        thumbnail:
+          "https://drive.google.com/uc?export=download&id=1Pdbzb0UG0w0Bflgm1xFGvvX_O6ey8NLF",
+        originalHeight: "300",
+        thumbnailClass: "thumbnail",
+      },
+      {
+        original:
+          "https://drive.google.com/uc?export=download&id=10QWg-Q53U9UJ55X9DzArjhKgINQzBgYi",
+        thumbnail:
+          "https://drive.google.com/uc?export=download&id=10QWg-Q53U9UJ55X9DzArjhKgINQzBgYi",
+        originalHeight: "300",
+        thumbnailClass: "thumbnail",
+      },
+      {
+        original:
+          "https://drive.google.com/uc?export=download&id=1_xwiqKkE12vq04QRorrvKBQBu-o56i5m",
+        thumbnail:
+          "https://drive.google.com/uc?export=download&id=1_xwiqKkE12vq04QRorrvKBQBu-o56i5m",
+        originalHeight: "300",
+        thumbnailClass: "thumbnail",
+      },
+      {
+        original:
+          "https://drive.google.com/uc?export=download&id=1U64Z0dYCQdjbK9se7qpd0oEfHZIzOvwQ",
+        thumbnail:
+          "https://drive.google.com/uc?export=download&id=1U64Z0dYCQdjbK9se7qpd0oEfHZIzOvwQ",
+        originalHeight: "300",
+        thumbnailClass: "thumbnail",
+      },
+      {
+        original:
+          "https://drive.google.com/uc?export=download&id=15ClgOzP1B_nQ2_D10BJsJ3d9f-m3Sp73",
+        thumbnail:
+          "https://drive.google.com/uc?export=download&id=15ClgOzP1B_nQ2_D10BJsJ3d9f-m3Sp73",
+        originalHeight: "300",
+        thumbnailClass: "thumbnail",
+      },
+      {
+        original:
+          "https://drive.google.com/uc?export=download&id=1HMFmUfEEZhfYXc1jfGKeXhwIbN7807i0",
+        thumbnail:
+          "https://drive.google.com/uc?export=download&id=1HMFmUfEEZhfYXc1jfGKeXhwIbN7807i0",
+        originalHeight: "300",
+        thumbnailClass: "thumbnail",
+      },
+      {
+        original:
+          "https://drive.google.com/uc?export=download&id=16h1MhDtfwjzjLRH73SEuVEXbbNOJP793",
+        thumbnail:
+          "https://drive.google.com/uc?export=download&id=1HMFmUfEEZhfYXc1jfGKeXhwIbN7807i0",
+        originalHeight: "300",
+        thumbnailClass: "thumbnail",
+      },
+      {
+        original:
+          "https://drive.google.com/uc?export=download&id=1PUPQ_AI9xAKtyz6k_Oqh26J2yKrHpyBz",
+        thumbnail:
+          "https://drive.google.com/uc?export=download&id=1PUPQ_AI9xAKtyz6k_Oqh26J2yKrHpyBz",
+        originalHeight: "300",
+        thumbnailClass: "thumbnail",
+      },
+    ],
+  },
 ];

@@ -180,6 +180,26 @@ const Contact = () => {
       </Box>
       <Box
         sx={{
+          width: { xs: "90vw", md: "50vw" },
+          height: "600px",
+          mx: "auto",
+          pb: { xs: 3, sm: 8, md: 10 },
+        }}
+      >
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfzRdPFv5PcvXJAJ6ppTRM975YCDIqYV_oDGzmElUl5SMxNzg/viewform?embedded=true"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          Title="Form"
+        >
+          Loading…
+        </iframe>{" "}
+      </Box>
+      <Box
+        sx={{
           display: "flex",
           p: 4,
           mx: "auto",
@@ -204,26 +224,6 @@ const Contact = () => {
           // referrerpolicy="no-referrer-when-downgrade"
           title="map location"
         ></iframe>
-      </Box>
-      <Box
-        sx={{
-          width: { xs: "80vw", md: "50vw" },
-          height: "600px",
-          mx: "auto",
-          pt: { xs: 3, sm: 8, md: 10 },
-        }}
-      >
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSfzRdPFv5PcvXJAJ6ppTRM975YCDIqYV_oDGzmElUl5SMxNzg/viewform?embedded=true"
-          width="100%"
-          height="100%"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          Title="Form"
-        >
-          Loading…
-        </iframe>{" "}
       </Box>
     </Box>
   );
