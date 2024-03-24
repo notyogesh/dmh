@@ -13,7 +13,7 @@ import LeaderboardIcon from "@mui/icons-material/Leaderboard";
 import GradeIcon from "@mui/icons-material/Grade";
 import BeenhereIcon from "@mui/icons-material/Beenhere";
 import Seo from "../main/Seo";
-// import mission from "../images/mission.png";
+import mission from "../images/mission.webp";
 import Btn1 from "../utils/Btn1";
 const AboutUs = () => {
   const aboutCardContent = [
@@ -201,7 +201,7 @@ const AboutUs = () => {
           }}
         >
           <img
-            src="https://drive.google.com/uc?export=download&id=1vovc0X7FtGdOBd6WW0BPFyhlXU14OJKx"
+            src={mission}
             alt="mission"
             style={{ width: 325, marginBottom: "-80px", marginLeft: "-90px" }}
           />

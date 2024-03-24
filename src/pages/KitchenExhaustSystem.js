@@ -1,12 +1,12 @@
 import React from "react";
 import { Box, Button } from "@mui/material";
 import Typography from "@mui/material/Typography";
-// import firesystem from "../images/firesystem.png";
+import firesystem from "../images/firesystem.webp";
 import Stack from "@mui/material/Stack";
-// import clean from "../images/clean.png";
-// import install from "../images/install.png";
-// import kit from "../images/kit.png";
-// import cabinet from "../images/cabinet.png";
+import clean from "../images/clean.webp";
+import install from "../images/install.webp";
+import kit from "../images/kit.webp";
+import cabinet from "../images/cabinet.webp";
 import AddCircleIcon from "@mui/icons-material/AddCircle"; // import curvyback from "../images/wave2.svg";
 import KitchenCard from "../utils/KitchenCard";
 import Accordion from "@mui/material/Accordion";
@@ -19,7 +19,8 @@ import BeenhereIcon from "@mui/icons-material/Beenhere";
 import Diversity2Icon from "@mui/icons-material/Diversity2";
 import ExtensionIcon from "@mui/icons-material/Extension";
 import Seo from "../main/Seo";
-// import itsimportant from "../images/itsimportant.png";
+import itsimportant from "../images/itsimportant.webp";
+import electrostatic from "../images/electrostatic.webp";
 const KitchenExhaustSystem = () => {
   // const imageRef = useRef(null);
 
@@ -157,7 +158,7 @@ const KitchenExhaustSystem = () => {
       <KitchenCard
         head="It's important?"
         body="Proper kitchen exhaust ducting installation is critical for the efficient and safe operation of your kitchen ventilation system. A well-designed and properly installed ducting system helps to remove grease, smoke, heat, and odors from your kitchen, creating a healthy and comfortable environment for your family, employees, or customers. It also helps to comply with local building codes and regulations, ensuring the safety and well-being of your property and those inside"
-        img="https://drive.google.com/uc?export=download&id=1J1wPlplQDWHmgyMkUGmRTz0pymExCZyH"
+        img={itsimportant}
       ></KitchenCard>
       <Box
       // sx={{
@@ -320,7 +321,7 @@ const services = [
   {
     head: " Kitchen Exhaust Duct Design:",
     body: "Our team of experts will assess your kitchen layout and design a customized exhaust ducting system that meets local building codes and industry standards. We consider factors such as the size of your kitchen, the type of cooking equipment you use, and the layout of your building to create an efficient and effective ducting system.",
-    img: "https://drive.google.com/uc?export=download&id=13IJfcQxLkYxDAYjECN46xyuNgI0hCId7",
+    img: install,
   },
   {
     head: "Duct Fabrication and Installation:",
@@ -330,26 +331,26 @@ const services = [
   {
     head: "Fresh Air System",
     body: "We can recommend, supply, and install high-quality exhaust fans that are suitable for your kitchen's needs. Properly sized and installed exhaust fans are crucial for effective ventilation, and our team will ensure that your fans are correctly positioned and connected to the ducting system for maximum efficiency. ",
-    img: "https://drive.google.com/uc?export=download&id=1VexMsLpyWWZ13y87RmJp5e5lB--ZR59Z",
+    img: kit,
   },
   {
     head: "Electrostatic Air Cleaner",
     body: "Our electrostatic air cleaner installation offers cleaner and healthier air by effectively capturing and removing airborne particles, allergens, and pollutants. we ensuring your specific needs make  optimal placement and integration with your existing system",
-    img: "https://drive.google.com/uc?export=download&id=1AGQ4Y5VTMPrSKd5GwhbuL-N8BxHxuNZ6",
+    img: electrostatic,
   },
   {
     head: "Fire suppression system for Kitchen",
     body: "Our customizable fire suppression solutions are designed and installed by certified professionals, guaranteeing compliance with regulations and tailored protection for your specific needs.With automatic activation and a specialized suppression agent, our system rapidly extinguishes fires, minimizing damage and protecting lives and property. Integrated alarms and shutdown capabilities enhance safety by alerting occupants and shutting down equipment, preventing fire spread and re-ignition",
-    img: "https://drive.google.com/uc?export=download&id=1fpm42Y0-eaCh4ByfbBIEmAMwIcsqhcQK",
+    img: firesystem,
   },
   {
     head: "Box Cabinet installation",
     body: "With our box/cabinet centrifugal fan installation, you can expect optimal airflow management and improved air quality, providing a comfortable and safe environment. Our experts will customize the installation to fit your specific requirements, ensuring seamless integration with existing systems and maximizing the fan's performance.",
-    img: "https://drive.google.com/uc?export=download&id=18HoNWAphn-I6fNGdCprERKm793IBbsxb",
+    img: cabinet,
   },
   {
     head: "Duct Cleaning and Maintenance:",
     body: "We offer comprehensive construction and building services for commercial and residential properties. From concept to completion,  including design, planning, and construction management. We  ensure that each project is completed to the highest standards of quality and safety. Whether you're looking to build a new property from scratch or renovate an existing one.",
-    img: "https://drive.google.com/uc?export=download&id=1dLIAa-V0B_Vwd3umWxIuFzXVds6zTGp6",
+    img: clean,
   },
 ];

@@ -14,7 +14,7 @@ import GradeIcon from "@mui/icons-material/Grade";
 import BeenhereIcon from "@mui/icons-material/Beenhere";
 import Seo from "../main/Seo";
 import construction from "../images/construction2.webp";
-import constructionMin from "../images/construction2-min.webp";
+// import constructionMin from "../images/construction2-min.webp";
 
 const whyUsConstruction = [
   {
@@ -46,7 +46,7 @@ function a11yProps(index) {
 const Construction = () => {
   const [value, setValue] = useState(0);
   // const [imageNum, setImageNum] = useState(1);
-  const constructionImage = construction || constructionMin;
+  const constructionImage = construction;
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
